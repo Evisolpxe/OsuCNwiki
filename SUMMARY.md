@@ -5,15 +5,15 @@
 
 ## 初见一下
 
-* [主程序下载安装](xia-zai-an-zhuang/zhu-cheng-xu-xia-zai-an-zhuang.md)
-* [maps、skin下载安装](xia-zai-an-zhuang/mapsskin-xia-zai-an-zhuang.md)
-* [国内分流](xia-zai-an-zhuang/guo-nei-fen-liu.md)
-* [如何找到自己喜欢的曲子](xia-zai-an-zhuang/ru-he-zhao-dao-zi-ji-xi-huan-de-qu-zi.md)
-* [界面介绍](xia-zai-an-zhuang/jie-mian-jie-shao.md)
-* [文件结构](xia-zai-an-zhuang/wen-jian-jie-gou.md)
-* [缩写解释](xia-zai-an-zhuang/suo-xie-jie-shi.md)
-* [一些需要遵守的规则](xia-zai-an-zhuang/yi-xie-xu-yao-zun-shou-de-gui-ze.md)
-* [CN osu 玩家聚集地](xia-zai-an-zhuang/cn-osu-wan-jia-ju-ji-di.md)
+* [主程序下载安装](chu-jian-yi-xia/zhu-cheng-xu-xia-zai-an-zhuang.md)
+* [maps、skin下载安装](chu-jian-yi-xia/mapsskin-xia-zai-an-zhuang.md)
+* [国内分流](chu-jian-yi-xia/guo-nei-fen-liu.md)
+* [如何找到自己喜欢的曲子](chu-jian-yi-xia/ru-he-zhao-dao-zi-ji-xi-huan-de-qu-zi.md)
+* [界面介绍](chu-jian-yi-xia/jie-mian-jie-shao.md)
+* [文件结构](chu-jian-yi-xia/wen-jian-jie-gou.md)
+* [缩写解释](chu-jian-yi-xia/suo-xie-jie-shi.md)
+* [一些需要遵守的规则](chu-jian-yi-xia/yi-xie-xu-yao-zun-shou-de-gui-ze.md)
+* [CN osu 玩家聚集地](chu-jian-yi-xia/cn-osu-wan-jia-ju-ji-di.md)
 
 ## 小试牛刀
 
@@ -43,8 +43,8 @@
 
 ## 你也是屙屎大神？
 
-* [屙屎哲学](ni-ye-shi-shi-da-shen/shi-zhe-xue.md)
-* [一些CN屙屎圈的亚文化](ni-ye-shi-shi-da-shen/yi-xie-cn-shi-quan-de-ya-wen-hua.md)
-* [不应该做的事](ni-ye-shi-shi-da-shen/bu-ying-gai-zuo-de-shi.md)
-* [屙屎黑名单](ni-ye-shi-shi-da-shen/shi-hei-ming-dan.md)
+* [屙屎哲学](ni-ye-shieshi-da-shen/shi-zhe-xue.md)
+* [一些CN屙屎圈的亚文化](ni-ye-shieshi-da-shen/yi-xie-cn-shi-quan-de-ya-wen-hua.md)
+* [不应该做的事](ni-ye-shieshi-da-shen/bu-ying-gai-zuo-de-shi.md)
+* [屙屎黑名单](ni-ye-shieshi-da-shen/shi-hei-ming-dan.md)
 
