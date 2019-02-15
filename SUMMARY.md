@@ -7,7 +7,7 @@
 
 * [主程序下载安装和登录](chu-jian-yi-xia/zhu-cheng-xu-xia-zai-an-zhuang.md)
 * [maps、skin下载安装](chu-jian-yi-xia/mapsskin-xia-zai-an-zhuang.md)
-* [分流](chu-jian-yi-xia/fen-liu.md)
+* [国内分流](chu-jian-yi-xia/guo-nei-fen-liu.md)
 * [如何找到自己喜欢的曲子](chu-jian-yi-xia/ru-he-zhao-dao-zi-ji-xi-huan-de-qu-zi.md)
 * [界面介绍](chu-jian-yi-xia/jie-mian-jie-shao.md)
 * [文件结构](chu-jian-yi-xia/wen-jian-jie-gou.md)
