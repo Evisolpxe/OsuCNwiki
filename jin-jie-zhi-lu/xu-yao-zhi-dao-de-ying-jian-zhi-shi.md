@@ -128,7 +128,9 @@ Cherry轴体专利过期后，国产轴体犹如雨后春笋，也大幅度拉�
 
 在画面变亮时，先变得更亮再暗回去，以此来将GTG提高到1ms的水平。缺陷会留下反色的鬼影，在osu!中的具体体现就是选歌界面用滚轮滚动歌曲列表时，白色的字会有黑色的阴影。
 
-但是在osu!游戏里，鬼影会在开HD后进一步让note更早出现，有类似提高Gamma的效果。具体品牌的OverDrive实现名称**不一样**:
+但是在osu!游戏里，鬼影会在开HD后进一步让note更早出现，有类似提高Gamma的效果。
+
+不同显示器厂商有各自的OverDrive实现名称:
 
 AOC：OverDrive
 
@@ -158,6 +160,19 @@ G-sync是**英伟达**开发并支持英伟达显示卡的产物，而Freesync�
 **osu!玩家尽可避开购买，都是偷偷加钱的项目。**Freesync倒不怎么加钱，但是G-sync真的很贵。
 
 如果您已经拥有了G-sync的设备，请直接关闭G-Sync，如果需要在其他游戏内开启，可以通过设置osu!为**无边框窗口**，并设置G-Sync为**仅全屏应用开启**来规避。
+
+#### **LightBoost**
+简单来说，这是一项使屏幕背光开启类似CRT的扫描闪烁，来提供更高的动态清晰度的功能。与OverDrive类似，不同显示器厂商也有各自的实现：
+
+Alienware：NVIDIA’s ULMB (Ultra Low Motion Blur)
+Acer：NVIDIA’s LightBoost
+BenQ： DyAc (Dynamic Accuracy)(旧型号使用Blur Reduce/模糊降减)
+ASUS： Extreme Low Motion Blur
+LG： 1ms Motion Blur Reduction
+Samsung： 1ms MPRT (Moving Picture Response Time)
+
+
+
 
 #### **多显示器**
 
