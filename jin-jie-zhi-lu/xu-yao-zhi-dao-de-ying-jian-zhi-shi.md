@@ -128,7 +128,26 @@ Cherry轴体专利过期后，国产轴体犹如雨后春笋，也大幅度拉�
 
 在画面变亮时，先变得更亮再暗回去，以此来将GTG提高到1ms的水平。缺陷会留下反色的鬼影，在osu!中的具体体现就是选歌界面用滚轮滚动歌曲列表时，白色的字会有黑色的阴影。
 
-但是在osu!游戏里，鬼影会在开HD后进一步让note更早出现，有类似提高Gamma的效果。具体品牌的OverDrive实现名称**不一样**，可以参考https://tieba.baidu.com/p/5996570986?see_lz=1。
+但是在osu!游戏里，鬼影会在开HD后进一步让note更早出现，有类似提高Gamma的效果。具体品牌的OverDrive实现名称**不一样**:
+
+AOC：OverDrive
+
+ASUS：Trace-Free
+
+BENQ：Advanced Motion Accelerator (AMA)
+
+ViewSonic：ClearMotiv
+
+SamSung：MagicSpeed / Response Time Acceleration (RTA)
+
+LG：Over Driving Circuit (ODC)
+
+NEC：RapidResponse / RapidMotion
+
+参考资料：
+https://www.blurbusters.com/faq/lcd-motion-artifacts/
+http://www.tftcentral.co.uk/advanced.htm#clearmotiv
+
 
 #### **G-sync与Freesync**
 
