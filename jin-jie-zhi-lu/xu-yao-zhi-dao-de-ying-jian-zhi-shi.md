@@ -133,17 +133,11 @@ Cherry轴体专利过期后，国产轴体犹如雨后春笋，也大幅度拉�
 不同显示器厂商有各自的OverDrive实现名称:
 
 AOC：OverDrive
-
 ASUS：Trace-Free
-
 BENQ：Advanced Motion Accelerator (AMA)
-
 ViewSonic：ClearMotiv
-
 SamSung：MagicSpeed / Response Time Acceleration (RTA)
-
 LG：Over Driving Circuit (ODC)
-
 NEC：RapidResponse / RapidMotion
 
 参考资料：
