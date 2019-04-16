@@ -1,6 +1,6 @@
 # Table of contents
 
-* [进度表](README.md)
+* [关于本项目](README.md)
 * [已有内容的部分](yi-you-nei-rong-de-bu-fen.md)
 
 ## 初见一下
@@ -40,11 +40,4 @@
 * [小心伤病！](jin-jie-zhi-lu/xiao-xin-shang-bing.md)
 * [Tournament](jin-jie-zhi-lu/tournament.md)
 * [比赛心态](jin-jie-zhi-lu/bi-sai-xin-tai.md)
-
-## 你也是屙屎大神？
-
-* [屙屎哲学](ni-ye-shieshi-da-shen/shi-zhe-xue.md)
-* [一些CN屙屎圈的亚文化](ni-ye-shieshi-da-shen/yi-xie-cn-shi-quan-de-ya-wen-hua.md)
-* [不应该做的事](ni-ye-shieshi-da-shen/bu-ying-gai-zuo-de-shi.md)
-* [屙屎黑名单](ni-ye-shieshi-da-shen/shi-hei-ming-dan.md)
 
