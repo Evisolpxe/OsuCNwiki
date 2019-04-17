@@ -11,7 +11,7 @@
 * [如何找到自己喜欢的曲子](chu-jian-yi-xia/ru-he-zhao-dao-zi-ji-xi-huan-de-qu-zi.md)
 * [界面介绍](chu-jian-yi-xia/jie-mian-jie-shao.md)
 * [文件结构](chu-jian-yi-xia/wen-jian-jie-gou.md)
-* [缩写解释](chu-jian-yi-xia/suo-xie-jie-shi.md)
+* [名词解释](chu-jian-yi-xia/ming-ci-jie-shi.md)
 * [一些需要遵守的规则](chu-jian-yi-xia/yi-xie-xu-yao-zun-shou-de-gui-ze.md)
 * [CN osu 玩家聚集地](chu-jian-yi-xia/cn-osu-wan-jia-ju-ji-di.md)
 
