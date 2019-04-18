@@ -4,9 +4,9 @@ description: Welcome to OsuCN-Wiki
 
 # 关于本项目
 
-**这是一个由一群中国osu!玩家发起并维护的Wiki开放式项目！**
+**这是一个由一群中国 osu! 玩家发起并维护的 wiki 开放式项目！**
 
-本项目**并不是**Osu!官方Wiki [_https://osu.ppy.sh/help/wiki/Welcome_ ](https://osu.ppy.sh/help/wiki/Welcome) 的本地化重建版本。
+本项目**并不是** [官方的 osu! wiki](https://osu.ppy.sh/help/wiki/Welcome) 的本地化重建版本。
 
 本项目更侧重于分享国内玩家总结出来的经验和知识，将以往散乱于贴吧、官方维基、群文件、甚至是口口相传的信息进行整理，将过时的信息进行修订。
 
@@ -19,8 +19,3 @@ description: Welcome to OsuCN-Wiki
 ### 现Wiki部分贡献成员：
 
 [DuNai](https://osu.ppy.sh/users/2522197) \| [Explosive](https://osu.ppy.sh/users/245276) \| [EmertxE](https://osu.ppy.sh/users/954557) \| [iMey](https://osu.ppy.sh/users/1597068) \| [MatsumotoRise](https://osu.ppy.sh/users/672726) \| [MaKenanbuReraaa](https://osu.ppy.sh/users/3331264) \| [Mother Ship](https://osu.ppy.sh/users/2545898) \| [rustbell](https://osu.ppy.sh/users/227717)
-
-
-
-
-
