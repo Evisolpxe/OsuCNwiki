@@ -2,8 +2,6 @@
 
 {% page-ref page="chu-jian-yi-xia/cn-osu-wan-jia-ju-ji-di.md" %}
 
-{% page-ref page="xiao-shi-niu-dao/zhi-fa.md" %}
-
 {% page-ref page="jin-jie-zhi-lu/xiao-xin-shang-bing.md" %}
 
 {% page-ref page="jin-jie-zhi-lu/guan-yu-shou-su.md" %}
