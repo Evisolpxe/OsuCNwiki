@@ -711,7 +711,7 @@ mp - 房间id（必须）【也就是官网MP Link的参数】
 
 #### 5.1.7 获取回放
 
-/get_replay
+/api/get_replay
 
 
 概览
