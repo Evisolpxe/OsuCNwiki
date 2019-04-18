@@ -19,8 +19,7 @@
 
 * [基础设置](xiao-shi-niu-dao/ji-chu-she-zhi.md)
 * [简单的乐理知识](xiao-shi-niu-dao/jian-dan-de-le-li-zhi-shi.md)
-* [游戏方式（指鼠标键盘板子）](xiao-shi-niu-dao/you-xi-fang-shi-zhi-shu-biao-jian-pan-ban-zi.md)
-* [指法](xiao-shi-niu-dao/zhi-fa.md)
+* [游戏方式](xiao-shi-niu-dao/you-xi-fang-shi.md)
 * [MultiPlay](xiao-shi-niu-dao/multiplay.md)
 * [排名（PP）](xiao-shi-niu-dao/pai-ming-pp.md)
 * [谱面难度](xiao-shi-niu-dao/pu-mian-nan-du.md)
@@ -39,5 +38,5 @@
 * [需要用到的软件知识](jin-jie-zhi-lu/xu-yao-yong-dao-de-ruan-jian-zhi-shi.md)
 * [小心伤病！](jin-jie-zhi-lu/xiao-xin-shang-bing.md)
 * [Tournament](jin-jie-zhi-lu/tournament.md)
-* [比赛心态](jin-jie-zhi-lu/bi-sai-xin-tai.md)
+* [比赛](jin-jie-zhi-lu/bi-sai.md)
 
