@@ -18,7 +18,7 @@
 ## 小试牛刀
 
 * [基础设置](xiao-shi-niu-dao/ji-chu-she-zhi.md)
-* [简单的乐理知识](xiao-shi-niu-dao/jian-dan-de-le-li-zhi-shi.md)
+* [简单的乐理知识](xiao-shi-niu-dao/jian-dan-de-yue-li-zhi-shi.md)
 * [游戏方式](xiao-shi-niu-dao/you-xi-fang-shi.md)
 * [MultiPlay](xiao-shi-niu-dao/multiplay.md)
 * [排名（PP）](xiao-shi-niu-dao/pai-ming-pp.md)
