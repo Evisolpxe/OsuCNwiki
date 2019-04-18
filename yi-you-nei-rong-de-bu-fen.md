@@ -24,8 +24,3 @@
 
 {% page-ref page="xiao-shi-niu-dao/jian-dan-de-le-li-zhi-shi.md" %}
 
-
-
-
-
-
