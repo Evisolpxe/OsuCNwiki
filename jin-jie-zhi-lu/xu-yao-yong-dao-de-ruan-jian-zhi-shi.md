@@ -36,11 +36,11 @@
 
 ### 2.1 游戏帧数
 
-很难以置信也难以理解的是，osu! 的输入和渲染挂钩，也就是游戏渲染帧数也同样是读取输入的帧数。
+由于 osu! 在渲染一帧时才读取一次输入，这意味着游戏渲染帧数与读取输入的次数在数值上相等。
 
 因此**千万不要在osu!中开启帧数限制**，除非你计算机的散热性能真的非常有限，需要使用帧数限制降低功耗！
 
-由于大部分键盘的输入在1khz，因此也推荐提升游戏帧数到1000以上，具体帧数与硬件的关联请查看硬件篇。
+由于大部分键盘的输入在1KHz，因此也推荐提升游戏帧数到1000以上，具体帧数与硬件的关联请查看硬件篇。
 
 
 ### 2.2 数位板
@@ -62,9 +62,9 @@ Wacom在近几年的官方驱动中加入了移动平滑，会带来数十毫秒
 
 ### 2.4 DWM
 
-**警告：挂起DWM进程属于硬核玩法，虽然能降低输入延迟，但是也会几乎使操作系统无法使用，请三思而行！**
+**警告：挂起DWM进程属于硬核玩法，虽然能降低输入延迟，但是会几乎使操作系统无法使用，请三思而行！**
 
-请仔细阅读https://github.com/Phorofor/DWM.ForceSwitch项目的readme文件，务必先了解后果再进行操作！
+请仔细阅读 [Phorofor/DWM.ForceSwitch](https://github.com/Phorofor/DWM.ForceSwitch) 项目的readme文件，务必先了解后果再进行操作！
 
 ## 3.直播
 
@@ -149,14 +149,15 @@ AVC (h.264) Level: 3.1
 ### 3.2 直播比赛
 
 近几年国内比赛增多（详见比赛页面），玩家的电脑配置也逐渐提升，因此参与比赛直播的人也越来越多。
+关于直播端的详细介绍可参考[官方wiki内容](https://osu.ppy.sh/help/wiki/osu!tourney)，此处仅为大致介绍。
 
 #### 3.2.1 前置条件和直播端准备
 
-首先你必须是osu! supporter，否则无法启动直播端。
+首先你必须是 osu!supporter，否则无法启动直播端。
 
-复制一个新的osu客户端，建议不带Skins、Songs、Replays三个文件夹．然后打开新的客户端，登陆你的用户（需要是supporter），选择记住用户名和密码，版本选“正式版”，并把皮肤改成default．
+复制 osu!.exe 到新的文件夹，然后打开，登陆你的用户（需要是supporter），选择记住用户名和密码，版本选“正式版”，并把皮肤改成default．
 
-退出后，在osu文件夹里新建一个空文件“tournament.cfg”，运行客户端，此时就应该会进入直播端，此时游戏会自动填写tournament.cfg。
+退出后，在这个文件夹里新建一个空文件“tournament.cfg”，运行客户端，此时就应该会进入直播端，此时游戏会自动填写tournament.cfg。
 
 #### 3.2.2 赛前准备：
 
@@ -166,7 +167,7 @@ AVC (h.264) Level: 3.1
 acronym = 比赛名，由裁判提供
 ```
 
-接下来根据比赛裁判要求，设置直播端的皮肤和音效，并且将本场比赛使用的谱面安装到直播端。
+启动直播端后接下来根据比赛裁判要求，设置直播端的皮肤和音效，并且将本场比赛使用的谱面安装到直播端。
 
 比赛开始前，由裁判创建房间，如果房间前缀和你的配置一样，应该能在左下角看到房间。
 
@@ -184,7 +185,7 @@ acronym = 比赛名，由裁判提供
 
 panic是重载，在比赛时有人没围观上之类的事故时使用，重新围观所有选手；
 
-顶端星星是双方得分，一般会根据房间情况自动增加，重赛时需要手动操作。
+顶端星星是双方得分，一般会根据房间情况自动增加，重赛时需要手动操作（左键加星右键减星）。
 
 #### 3.2.4 直播设置
 
@@ -358,7 +359,7 @@ https://github.com/OsuSync/LyricDisplayerPlugin/releases
 
 **real.exe 使用说明：**
 
-右键点击此电脑 -&gt; 选择“管理” -&gt; 选择左侧“设备管理器” -&gt; 展开“音频输入和输出” -&gt; 右键点击你的音频输出设备，选择“更新驱动程序和软件” -&gt; “浏览计算机以查找...” -&gt; “从计算机的设备驱动程序列表中选取...” -&gt; “通用软件设备” -&gt; 保存
+右键点击此电脑 -> 选择“管理” -> 选择左侧“设备管理器” -> 展开“音频输入和输出” -> 右键点击你的音频输出设备，选择“更新驱动程序和软件” -> “浏览计算机以查找...” -> “从计算机的设备驱动程序列表中选取...” -> “通用软件设备” -> 保存
 
 开启real.exe即可。
 
@@ -371,19 +372,19 @@ https://github.com/OsuSync/LyricDisplayerPlugin/releases
 ## 5.使用osu!提供的数据进行开发
 本篇可能涉及到一些Web开发相关的知识，如果你有兴趣基于osu!的数据构建一款自己的应用，可以参考本篇！
 
-###5.1 osu! API
+### 5.1 osu! API
 这是ppy在2013年7月公布的一组API。
 
 文档：https://github.com/ppy/osu-api/wiki
 
-开始使用： 在 https://osu.ppy.sh/p/api 申请一个API KEY，信息随意填写。
+开始使用： 在 https://old.ppy.sh/p/api 申请一个API KEY，信息随意填写。
 
 限制：每分钟1200次，最高瞬时1400次。
 
-共有的父URL：https://osu.ppy.sh/api/
+API根URL：https://osu.ppy.sh
 
 ---
-#### 5.1.1谱面信息
+#### 5.1.1 谱面信息
 
 
 /api/get_beatmaps
@@ -661,7 +662,7 @@ URL：/api/get_user_recent
 
 /api/get_match
 
-概览：返回一把mp的历史记录。
+概览：返回一场mp的历史记录。
 
 URL：/api/get_match
 
@@ -710,7 +711,7 @@ mp - 房间id（必须）【也就是官网MP Link的参数】
 
 #### 5.1.7 获取回放
 
-/api/get_replay
+/get_replay
 
 
 概览
@@ -750,7 +751,7 @@ The remaining data contains information about mouse movement and key presses in 
 
 osu://mp/<int mpID>/\[<string password>]
 
-加入某个mp房间的连接。前文搞错了一点，这个mpID和前文API用的id不同。如果存在密码，就加上密码参数。
+加入某个mp房间的连接。这里的mpID和前文API用的id不同。如果存在密码，就加上密码参数。
 
 ---
 osu://edit/<xx:xx:xxx>\[ (x,x,x,x...)]
@@ -784,9 +785,11 @@ osu://spectate/<String username or int userid>
 将这个链接发送到osu!中任何频道（当然为了社区礼仪，建议发送到私聊或者#announce）再点击，就可以开始围观uid是7679162的人，只要他在线。也可以直接在浏览器访问osu://spectate/7679162这个链接。
 
 
-###5.2 osu! API v2
+### 5.2 osu! API v2
 
 这是一些由[kj415j45](https://osu.ppy.sh/users/9367540)在[新官网的web项目中](https://github.com/ppy/osu-web)发掘的API，虽然随着新官网上线，但是并没有公布，功能也非常有限。
+
+关于 API v2 的最新信息可在 [int-and-his-friends/osu-api-v2/wiki](https://github.com/int-and-his-friends/osu-api-v2/wiki) 找到。
 
 相比获取信息，API V2更有用的地方是OAuth，也就是玩家可以授权开发者的网站访问他的数据，而不需要直接输入osu!账号密码的机制。
 
@@ -797,13 +800,10 @@ osu://spectate/<String username or int userid>
 
 OAuth认证中，Client指用户和osu!官网之间的第三方网站。第三方网站可以以用户的身份访问osu!的数据，同时用户可以控制Client能访问的osu!数据内容的范围，而不至于需要向第三方网站提供密码。
 
-如果你的项目不涉及其他玩家对你的授权，而只是你个人使用需要使用API V2返回的某些字段，也仍然需要创建Client。
+即使你的项目不涉及其他玩家对你的授权，只是你个人使用需要使用API V2返回的某些字段，也仍然需要创建Client。
 
-你需要授权自己的Client访问自己的账户，获得Client访问账户用的access_token，进而以自己账户的身份来访问API V2；还需要编写定时任务，使用refresh_token来刷新自己的access_token。
-
-
-##### 创建OAuth Client
-```http request
+##### 创建 OAuth Client
+```http
 POST https://osu.ppy.sh/oauth/clients
 X-CSRF-TOKEN: {Your CSRF Token here}
 Content-Type: application/json
@@ -815,11 +815,11 @@ Cookie: osu_session={Your osu_session in cookies};
 }
 ```
 
-其中osu_session和X-CSRF-TOKEN可以在访问新官网后，在Cookie中找到。
+其中osu_session和X-CSRF-TOKEN可以在访问新官网后，在Cookies中找到。
 
 只有第一次访问需要带osu_session，后续不需要。（这什么设定）
 
-`redirect`参数指开发者服务器用于接收osu! 回调的接口，请认真填写。
+`redirect`参数指开发者服务器用于接收 osu! 回调的接口，请认真填写。
 
 返回：
 ```json
@@ -847,14 +847,16 @@ Cookie: osu_session={Your osu_session in cookies};
 
 其中client_id和redirect_uri与创建Client时完全一致，state会在稍后回调时传回，而scope则可以控制Client要求访问用户内容的范围。
 
-`identify` 将要求所有权限， `friends.read`则只能获取好友。 多个权限使用空格（%20）分割。
+`identify` 将获得鉴权权限（默认值，即使未请求该scope也会自动追加），请求 `friends.read` 则能获取好友。 多个权限使用空格（%20）分割。
 
 
 ##### 接受回调
 
-用户点击后，你预先填写的地址将会收到回调：`{$redirect_uri}?code={$code}&state={$state}`，其中code将会被用来鉴别点击了授权的用户。
+用户点击后，你预先填写的地址将会收到回调：`{$redirect_uri}?code={$code}&state={$state}`，其中state可被用来鉴别点击了授权的用户。
 
-```http request
+此时通过下列请求即可获取该用户的token
+
+```http
 POST https://osu.ppy.sh/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
@@ -874,13 +876,13 @@ grant_type=authorization_code
 ```
 至此，你已经可以使用access_token以用户的身份访问osu! API v2了。
 
-#####附带Token
+##### 附带Token
 在请求头中添加`Authorization: {$token_type} {$token}`即可。
 
 
 #### 5.2.2 API V2
 
-完整的列表参见：[ppy/osu-web:/routes/web.php@line//API](https://github.com/ppy/osu-web/blob/master/routes/web.php#L296-L378)
+完整的列表参见：[ppy/osu-web:/routes/web.php@line//API](https://github.com/ppy/osu-web/blob/master/routes/web.php#L300-L373)
 
 网站开发者用于鉴别用户身份时，常用`/me`接口：
 
@@ -1007,14 +1009,10 @@ grant_type=authorization_code
 }
 ```
 
-
-
-
-
 #### 5.2.3 其他认证相关的接口
 
-#####刷新Token
-```http request
+##### 刷新Token
+```http
 POST https://osu.ppy.sh/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
@@ -1034,7 +1032,7 @@ grant_type=refresh_token
 
 ##### 查询Client
 
-```http request
+```http
 GET https://osu.ppy.sh/oauth/clients
 X-CSRF-TOKEN: {Your CSRF Token here}
 Content-Type: application/json
@@ -1057,7 +1055,7 @@ Content-Type: application/json
 ]
 ```
 ##### 修改Client
-```http request
+```http
 PUT https://osu.ppy.sh/oauth/clients/{client-id}
 X-CSRF-TOKEN: {Your CSRF Token here}
 Content-Type: application/json
@@ -1090,7 +1088,7 @@ Content-Type: application/json
 ```
 返回：
 ```
-200 ok
+200 OK
 ```
 需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
 
