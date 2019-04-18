@@ -4,17 +4,17 @@
 
 ### 1.1 Wacom官方驱动
 
-下载地址：http://support.wacom.com.cn/download/drivers.aspx?ctype=mode
+下载地址：[http://support.wacom.com.cn/download/drivers.aspx?ctype=mode](http://support.wacom.com.cn/download/drivers.aspx?ctype=mode)
 
 在2017年以前，Bamboo系列（CTL460/470/471）的驱动和Intuos系列（CTL480/490、PTH系列数位板）的驱动是分开的，但是现在新版的驱动已经支持两个产品线的数位板。
 
-如果你需要在网吧安装，必须使用2015年v6.3.15-2(Intuos系列)或v.5.3.5-3(Bamboo系列)或更早版本的驱动，连续安装两次来绕过重新启动才能使用的限制。
+如果你需要在网吧安装，必须使用2015年v6.3.15-2\(Intuos系列\)或v.5.3.5-3\(Bamboo系列\)或更早版本的驱动，连续安装两次来绕过重新启动才能使用的限制。
 
 下载完成后，首先设置为笔模式，然后找到【使用Windows Ink】选项，去掉其复选框，最后根据个人喜好调整映射。没有标准答案，每个人的映射都有差别，高Rank玩家的映射也不一定适合你。
 
 ### 1.2 TabletDriver第三方驱动
 
-下载地址：https://github.com/hawku/TabletDriver/releases
+下载地址：[https://github.com/hawku/TabletDriver/releases](https://github.com/hawku/TabletDriver/releases)
 
 2018年3月由外国友人开发的第三方驱动，持续维护至今，除了Wacom数位板外还支持XP Pen（一个日本的品牌）、绘王、高漫等其他品牌的数位板。
 
@@ -22,7 +22,7 @@
 
 **默认设置会带来最低的延迟，同时也会导致较强的光标抖动，在悬空/Azuki打图时对移动的干扰较大，建议调节Filter标签页中的第二个降噪Filter！**
 
-下载解压后，需要先运行目录下的install_vmulti_driver.bat来安装驱动，然后使用TabletDriverGUI启动用户界面。
+下载解压后，需要先运行目录下的install\_vmulti\_driver.bat来安装驱动，然后使用TabletDriverGUI启动用户界面。
 
 界面介绍：
 
@@ -42,8 +42,8 @@
 
 由于大部分键盘的输入在1KHz，因此也推荐提升游戏帧数到1000以上，具体帧数与硬件的关联请查看硬件篇。
 
-
 ### 2.2 数位板
+
 #### 2.1.1 Wacom官方驱动
 
 Wacom在近几年的官方驱动中加入了移动平滑，会带来数十毫秒的输入延迟，在高BPM锐角移动时尤其明显。
@@ -70,7 +70,7 @@ Wacom在近几年的官方驱动中加入了移动平滑，会带来数十毫秒
 
 ### 3.1 推流和录像：OBS
 
-下载地址：http://obsproject.com/download
+下载地址：[http://obsproject.com/download](http://obsproject.com/download)
 
 #### 3.1.1 基本使用
 
@@ -84,28 +84,31 @@ Wacom在近几年的官方驱动中加入了移动平滑，会带来数十毫秒
 
 #### 3.1.2 一些设置
 
-##### 编码优先级
+**编码优先级**
+
 OBS提供了从Fast到Slow的优先级，Slow会占用更多系统资源，推荐先设置为Very Fast再逐步调优。
 
-##### 码率
+**码率**
+
 码率就是你推流使用的最高上传速度，但是它会受物理带宽的限制，码率高于物理带宽时会出现大量的丢帧，在观众眼中就是转圈卡顿。但是较低的码率设置会导致在视频流每帧颜色变化较大时，尝试压缩视频体积，导致大量的马赛克。
 
-##### 分辨率和帧率
+**分辨率和帧率**
+
 高分辨率需要很高的码率，高帧数则需要更慢的编码优先级。
 
 当然，1080p@60FPS能给观众带来清晰又顺滑的体验，当你的网络环境不允许时，尽可能先降低分辨率再降低帧率。
 
 提示：虽然你的Banner可能要容纳1080p的游戏和320p的摄像头，进而远大于1080p，但是最终输出还是推荐进行缩放，以避免在投稿时被二次压制，同时也可以提高码率。
 
-##### 最佳实践
+**最佳实践**
 
 首先测试你的上传带宽（注意KBps和kbps的不同），将码率设置为比带宽较小的值，进行直播测试。如果右下角提示丢帧，进一步减小码率。
 
 根据最终的码率结果在下方三种方案中挑选一种，如果不丢帧的最高码率低于2500，建议放弃直播。
 
-##### 1080p 60fps
+**1080p 60fps**
 
-视频分辨率: 1920*1080
+视频分辨率: 1920\*1080
 
 码率: 4500 - 6000 kbps
 
@@ -113,14 +116,13 @@ OBS提供了从Fast到Slow的优先级，Slow会占用更多系统资源，推�
 
 关键帧间隔: 2 seconds
 
-AVC (h.264) Profile: Main/High
+AVC \(h.264\) Profile: Main/High
 
-AVC (h.264) Level: 4.2
+AVC \(h.264\) Level: 4.2
 
+**720p 60fps**
 
-##### 720p 60fps
-
-视频分辨率: 1280*720
+视频分辨率: 1280\*720
 
 码率: 3500 to 5000 kbps
 
@@ -128,23 +130,23 @@ AVC (h.264) Level: 4.2
 
 关键帧间隔: 2 seconds
 
-AVC (h.264) Profile: Main/High
+AVC \(h.264\) Profile: Main/High
 
-AVC (h.264) Level: 4.1
+AVC \(h.264\) Level: 4.1
 
-##### 720p 30fps
+**720p 30fps**
 
-视频分辨率: 1280*720
-     
+视频分辨率: 1280\*720
+
 码率: 2500 to 4000 kbps
-     
-帧数: 30 or 25 fps
-     
-关键帧间隔: 2 seconds
-     
-AVC (h.264) Profile: Main/High
 
-AVC (h.264) Level: 3.1
+帧数: 30 or 25 fps
+
+关键帧间隔: 2 seconds
+
+AVC \(h.264\) Profile: Main/High
+
+AVC \(h.264\) Level: 3.1
 
 ### 3.2 直播比赛
 
@@ -163,7 +165,7 @@ AVC (h.264) Level: 3.1
 
 编辑你的tournament.cfg，添加/修改如下一行：
 
-```
+```text
 acronym = 比赛名，由裁判提供
 ```
 
@@ -191,13 +193,13 @@ panic是重载，在比赛时有人没围观上之类的事故时使用，重新
 
 由于直播端由多个osu!窗口和直播端管理窗口构成，无法和普通游戏时一样使用游戏源捕获（可以逐个捕获但是要手动排序，偶尔会出现小客户端消失时更麻烦），需要直接使用**显示器捕获**。
 
-视频输出的分辨率应修改为1280*720，直播端下方的设置界面可以无需播出。
+视频输出的分辨率应修改为1280\*720，直播端下方的设置界面可以无需播出。
 
 ### 3.3 实时显示歌曲信息：Sync
 
 #### 3.3.1 主程序和默认插件下载
 
-https://github.com/OsuSync/Sync/releases
+[https://github.com/OsuSync/Sync/releases](https://github.com/OsuSync/Sync/releases)
 
 主程序最新版本号为2.18.2，内置插件有：
 
@@ -214,122 +216,92 @@ PPQuery —— 向自己的IRC账号发送消息查询PP。（其实是转发给
 RecentlyUserQuery —— 用户名/ID转化
 
 #### 3.3.2 插件安装
+
 **为了让它拥有实时PP、谱面信息显示，需要安装以下插件。**
 
 安装步骤：将插件release地址里最新的.zip文件下载，覆盖到Sync目录后，**启动一次Sync，并视情况在config.ini里修改配置**。
 
-##### 实时PP显示：
+**实时PP显示：**
 
-https://github.com/OsuSync/RealTimePPDisplayer/releases
+[https://github.com/OsuSync/RealTimePPDisplayer/releases](https://github.com/OsuSync/RealTimePPDisplayer/releases)
 
 将当前PP实时输出到内存映射/窗口
 
 配置项说明：
 
-OutputMethods
-插件输出模式。WPF为独立窗口，MMF为内存映射文件，text为输出到硬盘文本，可以用逗号分隔，同时输出多个目标
+OutputMethods 插件输出模式。WPF为独立窗口，MMF为内存映射文件，text为输出到硬盘文本，可以用逗号分隔，同时输出多个目标
 
-UseText
-单独控制是否输出文本（？）
+UseText 单独控制是否输出文本（？）
 
-TextOutputPath
-文本路径
+TextOutputPath 文本路径
 
-DisplayHitObject
-是否展示点击统计（300/100/50/X的数量）
+DisplayHitObject 是否展示点击统计（300/100/50/X的数量）
 
-PPFontSize
-PP字体
+PPFontSize PP字体
 
-PPFontColor
-PP字体颜色
+PPFontColor PP字体颜色
 
-HitObjectFontSize
-点击统计字体
+HitObjectFontSize 点击统计字体
 
-HitObjectFontColor
-点击统计字体颜色
+HitObjectFontColor 点击统计字体颜色
 
-BackgroundColor
-背景颜色，默认绿色，方便OBS采用色键功能抠图
+BackgroundColor 背景颜色，默认绿色，方便OBS采用色键功能抠图
 
-WindowHeight
-WPF窗口宽高
-WindowWidth
+WindowHeight WPF窗口宽高 WindowWidth
 
-SmoothTime
-渐变时间
+SmoothTime 渐变时间
 
-FPS
-……
+FPS ……
 
-Topmost
-WPF模式窗口是否置顶
+Topmost WPF模式窗口是否置顶
 
-WindowTextShadow
-字体阴影
+WindowTextShadow 字体阴影
 
-DebugMode
-调试输出
+DebugMode 调试输出
 
-RoundDigits
-PP小数位
+RoundDigits PP小数位
 
-PPFormat
-PP格式，默认为${rtpp}pp ，括号内支持三维/最大PP 具体参见github.com/OsuSync/RealTimePPDisplayer/wiki/How-to-customize-my-output-content%3F
+PPFormat PP格式，默认为${rtpp}pp ，括号内支持三维/最大PP 具体参见github.com/OsuSync/RealTimePPDisplayer/wiki/How-to-customize-my-output-content%3F
 
-HitCountFormat
-点击统计格式，默认为${n100}x100 ${n50}x50 ${nmiss}xMiss，括号内支持内容参见上文
+HitCountFormat 点击统计格式，默认为${n100}x100 ${n50}x50 ${nmiss}xMiss，括号内支持内容参见上文
 
-IgnoreTouchScreenDecrease
-是否无视触屏Mod
+IgnoreTouchScreenDecrease 是否无视触屏Mod
 
-RankingSendPerformanceToChat
-对Rank图，输出PP到IRC
+RankingSendPerformanceToChat 对Rank图，输出PP到IRC
 
-##### 屙屎信息源：
+**屙屎信息源：**
 
-https://https://github.com/OsuSync/OsuRTDataProvider-Release/releases
+[https://https://github.com/OsuSync/OsuRTDataProvider-Release/releases](https://https://github.com/OsuSync/OsuRTDataProvider-Release/releases)
 
 读取osu!内存的插件，因此只有release而没有源码。
 
 配置项说明：
 
-ListenInterval
-读取频率，默认即可。过小会导致资源浪费
+ListenInterval 读取频率，默认即可。过小会导致资源浪费
 
-EnableTourneyMode
-对比赛端的支持
+EnableTourneyMode 对比赛端的支持
 
-TeamSize
-比赛端每队人数
+TeamSize 比赛端每队人数
 
-ForceOsuSongsDirectory
-强制osu!文件夹
+ForceOsuSongsDirectory 强制osu!文件夹
 
-GameMode
-如果自动识别模式失败，需要手动指定
+GameMode 如果自动识别模式失败，需要手动指定
 
-DisableProcessNotFoundInformation
-是否隐藏“找不到osu!.exe信息”，支持True/False
+DisableProcessNotFoundInformation 是否隐藏“找不到osu!.exe信息”，支持True/False
 
-EnableModsChangedAtListening
-是否尝试在听歌时跟踪Mod变化
-
-
+EnableModsChangedAtListening 是否尝试在听歌时跟踪Mod变化
 
 以下两个插件有中文文档，参考code页下的说明即可。
 
+**谱面信息输出插件：**
 
-##### 谱面信息输出插件：
-
-https://github.com/OsuSync/OsuLiveStatusPanel/releases
+[https://github.com/OsuSync/OsuLiveStatusPanel/releases](https://github.com/OsuSync/OsuLiveStatusPanel/releases)
 
 需要注意的是配置里AllowUsedMemoryReader改为1，而AllowUsedNowPlaying改成0，否则听歌时没有输出。
 
-##### 歌词插件：
+**歌词插件：**
 
-https://github.com/OsuSync/LyricDisplayerPlugin/releases
+[https://github.com/OsuSync/LyricDisplayerPlugin/releases](https://github.com/OsuSync/LyricDisplayerPlugin/releases)
 
 ## 4.音频延迟
 
@@ -370,12 +342,14 @@ https://github.com/OsuSync/LyricDisplayerPlugin/releases
 * 不使用的音频硬件请禁用，例如显卡的音频输出。
 
 ## 5.使用osu!提供的数据进行开发
+
 本篇可能涉及到一些Web开发相关的知识，如果你有兴趣基于osu!的数据构建一款自己的应用，可以参考本篇！
 
 ### 5.1 osu! API
+
 这是ppy在2013年7月公布的一组API。
 
-文档：https://github.com/ppy/osu-api/wiki
+文档：[https://github.com/ppy/osu-api/wiki](https://github.com/ppy/osu-api/wiki)
 
 开始使用： 在 https://old.ppy.sh/p/api 申请一个API KEY，信息随意填写。
 
@@ -386,21 +360,19 @@ API根URL：https://osu.ppy.sh
 ---
 #### 5.1.1 谱面信息
 
-
-/api/get_beatmaps
+/api/get\_beatmaps
 
 概览：返回通用的谱面信息。
 
-URL：/api/get_beatmaps
+URL：/api/get\_beatmaps
 
----
 参数：
 
 k - api key （必须）
 
 since - 返回在该日期之后ranked的所有谱面。必须是MySQL格式。
 
-s - 指定一个谱面的SetID。(/s/xxxxx)
+s - 指定一个谱面的SetID。\(/s/xxxxx\)
 
 b - 指定一个谱面的Beatmap ID。（/b/xxxxx）
 
@@ -408,17 +380,17 @@ u - 指定一个用户名/用户数字id。
 
 type - 指定u参数是数字id还是用户名。对于数字id，该参数值为id，而用户名则参数值为string。默认为智能识别，在纯数字用户名时可能出现问题。
 
-m - 模式 (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). 默认返回所有模式的谱面。
+m - 模式 \(0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania\). 默认返回所有模式的谱面。
 
-a - 指定是否包括被转换的谱面（？） (0 = 不包括, 1 = 包括). 只在包含了m参数，并且不为0的情况下有效.被转换的谱面显示它们转换后的难度。默认为0。
+a - 指定是否包括被转换的谱面（？） \(0 = 不包括, 1 = 包括\). 只在包含了m参数，并且不为0的情况下有效.被转换的谱面显示它们转换后的难度。默认为0。
 
-h - 谱面哈希值。举个栗子，如果你尝试获取某个rep对应的谱面，而osr文件只包含谱面的哈希值。(例子：a5b99395a42bd55bc5eb1d2411cbdf8b). 默认情况下， 返回的谱面与Hash值无关。
+h - 谱面哈希值。举个栗子，如果你尝试获取某个rep对应的谱面，而osr文件只包含谱面的哈希值。\(例子：a5b99395a42bd55bc5eb1d2411cbdf8b\). 默认情况下， 返回的谱面与Hash值无关。
 
 limit - 返回值的数量. 默认值（同样是最大值）是500。
 
----
 返回值：一个包含所有符合指定条件的、ranked谱面的JSON列表。每个难度一个列表。
-```json
+
+```javascript
 [{"approved" : "1", // 4 = loved, 3 = qualified, 2 = approved, 1 = ranked, 0 = pending, -1 = WIP, -2 = graveyard 
 "approved_date" : "2013-07-02 01:01:12", // ranked日期, 时区为UTC+8 
 "last_update" : "2013-07-06 16:51:22", // 最后更新日期，时区同上。 如果谱面被Unranked之后Reranked，该日期可能晚于上面的日期。
@@ -451,31 +423,27 @@ limit - 返回值的数量. 默认值（同样是最大值）是500。
 
 #### 5.1.2 玩家信息
 
-/api/get_user
+/api/get\_user
 
 概览：返回用户信息。
 
-URL：/api/get_user
+URL：/api/get\_user
 
----
 参数：
 
 k - api key （必须）
 
 u - 指定一个用户名/用户数字id。
 
-m - 模式(0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania).默认值为0。
+m - 模式\(0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania\).默认值为0。
 
 type - 指定u参数是数字id还是用户名。对于数字id，该参数值为id，而用户名则参数值为string。默认为智能识别，在纯数字用户名时可能出现问题。
 
-event_days - 打出最后成绩的日期（last event date），距离现在的最大天数。取值范围为1-31，默认值为1。
-【实际使用时好像没有用。同时指定u参数和该参数，和直接指定u参数没有区别。单指定该参数没有返回。】
+event\_days - 打出最后成绩的日期（last event date），距离现在的最大天数。取值范围为1-31，默认值为1。 【实际使用时好像没有用。同时指定u参数和该参数，和直接指定u参数没有区别。单指定该参数没有返回。】
 
----
-返回值：
-包含用户信息的JSON列表。
+返回值： 包含用户信息的JSON列表。
 
-```json
+```javascript
 [{"user_id" : "1",
 "username" : "User name",
 "count300" : "1337", 
@@ -505,15 +473,13 @@ event_days - 打出最后成绩的日期（last event date），距离现在的�
 
 #### 5.1.3 按谱面获取成绩
 
-/api/get_scores
+/api/get\_scores
 
 概览：获取某张地图前100名的分数信息。
 
-URL：/api/get_scores
+URL：/api/get\_scores
 
----
 参数：
-
 
 k - api key （必须）
 
@@ -521,18 +487,17 @@ b - 指定一个谱面的Beatmap ID。（/b/xxxxx）（必须）
 
 u - 指定一个要返回分数的用户名/用户数字id。
 
-m - 模式 (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania)，默认为0。
+m - 模式 \(0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania\)，默认为0。
 
-mods -指定一个或者一些mod (具体枚举映射参见后文)
+mods -指定一个或者一些mod \(具体枚举映射参见后文\)
 
 type - 指定u参数是数字id还是用户名。对于数字id，该参数值为id，而用户名则参数值为string。默认为智能识别，在纯数字用户名时可能出现问题。
 
 limit - 返回值的数量. 默认值是50，最大值是100。
 
----
 返回值：包含选定谱面前100分数信息的JSON列表。
 
-```json
+```javascript
 [{"score" : "1234567",
 "username" : "User name",
 "count300" : "300",
@@ -553,11 +518,9 @@ limit - 返回值的数量. 默认值是50，最大值是100。
 {...}, 
 
 ...]
-
 ```
 
-
-```
+```text
 enum Mods{
 None = 0,
 NoFail = 1,
@@ -598,29 +561,27 @@ Key2 = 268435456
 
 #### 5.1.4 玩家的BP
 
-/api/get_user_best
+/api/get\_user\_best
 
 获取指定玩家的BP
 
-URL：/api/get_user_best
+URL：/api/get\_user\_best
 
----
 参数：
 
 k - api key （必须）
 
 u - 指定一个要返回分数的用户名/用户数字id。
 
-m - 模式 (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania)，默认为0。
+m - 模式 \(0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania\)，默认为0。
 
 limit - 返回值的数量. 默认值是10，最大值是100。
 
 type - 指定u参数是数字id还是用户名。对于数字id，该参数值为id，而用户名则参数值为string。默认为智能识别，在纯数字用户名时可能出现问题。
 
----
 返回值：包含了指定用户的BP前10的JSON列表。
 
-```json
+```javascript
 [{"beatmap_id" : "222342",
 "score" : "1234567",
 "username" : "User name",
@@ -640,18 +601,16 @@ type - 指定u参数是数字id还是用户名。对于数字id，该参数值�
 },
 { ... },
 ...]
-
 ```
+
 #### 5.1.5 玩家最近的游戏记录
 
-
-/api/get_user_recent
+/api/get\_user\_recent
 
 概览：获取玩家最近（24小时内）的10次游戏记录。
 
-URL：/api/get_user_recent
+URL：/api/get\_user\_recent
 
----
 参数：与获取BP一样，只不过limit的最大值是50。
 
 返回值：包含玩家最近10次游戏记录的JSON列表。
@@ -660,22 +619,19 @@ URL：/api/get_user_recent
 
 #### 5.1.6 MP房间信息
 
-/api/get_match
+/api/get\_match
 
 概览：返回一场mp的历史记录。
 
-URL：/api/get_match
+URL：/api/get\_match
 
----
-参数：
-k - api key （必须）
+参数： k - api key （必须）
 
 mp - 房间id（必须）【也就是官网MP Link的参数】
 
----
 返回值：包括房间信息和玩家成绩的JSON列表。
 
-```json
+```javascript
 [{"match":{"match_id" : "1936471",
 "name" : "Marcin's game",
 "start_time" : "2013-10-06 03:34:54",
@@ -711,79 +667,63 @@ mp - 房间id（必须）【也就是官网MP Link的参数】
 
 #### 5.1.7 获取回放
 
-/api/get_replay
-
+/api/get\_replay
 
 概览
 
 获取指定玩家在指定谱面的rep。
 
-并发请求限制说明：
-该请求对服务器负担较大，每分钟只允许10次查询。同样请注意该请求不是为批处理预设的。
+并发请求限制说明： 该请求对服务器负担较大，每分钟只允许10次查询。同样请注意该请求不是为批处理预设的。
 
-URL：/api/get_replay
+URL：/api/get\_replay
 
----
 参数
 
 k - api key （必须）
 
-m - 模式 (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania)，默认为0。（必须）
+m - 模式 \(0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania\)，默认为0。（必须）
 
 b - 指定谱面id（注意！不是BeatmapSet ID，也就是说不是/s/xxxxx而是/b/xxxxx）（必须）
 
 u - 指定玩家。（必须）
 
----
 返回值：一个包含"content"值的JSON列表，该值中含有base-64加密的rep。
 
-```json
+```javascript
 {"content":"喵喵喵","encoding":"base64"}
 ```
 
-
 请注意，这段二进制数据用base-64解码后，并不是.osr文件的目录。这是LZMA流，在osu-wiki中可以参看定义：
 
-The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream (https://osu.ppy.sh/wiki/Osr_(file_format)#Format)
+The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream \([https://osu.ppy.sh/wiki/Osr\_\(file\_format\)\#Format](https://osu.ppy.sh/wiki/Osr_%28file_format%29#Format)\)
 
 ### 5.1.8 osu://协议
 
-
-osu://mp/<int mpID>/\[<string password>]
+osu://mp/<mpID>[/<mpPassword>]
 
 加入某个mp房间的连接。这里的mpID和前文API用的id不同。如果存在密码，就加上密码参数。
 
----
-osu://edit/<xx:xx:xxx>\[ (x,x,x,x...)]
+osu://edit/\[ \(x,x,x,x...\)\]
 
-
-(x为0-9的整数。) xx:xx:xxx 是某首歌的具体时间点。x,x,x,x,x 没有数量限制 ，是被选中的一些Object，例如滑条，note，转盘等。
+\(x为0-9的整数。\) xx:xx:xxx 是某首歌的具体时间点。x,x,x,x,x 没有数量限制 ，是被选中的一些Object，例如滑条，note，转盘等。
 
 通常用于mod，直接在编辑器中选中这些Object，按Ctrl+C复制，再复制到论坛里，就是这样的连接了。
 
----
-osu://chan/#<string ChanName>
+osu://chan/\#
 
+加入osu!聊天频道的连接。\(例如osu://chan/\#italian\)
 
-加入osu!聊天频道的连接。(例如osu://chan/#italian)
-
----
-osu://dl/<int mapsetID> 
-
+osu://dl/
 
 打开某个谱面的osu!Direct下载。
 
----
-osu://spectate/<String username or int userid> 
-围观某人。
+osu://spectate/ 围观某人。
 
+注意：使用这些链接时，参数并不会包含`<>`或`[]`！
 
-注意：使用这些连接时，参数并不会包含<>！
+举个栗子：`[osu://spectate/7679162 点击围观]`
 
-举个栗子：[osu://spectate/7679162 点击围观]
-
-将这个链接发送到osu!中任何频道（当然为了社区礼仪，建议发送到私聊或者#announce）再点击，就可以开始围观uid是7679162的人，只要他在线。也可以直接在浏览器访问osu://spectate/7679162这个链接。
-
+将这个链接发送到osu!中任何频道（当然为了社区礼仪，建议发送到私聊或者\#announce）再点击，就可以开始围观uid是7679162的人，只要他在线。也可以直接在浏览器访问osu://spectate/7679162这个链接。
 
 ### 5.2 osu! API v2
 
@@ -793,8 +733,7 @@ osu://spectate/<String username or int userid>
 
 相比获取信息，API V2更有用的地方是OAuth，也就是玩家可以授权开发者的网站访问他的数据，而不需要直接输入osu!账号密码的机制。
 
-共有的父URL：https://osu.ppy.sh/api/v2
-
+共有的父URL：[https://osu.ppy.sh/api/v2](https://osu.ppy.sh/api/v2)
 
 #### 5.2.1 一次标准的鉴权+访问API流程
 
@@ -814,10 +753,9 @@ Cookie: osu_session={Your osu_session in cookies};
     "redirect": "https://example.com/callback"
 }
 ```
+其中`osu_session`和`X-CSRF-TOKEN`可以在访问新官网后，在Cookies中找到。
 
-其中osu_session和X-CSRF-TOKEN可以在访问新官网后，在Cookies中找到。
-
-只有第一次访问需要带osu_session，后续不需要。（这什么设定）
+只有第一次访问需要带`osu_session`，后续不需要。（这什么设定）
 
 `redirect`参数指开发者服务器用于接收 osu! 回调的接口，请认真填写。
 
@@ -836,21 +774,20 @@ Cookie: osu_session={Your osu_session in cookies};
   "id": 1
 }
 ```
+
 请妥善保存secret和id，接下来的授权过程会用到。
 
-
-##### 引导用户授权
+**引导用户授权**
 
 创建一个链接：
 
 `https://osu.ppy.sh/oauth/authorize?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$state}&scope={$scope}`
 
-其中client_id和redirect_uri与创建Client时完全一致，state会在稍后回调时传回，而scope则可以控制Client要求访问用户内容的范围。
+其中`client_id`和`redirect_uri`与创建Client时完全一致，`state`会在稍后回调时传回，而`scope`则声明Client要求访问用户内容的范围。
 
 `identify` 将获得鉴权权限（默认值，即使未请求该scope也会自动追加），请求 `friends.read` 则能获取好友。 多个权限使用空格（%20）分割。
 
-
-##### 接受回调
+**接受回调**
 
 用户点击后，你预先填写的地址将会收到回调：`{$redirect_uri}?code={$code}&state={$state}`，其中state可被用来鉴别点击了授权的用户。
 
@@ -866,6 +803,7 @@ grant_type=authorization_code
 &redirect_uri={$redirect_uri}
 &code={$code}
 ```
+返回：
 ```json
 {
     "token_type": "Bearer",
@@ -874,11 +812,10 @@ grant_type=authorization_code
     "refresh_token": "****"
 }
 ```
-至此，你已经可以使用access_token以用户的身份访问osu! API v2了。
 
 ##### 附带Token
-在请求头中添加`Authorization: {$token_type} {$token}`即可。
 
+在请求头中添加`Authorization: {$token_type} {$token}`即可。
 
 #### 5.2.2 API V2
 
@@ -934,21 +871,21 @@ grant_type=authorization_code
     "account_history": [],
     "active_tournament_banner": [],
     "badges": [
-	    {
-	        "awarded_at": "2018-04-03T04:29:52+00:00",
-	        "description": "Outstanding contribution and organization of the Chinese localisation project for osu!, osu!wiki and osu!lazer",
-	        "image_url": "https://assets.ppy.sh/profile-badges/contributor.jpg"
-	    }, {...}, ...
+        {
+            "awarded_at": "2018-04-03T04:29:52+00:00",
+            "description": "Outstanding contribution and organization of the Chinese localisation project for osu!, osu!wiki and osu!lazer",
+            "image_url": "https://assets.ppy.sh/profile-badges/contributor.jpg"
+        }, {...}, ...
     ],
     "favourite_beatmapset_count": [52],
     "follower_count": [164],
     "graveyard_beatmapset_count": [0],
     "loved_beatmapset_count": [0],
     "monthly_playcounts": [
-	    {
-	        "start_date": "2016-12-01",
-	        "count": 269
-	    }, {...}, ...
+        {
+            "start_date": "2016-12-01",
+            "count": 269
+        }, {...}, ...
     ],
     "page": {
         "html": "",
@@ -957,10 +894,10 @@ grant_type=authorization_code
     "previous_usernames": [],
     "ranked_and_approved_beatmapset_count": [0],
     "replays_watched_counts": [
-	    {
-	        "start_date": "2017-07-01",
-	        "count": 1
-	    }, {...}, ...
+        {
+            "start_date": "2017-07-01",
+            "count": 1
+        }, {...}, ...
     ],
     "scores_first_count": [0],
     "statistics": {
@@ -1030,7 +967,7 @@ grant_type=refresh_token
 }
 ```
 
-##### 查询Client
+##### 查询Clients
 
 ```http
 GET https://osu.ppy.sh/oauth/clients
@@ -1040,18 +977,18 @@ Content-Type: application/json
 返回：
 ```json
 [
-	{
-	  "user_id": 9367540,
-	  "name": "Example client",
-	  "secret": "****************************",
-	  "redirect": "https:\/\/example.com\/callback",
-	  "personal_access_client": false,
-	  "password_client": false,
-	  "revoked": false,
-	  "updated_at": "YYYY-mm-dd HH:ii:ss",
-	  "created_at": "YYYY-mm-dd HH:ii:ss",
-	  "id": 1
-	},{},...
+    {
+      "user_id": 9367540,
+      "name": "Example client",
+      "secret": "****************************",
+      "redirect": "https:\/\/example.com\/callback",
+      "personal_access_client": false,
+      "password_client": false,
+      "revoked": false,
+      "updated_at": "YYYY-mm-dd HH:ii:ss",
+      "created_at": "YYYY-mm-dd HH:ii:ss",
+      "id": 1
+    },{},...
 ]
 ```
 ##### 修改Client
@@ -1091,7 +1028,6 @@ Content-Type: application/json
 200 OK
 ```
 需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
-
 
 ### 5.3 osu!游戏更新信息接口
 
@@ -1264,3 +1200,7 @@ URL：https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40
 ```
 
 > 本篇贡献者: Mother Ship
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7b79c7f01a6006473adbd17be300bc7e8b379f5b

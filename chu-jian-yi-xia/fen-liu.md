@@ -1,17 +1,23 @@
 # 分流
+
 ## 游戏客户端
 
 #### 节点1
+
 维护者：[Maestrale](http://osu.ppy.sh/u/2759457)
 
-https://pan.baidu.com/s/1G3L4I3GJufaSz0lkkf27rQ
+[https://pan.baidu.com/s/1G3L4I3GJufaSz0lkkf27rQ](https://pan.baidu.com/s/1G3L4I3GJufaSz0lkkf27rQ)
+
 #### 节点2
+
 维护者：[Mother Ship](http://osu.ppy.sh/u/2545898)
 
-https://www.mothership.top/osu%21.zip
+[https://www.mothership.top/osu!.zip](https://www.mothership.top/osu!.zip)
 
 ## 谱面
+
 ### 现有存活
+
 #### inso
 
 网址：[http://inso.link](http://inso.link)
@@ -40,16 +46,25 @@ https://www.mothership.top/osu%21.zip
 
 对Unrank图的处理策略也是即时爬取，并且网站开发者会删除质量过差的图。
 
-
 ### 纪念碑
+
 由于吧内搜索数据不全，这些镜像站的历史已经不再可考，也仍然要感谢它们的作者为社区做出的贡献。
+
 #### loli.al
+
 2014年上线，2016年左右关站。
+
 #### mengsky.net
+
 2017年左右关站。
+
 #### osu.uu.gl
+
 韩国镜像站，15年左右关站。
+
 #### osu.yas-online.net
+
 主页尚存，但是请求下载时跳转的域名都不存在，并且Beatmap Packs只更新到400+。基本宣告死亡。
 
 > 本篇贡献者: Mother Ship
+
