@@ -1,6 +1,6 @@
----
-description: Welcome to OsuCN-Wiki
----
+
+Welcome to OsuCN-Wiki
+
 
 # 关于本项目
 
