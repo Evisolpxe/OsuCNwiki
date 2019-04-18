@@ -1,5 +1,5 @@
 # 缩写解释
-修订自https://tieba.baidu.com/p/2850690323，补上了这五年来游戏机制、社交用语的更新。感谢次方当年做的贡献
+修订自[【新人必看】一贴让你看懂osu中的常用英文缩写！](https://tieba.baidu.com/p/2850690323)，补上了这五年来游戏机制、社交用语的更新。感谢次方当年做的贡献。
 
 AFK：Away From Keyboard的缩写，一指暂离游戏的状态（在F9好友列表中显示黑色标签），二指不玩这游戏了（期限不定）。
 
@@ -32,7 +32,7 @@ BP：Best Performance的缩写，指个人页面上的同名项，是为玩家�
 
 CB：Combo的缩写，指连击数。
 
-Collab：合作难度，代表这个难度由多个mapper合作完成（关于难度名详见http://tieba.baidu.com/p/2177717461）
+Collab：合作难度，代表这个难度由多个mapper合作完成。
 
 Cost：费用，部分比赛会用这个参数来标明玩家的强度，一般是使用玩家在PP+的各个维度的水平计算而成。
 
@@ -89,7 +89,7 @@ LV：Level的缩写，指玩家的等级。等级只要在线打图就会提高�
 
 mania：钢琴/下落模式。
 
-MP：Multiplay的缩写，指多人游戏。
+MP：Multiplay的缩写，指多人游戏，后面加4/5时也指由MP系列4/5群举办的MP系列赛,分别对应6000PP-（约1w rank以下）和4500PP-（约3w rank以下）的分段。
 
 MP Link：指官网记载有一场多人游戏所有信息的网页。
 
@@ -97,11 +97,13 @@ Mod：一指游戏中可以改变游戏难度、形式、获得分数的游戏�
 
 mu：mutual friend的简称，指双向加为好友。
 
-NC：Nightcore的缩写，效果与DT相当，但会有墙裂的节奏鼓点并且歌曲风格会完全变化（关于nightcore文化详见http://tieba.baidu.com/p/2250683940）
+NC：Nightcore的缩写，效果与DT相当，但会有墙裂的节奏鼓点并且歌曲风格会完全变化。
 
 NF：NoFail的缩写，Mod之一，效果是不会死，分数降低为二分之一。
 
 np：Now Playing的简称，指在游戏聊天中发送/np指令将正在播放的歌曲链接发给别人。一般在围观、MP、求试图的时候使用。
+
+OCL: osu!Chinese League的缩写，由OCL组委会举办的面向较高段位玩家的比赛，采用Cost评定选手水平。分为OCLR（大致是1w-3w Rank）、LC(大致是4k-8k Rank)、LB和LA，不定时开赛。
 
 OCWT：osu! China Taiwan Tournament的缩写，华人区官方比赛。
 
@@ -131,11 +133,15 @@ revoke：指取消好友的行为。
 
 SB：Storyboard的缩写，译为故事板，mapper用它达到某些特效或显示歌词、mapper信息等。近几年也作为SliderBreak的简称，指拉断滑条头，没有Miss但是Combo断了。
 
+Score V2: 2016年加入MP胜利条件，2017-02-22作为Mod形式加入Solo模式的计分方式。旨在解决6,500Combo以上导致分数溢出2^16上限的问题，满分100w，其中30w是acc分数（accuracy ^ 10），100%可以完全拿到；另外70w类似Score V1的满分（ (combo / 10 + 1) * 当前打击分数），FC可以完全拿到。转盘奖励另算，HR加成1.1倍，DT加成1.2倍。
+
 SD：SuddenDeath的缩写，Mod之一，效果是一旦断Combo就立刻死掉，对分数无影响。
 
 SO：Spun out的缩写，Mod之一，效果是转盘会低速自动完成，分数乘以0.9。
 
 SS：100%准确率完成一张图。
+
+Supporter：又简称撒泼特，捐赠osu!之后会得到的身份，拥有一些特权（首次捐赠免费改名、一次捐赠即可一直修改主页、捐赠期间可以游戏内下载谱面等）。
 
 Taiko：太鼓模式。
 

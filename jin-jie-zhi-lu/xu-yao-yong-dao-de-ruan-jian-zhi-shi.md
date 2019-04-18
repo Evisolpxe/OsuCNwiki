@@ -1,21 +1,26 @@
 # 需要用到的软件知识
 
 ## 1.数位板驱动
-### Wacom官方驱动
+
+### 1.1 Wacom官方驱动
 
 下载地址：http://support.wacom.com.cn/download/drivers.aspx?ctype=mode
 
 在2017年以前，Bamboo系列（CTL460/470/471）的驱动和Intuos系列（CTL480/490、PTH系列数位板）的驱动是分开的，但是现在新版的驱动已经支持两个产品线的数位板。
-如果你需要在网吧安装，必须使用2015年v6.3.15-2(Intuos系列)或v.5.3.5-3(Bamboo系列)的驱动，连续安装两次来避免重新启动即刻生效。
+
+如果你需要在网吧安装，必须使用2015年v6.3.15-2(Intuos系列)或v.5.3.5-3(Bamboo系列)或更早版本的驱动，连续安装两次来绕过重新启动才能使用的限制。
 
 下载完成后，首先设置为笔模式，然后找到【使用Windows Ink】选项，去掉其复选框，最后根据个人喜好调整映射。没有标准答案，每个人的映射都有差别，高Rank玩家的映射也不一定适合你。
 
-### TabletDriver第三方驱动
+### 1.2 TabletDriver第三方驱动
+
 下载地址：https://github.com/hawku/TabletDriver/releases
 
 2018年3月由外国友人开发的第三方驱动，持续维护至今，除了Wacom数位板外还支持XP Pen（一个日本的品牌）、绘王、高漫等其他品牌的数位板。
 
-相对于Wacom官方驱动，这款驱动对玩家开放了延迟设置，并提供了一种低延迟的去抖方案，玩家不再需要使用高速摄像机测定各个版本数位板驱动的延迟。
+相对于Wacom官方驱动，这款驱动对玩家开放了延迟设置，并提供了一种低延迟的去抖方案，玩家不再需要逐个测试各个版本驱动的延迟。
+
+**默认设置会带来最低的延迟，同时也会导致较强的光标抖动，在悬空/Azuki打图时对移动的干扰较大，建议调节Filter标签页中的第二个降噪Filter！**
 
 下载解压后，需要先运行目录下的install_vmulti_driver.bat来安装驱动，然后使用TabletDriverGUI启动用户界面。
 
@@ -29,47 +34,76 @@
 
 ## 2.降低输入延迟
 
-###数位板
-#### Wacom官方驱动
+### 2.1 游戏帧数
+
+很难以置信也难以理解的是，osu! 的输入和渲染挂钩，也就是游戏渲染帧数也同样是读取输入的帧数。
+
+因此**千万不要在osu!中开启帧数限制**，除非你计算机的散热性能真的非常有限，需要使用帧数限制降低功耗！
+
+由于大部分键盘的输入在1khz，因此也推荐提升游戏帧数到1000以上，具体帧数与硬件的关联请查看硬件篇。
+
+
+### 2.2 数位板
+#### 2.1.1 Wacom官方驱动
+
 Wacom在近几年的官方驱动中加入了移动平滑，会带来数十毫秒的输入延迟，在高BPM锐角移动时尤其明显。
-使用旧版驱动可以略微降低延迟，可以在[英文官网](https://www.wacom.com/en/support/product-support/drivers)挑选2010年左右的驱动下载。
 
-#### TabletDriver第三方驱动
-将延迟设置直接开放给玩家，见上方介绍
+**Windows Ink功能会带来点击卡顿和延迟，严重影响体验，请务必在玩osu!时关闭！**
 
-### 键盘/鼠标
+使用2013-2014年的驱动（6.3.10w2和5.3.3-2）可以在驱动里关闭Windows Ink的同时略微降低延迟（更早的驱动需要手动在操作系统内卸载组件），可以在[英文官网](https://www.wacom.com/en/support/product-support/drivers)下载。
+
+#### 2.1.2 TabletDriver第三方驱动
+
+将延迟设置直接开放给玩家，见上方介绍。
+
+### 2.2 键盘/鼠标
+
 刷新率直接影响输入延迟，请尽可能挑选1khz刷新率的设备。
+
+### 2.4 DWM
+
+**警告：挂起DWM进程属于硬核玩法，虽然能降低输入延迟，但是也会几乎使操作系统无法使用，请三思而行！**
+
+请仔细阅读https://github.com/Phorofor/DWM.ForceSwitch项目的readme文件，务必先了解后果再进行操作！
 
 ## 3.直播
 
-### OBS
-下载地址：http://obsproject.com/download
-####基本使用
-一个场景可以理解为一种直播内容，由一些来源和它们的布局构成。
+### 3.1 推流和录像：OBS
 
-例如直播比赛需要使用显示器捕获源，并且只有直播端一个部分；而直播打图除了有游戏源，还有歌曲信息（文本源）和摄像头（视频捕获设备），这些源有固定的布局。此时直播比赛和直播打图就可以设置为两个场景。
+下载地址：http://obsproject.com/download
+
+#### 3.1.1 基本使用
+
+一个**场景**可以理解为一种直播内容，由一些**来源**和它们的布局构成。
+
+例如，直播比赛需要使用显示器捕获源来获取直播端，并且只有直播端一个来源，占满所有屏幕；
+
+而直播打图除了有osu!（游戏源），还有歌曲信息（文本源）和摄像头（视频捕获设备），这些**来源**有固定的布局。此时直播比赛和直播打图就可以设置为两个场景。
 
 直播打图时，推荐自己制作一个Banner，给画面中除了游戏和摄像头的黑边部分放一些图片，改善观众的体验。
 
-####一些设置
+#### 3.1.2 一些设置
 
 ##### 编码优先级
-OBS提供了从Fast到Slow的优先级，Slow会占用更多系统资源，推荐先设置为Very Fast。
+OBS提供了从Fast到Slow的优先级，Slow会占用更多系统资源，推荐先设置为Very Fast再逐步调优。
 
 ##### 码率
-码率就是你推流使用的最高上传速度，但是它会受物理带宽的限制，码率高于物理带宽时会出现大量的丢帧，在观众眼中就是转圈卡顿。但是低码率会在视频里出现动态元素时导致大量的马赛克。
+码率就是你推流使用的最高上传速度，但是它会受物理带宽的限制，码率高于物理带宽时会出现大量的丢帧，在观众眼中就是转圈卡顿。但是较低的码率设置会导致在视频流每帧颜色变化较大时，尝试压缩视频体积，导致大量的马赛克。
 
 ##### 分辨率和帧率
 高分辨率需要很高的码率，高帧数则需要更慢的编码优先级。
 
-当然，1080p@60FPS能给观众带来清晰又顺滑的体验，但是当你的网络环境不允许时，尽可能先降低分辨率再降低帧率。
+当然，1080p@60FPS能给观众带来清晰又顺滑的体验，当你的网络环境不允许时，尽可能先降低分辨率再降低帧率。
 
 提示：虽然你的Banner可能要容纳1080p的游戏和320p的摄像头，进而远大于1080p，但是最终输出还是推荐进行缩放，以避免在投稿时被二次压制，同时也可以提高码率。
 
 ##### 最佳实践
 
-----
-1080p 60fps
+首先测试你的上传带宽（注意KBps和kbps的不同），将码率设置为比带宽较小的值，进行直播测试。如果右下角提示丢帧，进一步减小码率。
+
+根据最终的码率结果在下方三种方案中挑选一种，如果不丢帧的最高码率低于2500，建议放弃直播。
+
+##### 1080p 60fps
 
 视频分辨率: 1920*1080
 
@@ -83,8 +117,8 @@ AVC (h.264) Profile: Main/High
 
 AVC (h.264) Level: 4.2
 
-----
-720p 60fps
+
+##### 720p 60fps
 
 视频分辨率: 1280*720
 
@@ -98,11 +132,69 @@ AVC (h.264) Profile: Main/High
 
 AVC (h.264) Level: 4.1
 
-----
+##### 720p 30fps
 
-### 实时显示歌曲信息：Sync
+视频分辨率: 1280*720
+     
+码率: 2500 to 4000 kbps
+     
+帧数: 30 or 25 fps
+     
+关键帧间隔: 2 seconds
+     
+AVC (h.264) Profile: Main/High
 
-#### 主程序和默认插件下载
+AVC (h.264) Level: 3.1
+
+### 3.2 直播比赛
+
+近几年国内比赛增多（详见比赛页面），玩家的电脑配置也逐渐提升，因此参与比赛直播的人也越来越多。
+
+#### 3.2.1 前置条件和直播端准备
+
+首先你必须是osu! supporter，否则无法启动直播端。
+
+复制一个新的osu客户端，建议不带Skins、Songs、Replays三个文件夹．然后打开新的客户端，登陆你的用户（需要是supporter），选择记住用户名和密码，版本选“正式版”，并把皮肤改成default．
+
+退出后，在osu文件夹里新建一个空文件“tournament.cfg”，运行客户端，此时就应该会进入直播端，此时游戏会自动填写tournament.cfg。
+
+#### 3.2.2 赛前准备：
+
+编辑你的tournament.cfg，添加/修改如下一行：
+
+```
+acronym = 比赛名，由裁判提供
+```
+
+接下来根据比赛裁判要求，设置直播端的皮肤和音效，并且将本场比赛使用的谱面安装到直播端。
+
+比赛开始前，由裁判创建房间，如果房间前缀和你的配置一样，应该能在左下角看到房间。
+
+**首先联系本场裁判给你直播权限**（否则无法看到房间内聊天，并且需要重启直播端并重新添加权限才能显示），接下来点击房间名即可开始围观场上所有选手。
+
+需要注意的是同一个比赛多场赛事同时进行的情况，需要仔细根据比赛队伍区分场次。
+
+#### 3.2.3 直播端使用
+
+右下角的“注意事项”指的是上方标题，热手的时候填上“Warm up”；
+
+“当前最高”指的是BO数，比如BO9就填9，联系比赛裁判获取；
+
+底下的toggle可以切换顶上显示标题还是显示比分，一般热手完时使用；
+
+panic是重载，在比赛时有人没围观上之类的事故时使用，重新围观所有选手；
+
+顶端星星是双方得分，一般会根据房间情况自动增加，重赛时需要手动操作。
+
+#### 3.2.4 直播设置
+
+由于直播端由多个osu!窗口和直播端管理窗口构成，无法和普通游戏时一样使用游戏源捕获（可以逐个捕获但是要手动排序，偶尔会出现小客户端消失时更麻烦），需要直接使用**显示器捕获**。
+
+视频输出的分辨率应修改为1280*720，直播端下方的设置界面可以无需播出。
+
+### 3.3 实时显示歌曲信息：Sync
+
+#### 3.3.1 主程序和默认插件下载
 
 https://github.com/OsuSync/Sync/releases
 
@@ -120,13 +212,18 @@ PPQuery —— 向自己的IRC账号发送消息查询PP。（其实是转发给
 
 RecentlyUserQuery —— 用户名/ID转化
 
-----
-为了让它拥有实时PP、谱面信息显示，需要安装这些插件。
+#### 3.3.2 插件安装
+**为了让它拥有实时PP、谱面信息显示，需要安装以下插件。**
 
 安装步骤：将插件release地址里最新的.zip文件下载，覆盖到Sync目录后，**启动一次Sync，并视情况在config.ini里修改配置**。
 
-#### 实时PP显示：
-github.com/OsuSync/RealTimePPDisplayer/releases
+##### 实时PP显示：
+
+https://github.com/OsuSync/RealTimePPDisplayer/releases
+
+将当前PP实时输出到内存映射/窗口
+
+配置项说明：
 
 OutputMethods
 插件输出模式。WPF为独立窗口，MMF为内存映射文件，text为输出到硬盘文本，可以用逗号分隔，同时输出多个目标
@@ -188,12 +285,14 @@ IgnoreTouchScreenDecrease
 
 RankingSendPerformanceToChat
 对Rank图，输出PP到IRC
-----
-#### 屙屎信息源：
-https://github.com/OsuSync/OsuRTDataProvider-Release/releases
+
+##### 屙屎信息源：
+
+https://https://github.com/OsuSync/OsuRTDataProvider-Release/releases
 
 读取osu!内存的插件，因此只有release而没有源码。
 
+配置项说明：
 
 ListenInterval
 读取频率，默认即可。过小会导致资源浪费
@@ -216,23 +315,24 @@ DisableProcessNotFoundInformation
 EnableModsChangedAtListening
 是否尝试在听歌时跟踪Mod变化
 
-----
+
 
 以下两个插件有中文文档，参考code页下的说明即可。
 
 
-#### 谱面信息输出插件：
+##### 谱面信息输出插件：
 
 https://github.com/OsuSync/OsuLiveStatusPanel/releases
 
 需要注意的是配置里AllowUsedMemoryReader改为1，而AllowUsedNowPlaying改成0，否则听歌时没有输出。
 
-#### 歌词插件：
+##### 歌词插件：
 
 https://github.com/OsuSync/LyricDisplayerPlugin/releases
+
 ## 4.音频延迟
 
-### 介绍
+### 4.1 介绍
 
 * 当前osu!版本使用DirectSound作为音频输出的API。DirectSound的缓冲区长度由Windows控制，会导致音效和音频一起晚40ms播放，可以认为不可修改。
 * 由于osu的帧采样特性，音效也是按帧播放的（上一帧点击，下一帧播放音效），帧率过低的情况会导致音效延迟并且错位。
@@ -244,7 +344,7 @@ https://github.com/OsuSync/LyricDisplayerPlugin/releases
 
 当然上述影响固然是因人而异的，有些人这个症状比较轻微。
 
-### 解决办法
+### 4.2 解决办法
 
 令人难过的是，osu并不支持任何低延迟音效组件\(coreaudio/wasapi/asio\)，而coreaudio和asio更是可以配合专业声卡达到5ms以内的音频延迟，这将对游戏体验有极大的提升。
 
@@ -269,8 +369,9 @@ https://github.com/OsuSync/LyricDisplayerPlugin/releases
 * 不使用的音频硬件请禁用，例如显卡的音频输出。
 
 ## 5.使用osu!提供的数据进行开发
+本篇可能涉及到一些Web开发相关的知识，如果你有兴趣基于osu!的数据构建一款自己的应用，可以参考本篇！
 
-###osu! API
+###5.1 osu! API
 这是ppy在2013年7月公布的一组API。
 
 文档：https://github.com/ppy/osu-api/wiki
@@ -282,7 +383,7 @@ https://github.com/OsuSync/LyricDisplayerPlugin/releases
 共有的父URL：https://osu.ppy.sh/api/
 
 ---
-#### 谱面信息
+#### 5.1.1谱面信息
 
 
 /api/get_beatmaps
@@ -347,7 +448,7 @@ limit - 返回值的数量. 默认值（同样是最大值）是500。
 }, { ... }, ...]
 ```
 
-####玩家信息
+#### 5.1.2 玩家信息
 
 /api/get_user
 
@@ -401,7 +502,7 @@ event_days - 打出最后成绩的日期（last event date），距离现在的�
 }]
 ```
 
-#### 成绩
+#### 5.1.3 按谱面获取成绩
 
 /api/get_scores
 
@@ -494,11 +595,11 @@ Key2 = 268435456
 }
 ```
 
-#### BP
+#### 5.1.4 玩家的BP
 
 /api/get_user_best
 
-获取指定用户的BP
+获取指定玩家的BP
 
 URL：/api/get_user_best
 
@@ -540,12 +641,12 @@ type - 指定u参数是数字id还是用户名。对于数字id，该参数值�
 ...]
 
 ```
-#### 最近的游戏记录
+#### 5.1.5 玩家最近的游戏记录
 
 
 /api/get_user_recent
 
-概览：获取玩家最近的10次游戏记录。
+概览：获取玩家最近（24小时内）的10次游戏记录。
 
 URL：/api/get_user_recent
 
@@ -556,7 +657,7 @@ URL：/api/get_user_recent
 
 字段与BP一致，不再赘述
 
-#### MP房间信息
+#### 5.1.6 MP房间信息
 
 /api/get_match
 
@@ -607,7 +708,7 @@ mp - 房间id（必须）【也就是官网MP Link的参数】
 }]
 ```
 
-#### 获取回放
+#### 5.1.7 获取回放
 
 /api/get_replay
 
@@ -644,7 +745,7 @@ u - 指定玩家。（必须）
 
 The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream (https://osu.ppy.sh/wiki/Osr_(file_format)#Format)
 
-### osu://协议
+### 5.1.8 osu://协议
 
 
 osu://mp/<int mpID>/\[<string password>]
@@ -683,7 +784,7 @@ osu://spectate/<String username or int userid>
 将这个链接发送到osu!中任何频道（当然为了社区礼仪，建议发送到私聊或者#announce）再点击，就可以开始围观uid是7679162的人，只要他在线。也可以直接在浏览器访问osu://spectate/7679162这个链接。
 
 
-###osu! API v2
+###5.2 osu! API v2
 
 这是一些由[kj415j45](https://osu.ppy.sh/users/9367540)在[新官网的web项目中](https://github.com/ppy/osu-web)发掘的API，虽然随着新官网上线，但是并没有公布，功能也非常有限。
 
@@ -692,7 +793,7 @@ osu://spectate/<String username or int userid>
 共有的父URL：https://osu.ppy.sh/api/v2
 
 
-#### 一次标准的鉴权+访问API流程
+#### 5.2.1 一次标准的鉴权+访问API流程
 
 OAuth认证中，Client指用户和osu!官网之间的第三方网站。第三方网站可以以用户的身份访问osu!的数据，同时用户可以控制Client能访问的osu!数据内容的范围，而不至于需要向第三方网站提供密码。
 
@@ -777,7 +878,7 @@ grant_type=authorization_code
 在请求头中添加`Authorization: {$token_type} {$token}`即可。
 
 
-#### API V2
+#### 5.2.2 API V2
 
 完整的列表参见：[ppy/osu-web:/routes/web.php@line//API](https://github.com/ppy/osu-web/blob/master/routes/web.php#L296-L378)
 
@@ -910,7 +1011,7 @@ grant_type=authorization_code
 
 
 
-#### 其他认证相关的接口
+#### 5.2.3 其他认证相关的接口
 
 #####刷新Token
 ```http request
@@ -994,7 +1095,7 @@ Content-Type: application/json
 需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
 
 
-### osu!游戏更新信息接口
+### 5.3 osu!游戏更新信息接口
 
 URL：https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40
 
