@@ -1,8 +1,8 @@
+# 关于本项目
 
 Welcome to OsuCN-Wiki
 
-
-# 关于本项目
+## 关于本项目
 
 **这是一个由一群中国osu!玩家发起并维护的Wiki开放式项目！**
 
@@ -18,7 +18,7 @@ Welcome to OsuCN-Wiki
 
 项目地址: [https://github.com/Evisolpxe/OsuCNwiki](https://github.com/Evisolpxe/OsuCNwiki)
 
-## 现Wiki部分贡献成员：
+### 现Wiki部分贡献成员：
 
 [DuNai](https://osu.ppy.sh/users/2522197) \| [Explosive](https://osu.ppy.sh/users/245276) \| [EmertxE](https://osu.ppy.sh/users/954557) \| [iMey](https://osu.ppy.sh/users/1597068) \| [MatsumotoRise](https://osu.ppy.sh/users/672726) \| [MaKenanbuReraaa](https://osu.ppy.sh/users/3331264) \| [Mother Ship](https://osu.ppy.sh/users/2545898) \| [rustbell](https://osu.ppy.sh/users/227717)
 
