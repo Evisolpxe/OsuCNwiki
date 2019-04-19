@@ -1,403 +1,20 @@
-# 需要用到的软件知识
-
-## 1.数位板驱动
-
-### 1.1 Wacom官方驱动
-
-下载地址：[http://support.wacom.com.cn/download/drivers.aspx?ctype=mode](http://support.wacom.com.cn/download/drivers.aspx?ctype=mode)
-
-在2017年以前，Bamboo系列（CTL460/470/471）的驱动和Intuos系列（CTL480/490、PTH系列数位板）的驱动是分开的，但是现在新版的驱动已经支持两个产品线的数位板。
-
-如果你需要在网吧安装，必须使用2015年v6.3.15-2\(Intuos系列\)或v.5.3.5-3\(Bamboo系列\)或更早版本的驱动，连续安装两次来绕过重新启动才能使用的限制。
-
-下载完成后，首先设置为笔模式，然后找到【使用Windows Ink】选项，去掉其复选框，最后根据个人喜好调整映射。没有标准答案，每个人的映射都有差别，高Rank玩家的映射也不一定适合你。
-
-### 1.2 TabletDriver第三方驱动
-
-下载地址：[https://github.com/hawku/TabletDriver/releases](https://github.com/hawku/TabletDriver/releases)
-
-2018年3月由外国友人开发的第三方驱动，持续维护至今，除了Wacom数位板外还支持XP Pen（一个日本的品牌）、绘王、高漫等其他品牌的数位板。
-
-相对于Wacom官方驱动，这款驱动对玩家开放了延迟设置，并提供了一种低延迟的去抖方案，玩家不再需要逐个测试各个版本驱动的延迟。
-
-**默认设置会带来最低的延迟，同时也会导致较强的光标抖动，在悬空/Azuki打图时对移动的干扰较大，建议调节Filter标签页中的第二个降噪Filter！**
-
-下载解压后，需要先运行目录下的install\_vmulti\_driver.bat来安装驱动，然后使用TabletDriverGUI启动用户界面。
-
-界面介绍：
-
-![](https://up.ppy.sh/files/qq20190417151951.png)
-
-![](https://up.ppy.sh/files/qq20190417152006.png)
-
-![](https://up.ppy.sh/files/qq20190417152009.png)
-
-## 2.降低输入延迟
-
-### 2.1 游戏帧数
-
-由于 osu! 底层设计的原因，画面在渲染一帧同时读取一次输入，这意味着游戏渲染帧数与读取输入的次数在数值上相等，更高的帧率会获得更低的输入延迟。
-
-因此**千万不要在osu!中开启帧数限制**，除非你计算机的散热性能真的非常有限，需要使用帧数限制降低功耗！
-
-由于大部分键盘的输入在1KHz，因此也推荐提升游戏帧数到1000以上，具体帧数与硬件的关联请查看硬件篇。
-
-### 2.2 数位板
-
-#### 2.1.1 Wacom官方驱动
-
-Wacom在近几年的官方驱动中加入了移动平滑，会带来数十毫秒的输入延迟，在高BPM锐角移动时尤其明显。
-
-**Windows Ink功能会带来点击卡顿和延迟，严重影响体验，请务必在玩osu!时关闭！**
-
-使用2013-2014年的驱动（6.3.10w2和5.3.3-2）可以在驱动里关闭Windows Ink的同时略微降低延迟（更早的驱动需要手动在操作系统内卸载组件），可以在[英文官网](https://www.wacom.com/en/support/product-support/drivers)下载。
-
-#### 2.1.2 TabletDriver第三方驱动
-
-将延迟设置直接开放给玩家，见上方介绍。
-
-### 2.3 键盘/鼠标
-
-刷新率直接影响输入延迟，请尽可能挑选1khz刷新率的设备。
-
-### 2.4 Windows设置
-
-* 关闭Xbox dvr\(win10\)
-* 关闭全屏优化模式\(1709及以上\)
-* 音频格式请设置为16bit 44.1khz\(高了要重算 带来延迟\)
-
-### 2.5 NVIDIA显卡驱动
-
-（AMD用户不需要设置，没什么用而且实际手感比N卡好）
-
-Phyx处理器：CPU
-
-3D设置：
-
-针对osu!关闭以下选项：
-
-* 三重缓冲
-* 各向异性过滤
-* 垂直同步
-* 平滑处理-模式
-* 平滑处理-灰度纠正
-* 着色缓存器
-* 纹理过滤-三线性优化
-* 纹理过滤-各向异性采样优化
-* 线程优化
-
-修改以下设置：
-
-* CUDA-GPUS设为无
-* 最大预渲染帧数设为【1】
-* 纹理过滤-负LOD偏移设为【锁定】
-* 纹理过滤-质量设为【高性能】
-
-### 2.6 其他osu!设置
-
-* Don't change dim level during breaks：关闭 ，虽然很好用但是会增加延迟
-* 全屏模式：开，在同时使用两个不同刷新率的显示器的情况下，低刷新率显示器上有画面改变时会拖慢高刷新率显示器的刷新率，但是全屏应用不受影响。
-
-### 2.4 DWM
-
-**警告：挂起DWM进程属于硬核玩法，虽然能降低输入延迟，但是会几乎使操作系统无法使用，请三思而行！**
-
-请仔细阅读 [Phorofor/DWM.ForceSwitch](https://github.com/Phorofor/DWM.ForceSwitch) 项目的readme文件，务必先了解后果再进行操作！
-
-## 3.直播
-
-### 3.1 推流和录像：OBS
-
-下载地址：[http://obsproject.com/download](http://obsproject.com/download)
-
-#### 3.1.1 基本使用
-
-一个**场景**可以理解为一种直播内容，由一些**来源**和它们的布局构成。
-
-例如，直播比赛需要使用显示器捕获源来获取直播端，并且只有直播端一个来源，占满所有屏幕；
-
-而直播打图除了有osu!（游戏源），还有歌曲信息（文本源）和摄像头（视频捕获设备），这些**来源**有固定的布局。此时直播比赛和直播打图就可以设置为两个场景。
-
-直播打图时，推荐自己制作一个Banner，给画面中除了游戏和摄像头的黑边部分放一些图片，改善观众的体验。
-
-#### 3.1.2 一些设置
-
-**编码优先级**
-
-OBS提供了从Fast到Slow的优先级，Slow会占用更多系统资源，推荐先设置为Very Fast再逐步调优。
-
-**码率**
-
-码率就是你推流使用的最高上传速度，但是它会受物理带宽的限制，码率高于物理带宽时会出现大量的丢帧，在观众眼中就是转圈卡顿。但是较低的码率设置会导致在视频流每帧颜色变化较大时，尝试压缩视频体积，导致大量的马赛克。
-
-**分辨率和帧率**
-
-高分辨率需要很高的码率，高帧数则需要更慢的编码优先级。
-
-当然，1080p@60FPS能给观众带来清晰又顺滑的体验，当你的网络环境不允许时，尽可能先降低分辨率再降低帧率。
-
-提示：虽然你的Banner可能要容纳1080p的游戏和320p的摄像头，进而远大于1080p，但是最终输出还是推荐进行缩放，以避免在投稿时被二次压制，同时也可以提高码率。
-
-**最佳实践**
-
-首先测试你的上传带宽（注意KBps和kbps的不同），将码率设置为比带宽较小的值，进行直播测试。如果右下角提示丢帧，进一步减小码率。
-
-根据最终的码率结果在下方三种方案中挑选一种，如果不丢帧的最高码率低于2500，建议放弃直播。
-
-**1080p 60fps**
-
-视频分辨率: 1920\*1080
-
-码率: 4500 - 6000 kbps
-
-帧数: 60 or 50 fps
-
-关键帧间隔: 2 seconds
-
-AVC \(h.264\) Profile: Main/High
-
-AVC \(h.264\) Level: 4.2
-
-**720p 60fps**
-
-视频分辨率: 1280\*720
-
-码率: 3500 to 5000 kbps
-
-帧数: 60 or 50 fps
-
-关键帧间隔: 2 seconds
-
-AVC \(h.264\) Profile: Main/High
-
-AVC \(h.264\) Level: 4.1
-
-**720p 30fps**
-
-视频分辨率: 1280\*720
-
-码率: 2500 to 4000 kbps
-
-帧数: 30 or 25 fps
-
-关键帧间隔: 2 seconds
-
-AVC \(h.264\) Profile: Main/High
-
-AVC \(h.264\) Level: 3.1
-
-### 3.2 直播比赛
-
-近几年国内比赛增多（详见比赛页面），玩家的电脑配置也逐渐提升，因此参与比赛直播的人也越来越多。
-关于直播端的详细介绍可参考[官方wiki内容](https://osu.ppy.sh/help/wiki/osu!tourney)，此处仅为大致介绍。
-
-#### 3.2.1 前置条件和直播端准备
-
-首先你必须是 osu!supporter，否则无法启动直播端。
-
-复制 osu!.exe 到新的文件夹，然后打开，登陆你的用户（需要是supporter），选择记住用户名和密码，版本选“正式版”，并把皮肤改成default．
-
-退出后，在这个文件夹里新建一个空文件“tournament.cfg”，运行客户端，此时就应该会进入直播端，此时游戏会自动填写tournament.cfg。
-
-#### 3.2.2 赛前准备：
-
-编辑你的tournament.cfg，添加/修改如下一行：
-
-```text
-acronym = 比赛名，由裁判提供
-```
-
-注意，必须在裁判输入<!mp addref username>后再开启直播客户端才会显示房间内聊天，如在此之前开启须重启客户端。
-启动直播端后接下来根据比赛裁判要求，设置直播端的皮肤和音效，并且将本场比赛使用的谱面安装到直播端。
-
-比赛开始前，由裁判创建房间，如果房间前缀和你的配置一样，应该能在左下角看到房间。
-
-**首先联系本场裁判给你直播权限**（否则无法看到房间内聊天，并且需要重启直播端并重新添加权限才能显示），接下来点击房间名即可开始围观场上所有选手。
-
-需要注意的是同一个比赛多场赛事同时进行的情况，需要仔细根据比赛队伍区分场次。
-
-#### 3.2.3 直播端使用
-
-右下角的“注意事项”指的是上方标题，热手的时候填上“Warm up”；
-
-“当前最高”指的是BO数，比如BO9就填9，联系比赛裁判获取；
-
-底下的toggle可以切换顶上显示标题还是显示比分，一般热手完时使用；
-
-panic是重载，在比赛时有人没围观上之类的事故时使用，重新围观所有选手；
-
-顶端星星是双方得分，一般会根据房间情况自动增加，重赛时需要手动操作（左键加星右键减星）。
-
-#### 3.2.4 直播设置
-
-由于直播端由多个osu!窗口和直播端管理窗口构成，无法和普通游戏时一样使用游戏源捕获（可以逐个捕获但是要手动排序，偶尔会出现小客户端消失时更麻烦），需要直接使用**显示器捕获**。
-
-视频输出的分辨率应修改为1280\*720，直播端下方的设置界面可以无需播出。
-
-### 3.3 实时显示歌曲信息：Sync
-
-#### 3.3.1 主程序和默认插件下载
-
-[https://github.com/OsuSync/Sync/releases](https://github.com/OsuSync/Sync/releases)
-
-主程序最新版本号为2.18.2，内置插件有：
-
-BanManager —— 弹幕拉黑
-
-BeatmapSuggest —— 谱面推荐
-
-DefaultPlugin —— 默认插件，处理直播事件（礼物等）
-
-NowPlaying —— 传统的osu!信息获取插件，通过接受osu!推送到MSN的信息+处理osu文件信息来获取当前歌曲。
-
-PPQuery —— 向自己的IRC账号发送消息查询PP。（其实是转发给Tillerino
-
-RecentlyUserQuery —— 用户名/ID转化
-
-#### 3.3.2 插件安装
-
-**为了让它拥有实时PP、谱面信息显示，需要安装以下插件。**
-
-安装步骤：将插件release地址里最新的.zip文件下载，覆盖到Sync目录后，**启动一次Sync，并视情况在config.ini里修改配置**。
-
-**实时PP显示：**
-
-[https://github.com/OsuSync/RealTimePPDisplayer/releases](https://github.com/OsuSync/RealTimePPDisplayer/releases)
-
-将当前PP实时输出到内存映射/窗口
-
-配置项说明：
-
-OutputMethods 插件输出模式。WPF为独立窗口，MMF为内存映射文件，text为输出到硬盘文本，可以用逗号分隔，同时输出多个目标
-
-UseText 单独控制是否输出文本（？）
-
-TextOutputPath 文本路径
-
-DisplayHitObject 是否展示点击统计（300/100/50/X的数量）
-
-PPFontSize PP字体
-
-PPFontColor PP字体颜色
-
-HitObjectFontSize 点击统计字体
-
-HitObjectFontColor 点击统计字体颜色
-
-BackgroundColor 背景颜色，默认绿色，方便OBS采用色键功能抠图
-
-WindowHeight WPF窗口宽高 WindowWidth
-
-SmoothTime 渐变时间
-
-FPS ……
-
-Topmost WPF模式窗口是否置顶
-
-WindowTextShadow 字体阴影
-
-DebugMode 调试输出
-
-RoundDigits PP小数位
-
-PPFormat PP格式，默认为${rtpp}pp ，括号内支持三维/最大PP 具体参见github.com/OsuSync/RealTimePPDisplayer/wiki/How-to-customize-my-output-content%3F
-
-HitCountFormat 点击统计格式，默认为${n100}x100 ${n50}x50 ${nmiss}xMiss，括号内支持内容参见上文
-
-IgnoreTouchScreenDecrease 是否无视触屏Mod
-
-RankingSendPerformanceToChat 对Rank图，输出PP到IRC
-
-**屙屎信息源：**
-
-[https://https://github.com/OsuSync/OsuRTDataProvider-Release/releases](https://https://github.com/OsuSync/OsuRTDataProvider-Release/releases)
-
-读取osu!内存的插件，因此只有release而没有源码。
-
-配置项说明：
-
-ListenInterval 读取频率，默认即可。过小会导致资源浪费
-
-EnableTourneyMode 对比赛端的支持
-
-TeamSize 比赛端每队人数
-
-ForceOsuSongsDirectory 强制osu!文件夹
-
-GameMode 如果自动识别模式失败，需要手动指定
-
-DisableProcessNotFoundInformation 是否隐藏“找不到osu!.exe信息”，支持True/False
-
-EnableModsChangedAtListening 是否尝试在听歌时跟踪Mod变化
-
-以下两个插件有中文文档，参考code页下的说明即可。
-
-**谱面信息输出插件：**
-
-[https://github.com/OsuSync/OsuLiveStatusPanel/releases](https://github.com/OsuSync/OsuLiveStatusPanel/releases)
-
-需要注意的是配置里AllowUsedMemoryReader改为1，而AllowUsedNowPlaying改成0，否则听歌时没有输出。
-
-**歌词插件：**
-
-[https://github.com/OsuSync/LyricDisplayerPlugin/releases](https://github.com/OsuSync/LyricDisplayerPlugin/releases)
-
-## 4.音频延迟
-
-### 4.1 介绍
-
-* 当前osu!版本使用DirectSound作为音频输出的API。DirectSound的缓冲区长度由Windows控制，会导致音效和音频一起晚40ms播放，可以认为不可修改。
-* 由于osu的帧采样特性，音效也是按帧播放的（上一帧点击，下一帧播放音效），帧率过低的情况会导致音效延迟并且错位。
-
-  **影响**
-
-* 由于音频的错位，我们需要在节拍响起之前的40ms按键（这里暂时忽视帧数导致的输入延迟），对于听力敏感的玩家来说会影响游戏体验。
-* 点击音效本来应该是提供点击回馈的一部分，它反馈迟钝将影响到下一个物件的点击,40ms音效延迟的概念是一次正常点击时手指完全抬起来音效才会响，有些人很难在音效响起之前就把手指抬起来，**而这对更高bpm的复杂节奏产生一定影响**。
-
-当然上述影响固然是因人而异的，有些人这个症状比较轻微。
-
-### 4.2 解决办法
-
-令人难过的是，osu并不支持任何低延迟音效组件\(coreaudio/wasapi/asio\)，而coreaudio和asio更是可以配合专业声卡达到5ms以内的音频延迟，这将对游戏体验有极大的提升。
-
-这个问题很久以前就提出来过，ppy对要求他加上asio的态度比较搞笑（他认为从键盘到音效响起的录音并不能说明问题，然而他又不自己给出测试方法，而且他也认为asio没有用）。即使到了lazer也不会用上能支持asio/wasapi的osu，请大家尽可能死心。
-
-虽然我们不能真的拿枪怼他脸上逼着他做asio输出，但是对音效延迟忍无可忍的朋友可以尝试以下内容。
-
-* linux下用wine运行osu，调整wine的DirectSound Buffer，最低可致13ms左右，远低于windows的40ms。有完善的方案，但是这样的音频输出质量极差，基本不能听。
-* **关闭音效，全局-40ms，听按键盘的声音打图。**
-* 推荐使用real.exe，可以稍微降低一点DirectSound延迟到30ms。差距比较小但是仍然有用。
-
-**real.exe 使用说明：**
-
-右键点击此电脑 -> 选择“管理” -> 选择左侧“设备管理器” -> 展开“音频输入和输出” -> 右键点击你的音频输出设备，选择“更新驱动程序和软件” -> “浏览计算机以查找...” -> “从计算机的设备驱动程序列表中选取...” -> “通用软件设备” -> 保存
-
-开启real.exe即可。
-
-### 注意事项
-
-* osu!无论如何也不会通过asio接口输出的，而asio声卡跑DirectSound的延迟比板载声卡更高，一块Focusrite 2i4声卡甚至跑出了85ms的延迟。
-* 不听音效也不能提高音频格式（位数和采样），osu最佳运行是16bit 44100hz，高于此格式均需要重采样，由于游戏的每帧采样特性，音频重采样会造成帧延迟，体现于光标变拖。
-* 不使用的音频硬件请禁用，例如显卡的音频输出。
-
-## 5.使用osu!提供的数据进行开发
+# 围绕osu!开发
 
 本篇可能涉及到一些Web开发相关的知识，如果你有兴趣基于osu!的数据构建一款自己的应用，可以参考本篇！
 
-### 5.1 osu! API
+## 5.1 osu! API
 
 这是ppy在2013年7月公布的一组API。
 
 文档：[https://github.com/ppy/osu-api/wiki](https://github.com/ppy/osu-api/wiki)
 
-开始使用： 在 https://old.ppy.sh/p/api 申请一个API KEY，信息随意填写。
+开始使用： 在 [https://osu.ppy.sh/p/api](https://osu.ppy.sh/p/api) 申请一个API KEY，信息随意填写。
 
 限制：每分钟1200次，最高瞬时1400次。
 
-API根URL：https://osu.ppy.sh
+共有的父URL：[https://osu.ppy.sh/api/](https://osu.ppy.sh/api/)
 
----
-#### 5.1.1 谱面信息
+### 5.1.1谱面信息
 
 /api/get\_beatmaps
 
@@ -460,7 +77,7 @@ limit - 返回值的数量. 默认值（同样是最大值）是500。
 }, { ... }, ...]
 ```
 
-#### 5.1.2 玩家信息
+### 5.1.2 玩家信息
 
 /api/get\_user
 
@@ -510,7 +127,7 @@ event\_days - 打出最后成绩的日期（last event date），距离现在的
 }]
 ```
 
-#### 5.1.3 按谱面获取成绩
+### 5.1.3 按谱面获取成绩
 
 /api/get\_scores
 
@@ -598,7 +215,7 @@ Key2 = 268435456
 }
 ```
 
-#### 5.1.4 玩家的BP
+### 5.1.4 玩家的BP
 
 /api/get\_user\_best
 
@@ -642,7 +259,7 @@ type - 指定u参数是数字id还是用户名。对于数字id，该参数值�
 ...]
 ```
 
-#### 5.1.5 玩家最近的游戏记录
+### 5.1.5 玩家最近的游戏记录
 
 /api/get\_user\_recent
 
@@ -650,17 +267,17 @@ type - 指定u参数是数字id还是用户名。对于数字id，该参数值�
 
 URL：/api/get\_user\_recent
 
-想体验低延迟但又不想倒腾的朋友，可以试试steam上McOsu的wasapi组件，本文不展开阐述。
+参数：与获取BP一样，只不过limit的最大值是50。
 
 返回值：包含玩家最近10次游戏记录的JSON列表。
 
 字段与BP一致，不再赘述
 
-#### 5.1.6 MP房间信息
+### 5.1.6 MP房间信息
 
 /api/get\_match
 
-概览：返回一场mp的历史记录。
+概览：返回一把mp的历史记录。
 
 URL：/api/get\_match
 
@@ -704,7 +321,7 @@ mp - 房间id（必须）【也就是官网MP Link的参数】
 }]
 ```
 
-#### 5.1.7 获取回放
+### 5.1.7 获取回放
 
 /api/get\_replay
 
@@ -736,11 +353,11 @@ u - 指定玩家。（必须）
 
 The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream \([https://osu.ppy.sh/wiki/Osr\_\(file\_format\)\#Format](https://osu.ppy.sh/wiki/Osr_%28file_format%29#Format)\)
 
-### 5.1.8 osu://协议
+## 5.1.8 osu://协议
 
-osu://mp/<mpID>[/<mpPassword>]
+osu://mp//\[\]
 
-加入某个mp房间的连接。这里的mpID和前文API用的id不同。如果存在密码，就加上密码参数。
+加入某个mp房间的连接。前文搞错了一点，这个mpID和前文API用的id不同。如果存在密码，就加上密码参数。
 
 osu://edit/\[ \(x,x,x,x...\)\]
 
@@ -758,45 +375,40 @@ osu://dl/
 
 osu://spectate/ 围观某人。
 
-注意：使用这些链接时，参数并不会包含`<>`或`[]`！
+注意：使用这些连接时，参数并不会包含&lt;&gt;！
 
-举个栗子：`[osu://spectate/7679162 点击围观]`
+举个栗子：\[osu://spectate/7679162 点击围观\]
 
 将这个链接发送到osu!中任何频道（当然为了社区礼仪，建议发送到私聊或者\#announce）再点击，就可以开始围观uid是7679162的人，只要他在线。也可以直接在浏览器访问osu://spectate/7679162这个链接。
 
-### 5.2 osu! API v2
+## 5.2 osu! API v2
 
 这是一些由[kj415j45](https://osu.ppy.sh/users/9367540)在[新官网的web项目中](https://github.com/ppy/osu-web)发掘的API，虽然随着新官网上线，但是并没有公布，功能也非常有限。
-
-关于 API v2 的最新信息可在 [int-and-his-friends/osu-api-v2/wiki](https://github.com/int-and-his-friends/osu-api-v2/wiki) 找到。
 
 相比获取信息，API V2更有用的地方是OAuth，也就是玩家可以授权开发者的网站访问他的数据，而不需要直接输入osu!账号密码的机制。
 
 共有的父URL：[https://osu.ppy.sh/api/v2](https://osu.ppy.sh/api/v2)
 
-#### 5.2.1 一次标准的鉴权+访问API流程
+### 5.2.1 一次标准的鉴权+访问API流程
 
 OAuth认证中，Client指用户和osu!官网之间的第三方网站。第三方网站可以以用户的身份访问osu!的数据，同时用户可以控制Client能访问的osu!数据内容的范围，而不至于需要向第三方网站提供密码。
 
-即使你的项目不涉及其他玩家对你的授权，只是你个人使用需要使用API V2返回的某些字段，也仍然需要创建Client。
+如果你的项目不涉及其他玩家对你的授权，而只是你个人使用需要使用API V2返回的某些字段，也仍然需要创建Client。
 
-##### 创建 OAuth Client
-```http
-POST https://osu.ppy.sh/oauth/clients
-X-CSRF-TOKEN: {Your CSRF Token here}
-Content-Type: application/json
-Cookie: osu_session={Your osu_session in cookies};
+你需要授权自己的Client访问自己的账户，获得Client访问账户用的access\_token，进而以自己账户的身份来访问API V2；还需要编写定时任务，使用refresh\_token来刷新自己的access\_token。
 
-{
-    "name": "Example client",
-    "redirect": "https://example.com/callback"
-}
-```
-其中`osu_session`和`X-CSRF-TOKEN`可以在访问新官网后，在Cookies中找到。
+**创建OAuth Client**
 
-只有第一次访问需要带`osu_session`，后续不需要。（这什么设定）
+\`\`\`http request POST [https://osu.ppy.sh/oauth/clients](https://osu.ppy.sh/oauth/clients) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json Cookie: osu\_session={Your osu\_session in cookies};
 
-`redirect`参数指开发者服务器用于接收 osu! 回调的接口，请认真填写。
+{ "name": "Example client", "redirect": "[https://example.com/callback](https://example.com/callback)" }
+
+```text
+其中osu_session和X-CSRF-TOKEN可以在访问新官网后，在Cookie中找到。
+
+只有第一次访问需要带osu_session，后续不需要。（这什么设定）
+
+`redirect`参数指开发者服务器用于接收osu! 回调的接口，请认真填写。
 
 返回：
 ```json
@@ -822,27 +434,19 @@ Cookie: osu_session={Your osu_session in cookies};
 
 `https://osu.ppy.sh/oauth/authorize?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$state}&scope={$scope}`
 
-其中`client_id`和`redirect_uri`与创建Client时完全一致，`state`会在稍后回调时传回，而`scope`则声明Client要求访问用户内容的范围。
+其中client\_id和redirect\_uri与创建Client时完全一致，state会在稍后回调时传回，而scope则可以控制Client要求访问用户内容的范围。
 
-`identify` 将获得鉴权权限（默认值，即使未请求该scope也会自动追加），请求 `friends.read` 则能获取好友。 多个权限使用空格（%20）分割。
+`identify` 将要求所有权限， `friends.read`则只能获取好友。 多个权限使用空格（%20）分割。
 
 **接受回调**
 
-用户点击后，你预先填写的地址将会收到回调：`{$redirect_uri}?code={$code}&state={$state}`，其中state可被用来鉴别点击了授权的用户。
+用户点击后，你预先填写的地址将会收到回调：`{$redirect_uri}?code={$code}&state={$state}`，其中code将会被用来鉴别点击了授权的用户。
 
-此时通过下列请求即可获取该用户的token
+\`\`\`http request POST [https://osu.ppy.sh/oauth/token](https://osu.ppy.sh/oauth/token) Content-Type: application/x-www-form-urlencoded
 
-```http
-POST https://osu.ppy.sh/oauth/token
-Content-Type: application/x-www-form-urlencoded
+grant\_type=authorization\_code &client\_id={$client\_id} &client\_secret={$client\_secret} &redirect\_uri={$redirect\_uri} &code={$code}
 
-grant_type=authorization_code
-&client_id={$client_id}
-&client_secret={$client_secret}
-&redirect_uri={$redirect_uri}
-&code={$code}
-```
-返回：
+```text
 ```json
 {
     "token_type": "Bearer",
@@ -852,17 +456,19 @@ grant_type=authorization_code
 }
 ```
 
-##### 附带Token
+至此，你已经可以使用access\_token以用户的身份访问osu! API v2了。
+
+**附带Token**
 
 在请求头中添加`Authorization: {$token_type} {$token}`即可。
 
-#### 5.2.2 API V2
+### 5.2.2 API V2
 
-完整的列表参见：[ppy/osu-web:/routes/web.php@line//API](https://github.com/ppy/osu-web/blob/master/routes/web.php#L300-L373)
+完整的列表参见：[ppy/osu-web:/routes/web.php@line//API](https://github.com/ppy/osu-web/blob/master/routes/web.php#L296-L378)
 
 网站开发者用于鉴别用户身份时，常用`/me`接口：
 
-```json
+```javascript
 {
     "id": 9367540,
     "username": "kj415j45",
@@ -985,18 +591,15 @@ grant_type=authorization_code
 }
 ```
 
-#### 5.2.3 其他认证相关的接口
+### 5.2.3 其他认证相关的接口
 
-##### 刷新Token
-```http
-POST https://osu.ppy.sh/oauth/token
-Content-Type: application/x-www-form-urlencoded
+**刷新Token**
 
-grant_type=refresh_token
-&client_id=1
-&client_secret=*************
-&refresh_token=**********************
-```
+\`\`\`http request POST [https://osu.ppy.sh/oauth/token](https://osu.ppy.sh/oauth/token) Content-Type: application/x-www-form-urlencoded
+
+grant\_type=refresh\_token &client\_id=1 &client\_secret=**\*** &refresh\_token=**\*\***
+
+```text
 ```json
 {
     "token_type": "Bearer",
@@ -1006,13 +609,11 @@ grant_type=refresh_token
 }
 ```
 
-##### 查询Clients
+**查询Client**
 
-```http
-GET https://osu.ppy.sh/oauth/clients
-X-CSRF-TOKEN: {Your CSRF Token here}
-Content-Type: application/json
-```
+\`\`\`http request GET [https://osu.ppy.sh/oauth/clients](https://osu.ppy.sh/oauth/clients) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json
+
+```text
 返回：
 ```json
 [
@@ -1030,17 +631,14 @@ Content-Type: application/json
     },{},...
 ]
 ```
-##### 修改Client
-```http
-PUT https://osu.ppy.sh/oauth/clients/{client-id}
-X-CSRF-TOKEN: {Your CSRF Token here}
-Content-Type: application/json
 
-{
-    "name": "Example client",
-    "redirect": "https://example.com/callback"
-}
-```
+**修改Client**
+
+\`\`\`http request PUT [https://osu.ppy.sh/oauth/clients/{client-id}](https://osu.ppy.sh/oauth/clients/{client-id}) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json
+
+{ "name": "Example client", "redirect": "[https://example.com/callback](https://example.com/callback)" }
+
+```text
 返回：
 ```json
 {
@@ -1056,17 +654,19 @@ Content-Type: application/json
 }
 ```
 
-##### 撤销Client
-```http request
-DELETE https://osu.ppy.sh/oauth/clients/{client-id}
-X-CSRF-TOKEN: {Your CSRF Token here}
-Content-Type: application/json
-```
+**撤销Client**
+
+\`\`\`http request DELETE [https://osu.ppy.sh/oauth/clients/{client-id}](https://osu.ppy.sh/oauth/clients/{client-id}) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json
+
+```text
 返回：
 ```
-200 OK
-```
+
+200 ok
+
+```text
 需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
+
 
 ### 5.3 osu!游戏更新信息接口
 
@@ -1237,6 +837,4 @@ URL：https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40
     }
 ]
 ```
-
-> 本篇贡献者: Mother Ship
 
