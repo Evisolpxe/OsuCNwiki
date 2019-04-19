@@ -1,2 +1,83 @@
+---
+description: 就是比赛啦
+---
+
 # Tournament
+
+## **国内比赛**
+
+### _**OCL联赛**_
+
+OCL 即 osu! Chinese League，是以培养各层次华语玩家实力为目标的一系列联赛，分为 OCLA、OCLB、OCLC 、OCLR四个等级，由 Prophet（光法）主办，OCL 组委会承办。自OCL创建以来，OCLA 已成功举办 4 个赛季，OCLB 已举办 10个赛季，OCLC 已举办 7个赛季，OCLR已举办1个赛季。
+
+OCL系列比赛以队长选秀制为基础。
+
+#### OCLA冠军队伍
+
+| 赛季 | 队长 | 队员 |
+| :--- | :--- | :--- |
+| S1 |  |  |
+| S2 |  |  |
+| S3 |  |  |
+| S4 |  |  |
+| S5 |  |  |
+
+#### OCLB冠军队伍
+
+| 赛季 | 队长 | 队员 |
+| :--- | :--- | :--- |
+| S1 |  |  |
+| S2 |  |  |
+| S3 |  |  |
+| S4 |  |  |
+| S5 |  |  |
+| S6 |  |  |
+| S7 |  |  |
+| S8 | [davidqu2](https://osu.ppy.sh/u/6090175) | MusHi，FujiwaraNoMokou，-Yuzuriha Inori ，Rem MajiTenshi , Mikako |
+| S9 | [\_Mayuri](https://osu.ppy.sh/u/1955058) | Ma yin，Ariazi，\[-BlackZ-\]，Rem MajiTenshi，tommy0519 \(外援:Chaoslitz\) |
+| S10 |  |  |
+|  |  |  |
+
+#### OCLC冠军队伍
+
+| 赛季 | 队长 | 队员 |
+| :--- | :--- | :--- |
+| S1 |  |  |
+| S2 |  |  |
+| S3 | [Rem MajiTenshi](https://osu.ppy.sh/users/5084172) | Asarc,  Kyoka Izumi,  \[ alone \], johnny880727 |
+| S4 | [Rem MajiTenshi](https://osu.ppy.sh/users/5084172) | Asarc,  Fumino,  ayase sakuki,  sasa kanako,  Amuamn |
+| S5 | [Moting](https://osu.ppy.sh/users/4902208) | Komeji Koishi,  play offline,  Sugiura Kanade,  \_Dysania |
+| S6 | [Explosive](https://osu.ppy.sh/users/245276) | Kato Emiri,  Hatsuki Yura,  Slay\_conceit,  Sister10086,  Mother Ship |
+| S7 | [Explosive](https://osu.ppy.sh/users/245276) | Refia Vridis,  jj986544591,  HailAltair,  -Monogatari-,  \[kamiya\],  -Cleony |
+
+#### OCLR冠军队伍
+
+| 赛季 | 队长 | 副队长 | 队员 |
+| :--- | :--- | :--- | :--- |
+| S1 | \*\*\*\*[**fengyin-**](https://osu.ppy.sh/users/7812692)\*\*\*\* | [zfxggg](https://osu.ppy.sh/users/10970623) | -Artemis,  HailAltair,  DDisokaze,  Sakura miku |
+
+### _毒品杯_
+
+以绝对不想得到的东西为奖品的特色比赛。
+
+**冠军队伍**
+
+| 赛季 | 队名 | 队长 | 队员 |
+| :--- | :--- | :--- | :--- |
+| S1 | _**akaisukafu的本质就是欧洲人**_ | toyosaki Lina | xiaoshinya,  Yurih,  EarwormS,  Blooming Lily |
+| S2 |  |  |  |
+| S3 | _**便当队**_ | tomatosiruco | Asarc,  Vsblueiceflame,  totoriott,  c03738 |
+| S4 | _**卢克金团队**_ | [Start](https://osu.ppy.sh/users/2190156) | Kaguya\_1096,  Vsblueiceflame,  \[57HmOnlyL\],  Purple Heart |
+| S_**5**_ | _**bananice**_ | [White Reimu](https://osu.ppy.sh/users/5279511) | Amuamn,  Futaba Anzu,  Explosive,  Hatsuki Yura |
+
+### _鱼塘杯_
+
+| 赛季 | 队名 | 队长 |  |  |  | 队员 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| S1 |  |  |  |  |  |  |
+| S2 |  |  |  |  |  |  |
+| S3 |  |  |  |  |  |  |
+| SE |  |  |  |  |  |  |
+
+### _**文明杯**_
 
