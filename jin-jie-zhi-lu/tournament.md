@@ -43,7 +43,7 @@ OCL系列比赛以队长选秀制为基础。赛制:循环赛+淘汰赛，计分
 | 赛季 | 队长 | 队员 |
 | :--- | :--- | :--- |
 | S1 |  |  |
-| S2 |  |  |
+| S2 | [-lovely ala-](https://osu.ppy.sh/users/4469565) | -Mause-,  lwxb,  kyoka izumi, superbox, My Fate Arrive |
 | S3 | [Rem MajiTenshi](https://osu.ppy.sh/users/5084172) | Asarc,  Kyoka Izumi,  \[ alone \], johnny880727 |
 | S4 | [Rem MajiTenshi](https://osu.ppy.sh/users/5084172) | Asarc,  Fumino,  ayase sakuki,  sasa kanako,  Amuamn |
 | S5 | [Moting](https://osu.ppy.sh/users/4902208) | Komeji Koishi,  Play offline,  Sugiura Kanade,  \_Dysania |
