@@ -8,7 +8,7 @@ description: 就是比赛啦
 
 ### _**OCL联赛**_
 
-OCL 即 osu! Chinese League，是以培养各层次华语玩家实力为目标的一系列联赛，分为 OCLA、OCLB、OCLC 、OCLR四个等级，由 Prophet（光法）主办，OCL 组委会承办。自OCL创建以来，OCLA 已成功举办 4 个赛季，OCLB 已举办 10个赛季，OCLC 已举办 7个赛季，OCLR已举办1个赛季。
+OCL 即 osu! Chinese League，是以培养各层次华语玩家实力为目标的一系列联赛，分为 OCLA、OCLB、OCLC 、OCLR四个等级， LA、B、C由[Prophet](https://osu.ppy.sh/users/651307)（光法）主办、LR由[Explosive](https://osu.ppy.sh/users/245276)主办，OCL 组委会承办。自OCL创建以来，OCLA 已成功举办 4 个赛季，OCLB 已举办 12个赛季，OCLC 已举办 7个赛季，OCLR已举办1个赛季。
 
 OCL系列比赛以队长选秀制为基础。赛制:循环赛+淘汰赛，计分方式Score V1。
 
@@ -46,7 +46,7 @@ OCL系列比赛以队长选秀制为基础。赛制:循环赛+淘汰赛，计分
 | S2 |  |  |
 | S3 | [Rem MajiTenshi](https://osu.ppy.sh/users/5084172) | Asarc,  Kyoka Izumi,  \[ alone \], johnny880727 |
 | S4 | [Rem MajiTenshi](https://osu.ppy.sh/users/5084172) | Asarc,  Fumino,  ayase sakuki,  sasa kanako,  Amuamn |
-| S5 | [Moting](https://osu.ppy.sh/users/4902208) | Komeji Koishi,  play offline,  Sugiura Kanade,  \_Dysania |
+| S5 | [Moting](https://osu.ppy.sh/users/4902208) | Komeji Koishi,  Play offline,  Sugiura Kanade,  \_Dysania |
 | S6 | [Explosive](https://osu.ppy.sh/users/245276) | Kato Emiri,  Hatsuki Yura,  Slay\_conceit,  Sister10086,  Mother Ship |
 | S7 | [Explosive](https://osu.ppy.sh/users/245276) | Refia Vridis,  jj986544591,  HailAltair,  -Monogatari-,  \[kamiya\],  -Cleony |
 
@@ -58,7 +58,7 @@ OCL系列比赛以队长选秀制为基础。赛制:循环赛+淘汰赛，计分
 
 ### _毒品杯_
 
-以绝对不想得到的东西为奖品的特色比赛。
+以绝对不想得到的东西为奖品的特色比赛。前任主办为[hx073269](https://osu.ppy.sh/users/3924736)，~~现已归隐山田~~（考研），由其他玩家负责。
 
 **冠军队伍**
 
@@ -72,12 +72,20 @@ OCL系列比赛以队长选秀制为基础。赛制:循环赛+淘汰赛，计分
 
 ### _鱼塘杯_
 
-| 赛季 | 队名 | 队长 |  |  |  | 队员 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| S1 |  |  |  |  |  |  |
-| S2 |  |  |  |  |  |  |
-| S3（Bingo!） |  |  |  |  |  |  |
-| S4（SE） |  |  |  |  |  |  |
+有着很强趣味性的比赛，S3时加入Badge。S1-S3主办为[SweetCukes\_](https://osu.ppy.sh/users/7209223)，S4主办为[VRainbow](https://osu.ppy.sh/users/3635214)。
+
+S1: 2017.4 - 2017.6。首届采用积分+队长选人。
+
+S2: 2017.7，鱼塘黑历史。淘汰+队长选人+绑定 因为各种原因没有办好，因此鱼塘在一年内都没有举办甚至传出群主跑路的信息（其实是某个主办） 。
+
+S3: 始于2018.7 - 2018.9。满血复活，采用新颖的roll点抽技能玩法获得了不错的好评，从此向娱乐赛的方向发展。
+
+| 赛季 | 队名 | 队长 | 队员 |
+| :--- | :--- | :--- | :--- |
+| S1 |  | [Level-min](https://osu.ppy.sh/users/3192398) | gxytcgxytc,  Stella rium,  Can,  QwQwQwQwQ,  Drolrpoi |
+| S2 |  | [Sakura Kyouko](https://osu.ppy.sh/users/2465142) | Can,  rikkaing,  \[HR-D3\],  MisakaNO10086,  Xuechun |
+| S3 | 大黄瓜是我们队长老婆 | [SugiuraKanade](https://osu.ppy.sh/users/7839397) | Play offline, Hatsuki Yura, Moting, Shawn0123 Explosive |
+| S4 |  |  |  |
 
 ### _**文明杯**_
 
