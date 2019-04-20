@@ -22,5 +22,3 @@
 
 {% page-ref page="xiao-shi-niu-dao/you-xi-fang-shi.md" %}
 
-{% page-ref page="xiao-shi-niu-dao/jian-dan-de-le-li-zhi-shi.md" %}
-
