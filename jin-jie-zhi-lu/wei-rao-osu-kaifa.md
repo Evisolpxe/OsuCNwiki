@@ -399,11 +399,17 @@ OAuth认证中，Client指用户和osu!官网之间的第三方网站。第三�
 
 **创建OAuth Client**
 
-\`\`\`http request POST [https://osu.ppy.sh/oauth/clients](https://osu.ppy.sh/oauth/clients) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json Cookie: osu\_session={Your osu\_session in cookies};
+```http
+POST https://osu.ppy.sh/oauth/clients
+X-CSRF-TOKEN: {Your CSRF Token here}
+Content-Type: application/json
+Cookie: osu_session={Your osu_session in cookies};
 
-{ "name": "Example client", "redirect": "[https://example.com/callback](https://example.com/callback)" }
-
-```text
+{
+    "name": "Example client",
+    "redirect": "https://example.com/callback"
+}
+```
 其中osu_session和X-CSRF-TOKEN可以在访问新官网后，在Cookie中找到。
 
 只有第一次访问需要带osu_session，后续不需要。（这什么设定）
@@ -442,11 +448,17 @@ OAuth认证中，Client指用户和osu!官网之间的第三方网站。第三�
 
 用户点击后，你预先填写的地址将会收到回调：`{$redirect_uri}?code={$code}&state={$state}`，其中code将会被用来鉴别点击了授权的用户。
 
-\`\`\`http request POST [https://osu.ppy.sh/oauth/token](https://osu.ppy.sh/oauth/token) Content-Type: application/x-www-form-urlencoded
+```http
+POST https://osu.ppy.sh/oauth/token
+Content-Type: application/x-www-form-urlencoded
 
-grant\_type=authorization\_code &client\_id={$client\_id} &client\_secret={$client\_secret} &redirect\_uri={$redirect\_uri} &code={$code}
+grant_type=authorization_code
+&client_id={$client_id}
+&client_secret={$client_secret}
+&redirect_uri={$redirect_uri}
+&code={$code}
+```
 
-```text
 ```json
 {
     "token_type": "Bearer",
@@ -468,7 +480,7 @@ grant\_type=authorization\_code &client\_id={$client\_id} &client\_secret={$clie
 
 网站开发者用于鉴别用户身份时，常用`/me`接口：
 
-```javascript
+```json
 {
     "id": 9367540,
     "username": "kj415j45",
@@ -595,11 +607,16 @@ grant\_type=authorization\_code &client\_id={$client\_id} &client\_secret={$clie
 
 **刷新Token**
 
-\`\`\`http request POST [https://osu.ppy.sh/oauth/token](https://osu.ppy.sh/oauth/token) Content-Type: application/x-www-form-urlencoded
+```http
+POST https://osu.ppy.sh/oauth/token
+Content-Type: application/x-www-form-urlencoded
 
-grant\_type=refresh\_token &client\_id=1 &client\_secret=**\*** &refresh\_token=**\*\***
+grant_type=refresh_token
+&client_id=1
+&client_secret=*************
+&refresh_token=**********************
+```
 
-```text
 ```json
 {
     "token_type": "Bearer",
@@ -611,9 +628,11 @@ grant\_type=refresh\_token &client\_id=1 &client\_secret=**\*** &refresh\_token=
 
 **查询Client**
 
-\`\`\`http request GET [https://osu.ppy.sh/oauth/clients](https://osu.ppy.sh/oauth/clients) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json
-
-```text
+```http
+GET https://osu.ppy.sh/oauth/clients
+X-CSRF-TOKEN: {Your CSRF Token here}
+Content-Type: application/json
+```
 返回：
 ```json
 [
@@ -634,11 +653,16 @@ grant\_type=refresh\_token &client\_id=1 &client\_secret=**\*** &refresh\_token=
 
 **修改Client**
 
-\`\`\`http request PUT [https://osu.ppy.sh/oauth/clients/{client-id}](https://osu.ppy.sh/oauth/clients/{client-id}) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json
+```http
+PUT https://osu.ppy.sh/oauth/clients/{client-id}
+X-CSRF-TOKEN: {Your CSRF Token here}
+Content-Type: application/json
 
-{ "name": "Example client", "redirect": "[https://example.com/callback](https://example.com/callback)" }
-
-```text
+{
+    "name": "Example client",
+    "redirect": "https://example.com/callback"
+}
+```
 返回：
 ```json
 {
@@ -656,15 +680,15 @@ grant\_type=refresh\_token &client\_id=1 &client\_secret=**\*** &refresh\_token=
 
 **撤销Client**
 
-\`\`\`http request DELETE [https://osu.ppy.sh/oauth/clients/{client-id}](https://osu.ppy.sh/oauth/clients/{client-id}) X-CSRF-TOKEN: {Your CSRF Token here} Content-Type: application/json
-
-```text
+```http
+DELETE https://osu.ppy.sh/oauth/clients/{client-id}
+X-CSRF-TOKEN: {Your CSRF Token here}
+Content-Type: application/json
+```
 返回：
 ```
-
-200 ok
-
-```text
+200 OK
+```
 需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
 
 
