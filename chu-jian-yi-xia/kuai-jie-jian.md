@@ -20,7 +20,7 @@ osu!有非常多的快捷键，但是由于缺少引导和介绍，大部分玩�
 
 <kbd>Insert</kbd>: 最小化osu!至通知栏（老板键）
 
-<kbd>Ctrl+F11</kbd>: 打开/关闭Frame time graph；按住Ctrl可以暂停图像变化
+<kbd>Ctrl+F11</kbd>: 打开/关闭Frame time graph；按住<kbd>Ctrl</kbd>可以暂停图像变化
 
 <kbd>Ctrl</kbd>+<kbd>O</kbd>：打开侧边Options菜单
 
@@ -70,7 +70,7 @@ Q: 退出 -->
 
 <kbd>↑</kbd>/<kbd>↓</kbd>: 增大/减小音量
 
-<kbd>←</kbd>/<kbd>→</kbd>：前一首歌/下一首歌，等价于F1/F5
+<kbd>←</kbd>/<kbd>→</kbd>：前一首歌/下一首歌，等价于<kbd>F1</kbd>/<kbd>F5</kbd>
 
 
 ## 歌曲选择
@@ -79,7 +79,7 @@ Q: 退出 -->
 <kbd>F2</kbd>: 随机谱面
 <!-- F2: 随机谱面（快速按下两次立即选择随机谱面） -->
 
-<kbd>Shift</kbd>+<kbd>F2</kbd>：回到随机选择前的谱面，等价于F2的逆操作
+<kbd>Shift</kbd>+<kbd>F2</kbd>：回到随机选择前的谱面，等价于<kbd>F2</kbd>的逆操作
 
 <kbd>F3</kbd>: 谱面选项
 
@@ -112,7 +112,7 @@ Q: 退出 -->
 关键词基本上是谱面的属性，一些关键词列举如下：
 stars, bpm, ar, od, hp, cs, keys, ......
 
-示例：将“stars=6.85 ar=9.6 bpm=200”复制后在歌曲选择页面按"Ctrl+V"。
+示例：将“stars=6.85 ar=9.6 bpm=200”复制后在歌曲选择页面按"<kbd>Ctrl</kbd>+<kbd>V</kbd>"。
 
 
 ## 模式选择
@@ -166,7 +166,7 @@ osu!模式列表（依次序绑定键盘）
 
 ## 播放Replay
 
-<kbd>F</kbd>：改变为1/2/0.5倍速播放（一个可能的bug是假如在进入replay播放瞬间按F改变倍速，整个replay的播放倍速将以这个瞬间改变后的倍速为准，也就是可能获得1-4倍或0.25-1倍速的播放）
+<kbd>F</kbd>：改变为1/2/0.5倍速播放（一个可能的bug是假如在进入replay播放瞬间按<kbd>F</kbd>改变倍速，整个replay的播放倍速将以这个瞬间改变后的倍速为准，也就是可能获得1-4倍或0.25-1倍速的播放）
 
 <kbd>H</kbd>：隐藏界面上的大部分元件（除了按键计数框）
 
