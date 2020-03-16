@@ -146,7 +146,7 @@ _注意： Target practice \(osu!std\), 1K 与 2K \(osu!mania\), Co-op \(osu!man
 | `Esc` | 暂停（在观看replay或者Auto、Cinema模式下会直接退出）。 |
 | `Space` | 跳过开头。 |
 | `Tab` | 切换左侧榜单显示模式（一直显示/仅在休息时段显示）。 |
-| `Shift` + `Tab` | 隐藏/显示acc，分数，血条，进度条等元素。 |
+| `Shift` + `Tab` | 隐藏/显示acc，combo，分数，血条，进度条等元素。 |
 | `F3` / `F4` | 调整 osu!mania下落速度（在谱面开头使用有效）。 |
 |  `~`  / `Ctrl` + `R` | 立刻retry，并自动跳过开头（出于防误触考虑，轻按是无效的；_`~` 键位可以在Options里的“键位设置”中的“quick retry”进行修改_）。 |
 
@@ -154,7 +154,7 @@ _注意： Target practice \(osu!std\), 1K 与 2K \(osu!mania\), Co-op \(osu!man
 
 | 快捷键 | 效果 |
 | :--- | :--- |
-| `H` | 隐藏/显示界面上的大部分元件（除了按键计数框）。 |
+| `H` | 隐藏/显示排行榜、滚动文字、右侧四个控制元件等replay元素（可与`Shift` + `Tab`结合使用；_按键计数框可在Options菜单里关闭_）。 |
 | `F` | 1/2/0.5倍速播放（一个可能的bug是假如在进入replay播放瞬间按`F`改变倍速，整个replay的播放倍速将以这个瞬间改变后的倍速为准，也就是可能获得1-4倍或0.25-1倍速的播放）。 |
 | `F2` | （在成绩结算页面下）导出replay为.osr文件，保存目录为osu/Replays。 |
 
