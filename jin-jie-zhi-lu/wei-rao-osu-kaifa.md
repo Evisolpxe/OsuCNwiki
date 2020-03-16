@@ -410,14 +410,16 @@ Cookie: osu_session={Your osu_session in cookies};
     "redirect": "https://example.com/callback"
 }
 ```
-其中osu_session和X-CSRF-TOKEN可以在访问新官网后，在Cookie中找到。
 
-只有第一次访问需要带osu_session，后续不需要。（这什么设定）
+其中osu\_session和X-CSRF-TOKEN可以在访问新官网后，在Cookie中找到。
+
+只有第一次访问需要带osu\_session，后续不需要。（这什么设定）
 
 `redirect`参数指开发者服务器用于接收osu! 回调的接口，请认真填写。
 
 返回：
-```json
+
+```javascript
 {
   "user_id": 12345,
   "name": "Example client",
@@ -459,7 +461,7 @@ grant_type=authorization_code
 &code={$code}
 ```
 
-```json
+```javascript
 {
     "token_type": "Bearer",
     "expires_in": 86400,
@@ -480,7 +482,7 @@ grant_type=authorization_code
 
 网站开发者用于鉴别用户身份时，常用`/me`接口：
 
-```json
+```javascript
 {
     "id": 9367540,
     "username": "kj415j45",
@@ -617,7 +619,7 @@ grant_type=refresh_token
 &refresh_token=**********************
 ```
 
-```json
+```javascript
 {
     "token_type": "Bearer",
     "expires_in": 86400,
@@ -633,8 +635,10 @@ GET https://osu.ppy.sh/oauth/clients
 X-CSRF-TOKEN: {Your CSRF Token here}
 Content-Type: application/json
 ```
+
 返回：
-```json
+
+```javascript
 [
     {
       "user_id": 9367540,
@@ -663,8 +667,10 @@ Content-Type: application/json
     "redirect": "https://example.com/callback"
 }
 ```
+
 返回：
-```json
+
+```javascript
 {
   "user_id": 9367540,
   "name": "Example client",
@@ -685,16 +691,18 @@ DELETE https://osu.ppy.sh/oauth/clients/{client-id}
 X-CSRF-TOKEN: {Your CSRF Token here}
 Content-Type: application/json
 ```
+
 返回：
-```
+
+```text
 200 OK
 ```
-需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
 
+需要注意的是，撤销一个已经撤销的Client也会返回200，而撤销其他人的Client返回的是404而不是401。
 
 ### 5.3 osu!游戏更新信息接口
 
-URL：https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40
+URL：[https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40](https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40)
 
 参数：stream可以切换为fallback、cutting edge（请自行抓包获取）。
 
@@ -702,7 +710,7 @@ URL：https://osu.ppy.sh/web/check-updates.php?action=check&stream=stable40
 
 **如果你有一台流量充足、位于国外的服务器，可以使用此API定时爬取客户端，进而搭建客户端镜像。**
 
-```json
+```javascript
 [
     {
         "file_version":"1349",

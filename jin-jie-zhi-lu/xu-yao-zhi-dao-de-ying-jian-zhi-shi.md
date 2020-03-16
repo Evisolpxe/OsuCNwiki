@@ -48,12 +48,12 @@ osu!的玩家中有很大一部分人都在使用数位板，而购买数位板�
 * 最后一位一般没有意义，唯一的例外是CTL系列在第7代数位板推出了两款简化款471和472，修改了最后一位数字。
 
 {% hint style="warning" %}
-
 **注意事项**
 
 * 驱动请尽可能使用第三方驱动，设置等详情可以参考软件部分。
 * CTL460 470 471 480的压感笔可以通用，但是不同组合手感略有不同。而472、490和4100的压感笔与以上数位板/笔均不通用。
 * 由于数位板的工作原理是电磁感应，在数位板附近放强磁或把数位板互相罗列可能会导致干扰，而在数位板上盖金属板会直接停止工作。
+{% endhint %}
 
 ### 总结
 
@@ -104,13 +104,13 @@ Cherry轴体专利过期后，国产轴体犹如雨后春笋，也大幅度拉�
 对于熟练挥舞电烙铁的玩家，或者想体验稀有轴的玩家来说，购买PCB、外壳\(也有PCB+外壳的套件出售\)、键帽和轴体自己焊接也是一个选择，想必以你们对键盘的理解也不需要阅读这一段。
 
 {% hint style="danger" %}
-
 **黑名单**
 
 1. 贼船系列。虽然用户群体众多但品控十分感人，从漏电，双击到坏灯各种问题层出不穷。
 2. 无钢板键盘。没有钢板的支撑，PCB在osu!玩家的大力敲击之下很快会出现断线问题。
 3. 洋垃圾。尽管可以更换轴体，进水腐蚀的电路板也会在几个月到一年后出现各种断线问题。
 4. 网吧二手。本来就质量堪忧的段落轴在恶劣环境高压使用后，手感基本无法直视，少部分线性轴的可勉强使用，但是价格也往往赶上了自用的二手。
+{% endhint %}
 
 ## 3．显示器
 
@@ -134,9 +134,18 @@ Cherry轴体专利过期后，国产轴体犹如雨后春笋，也大幅度拉�
 
 不同显示器厂商有各自的OverDrive实现名称:
 
-AOC：OverDrive ASUS：Trace-Free BENQ：Advanced Motion Accelerator \(AMA\) ViewSonic：ClearMotiv SamSung：MagicSpeed / Response Time Acceleration \(RTA\) LG：Over Driving Circuit \(ODC\) NEC：RapidResponse / RapidMotion
+* AOC：OverDrive 
+* ASUS：Trace-Free 
+* BENQ：Advanced Motion Accelerator \(AMA\) 
+* ViewSonic：ClearMotiv 
+* SamSung：MagicSpeed / Response Time Acceleration \(RTA\) 
+* LG：Over Driving Circuit \(ODC\) 
+* NEC：RapidResponse / RapidMotion
 
-参考资料： [https://www.blurbusters.com/faq/lcd-motion-artifacts/](https://www.blurbusters.com/faq/lcd-motion-artifacts/) [http://www.tftcentral.co.uk/advanced.htm\#clearmotiv](http://www.tftcentral.co.uk/advanced.htm#clearmotiv)
+参考资料：
+
+* [https://www.blurbusters.com/faq/lcd-motion-artifacts/](https://www.blurbusters.com/faq/lcd-motion-artifacts/) 
+* [http://www.tftcentral.co.uk/advanced.htm\#clearmotiv](http://www.tftcentral.co.uk/advanced.htm#clearmotiv)
 
 #### **G-sync与Freesync**
 
@@ -154,7 +163,12 @@ G-sync是 **英伟达** 开发并支持英伟达显示卡的产物，而Freesync
 
 与OverDrive类似，不同显示器厂商也有各自的实现：
 
-Alienware：NVIDIA’s ULMB \(Ultra Low Motion Blur\) Acer：NVIDIA’s LightBoost BenQ： DyAc \(Dynamic Accuracy\)\(旧型号使用Blur Reduce/模糊降减\) ASUS： Extreme Low Motion Blur LG： 1ms Motion Blur Reduction Samsung： 1ms MPRT \(Moving Picture Response Time\)
+* Alienware：NVIDIA’s ULMB \(Ultra Low Motion Blur\) 
+* Acer：NVIDIA’s LightBoost 
+* BenQ： DyAc \(Dynamic Accuracy\)\(旧型号使用Blur Reduce/模糊降减\) 
+* ASUS： Extreme Low Motion Blur 
+* LG： 1ms Motion Blur Reduction 
+* Samsung： 1ms MPRT \(Moving Picture Response Time\)
 
 实际效果 理想很美好，实际很残酷。看过眼球追踪的都明白我们在打图的过程中绝对不会固定视线，而因为图像活动过程中不再是连续的，背光闪烁过程中挪动视线就会造成严重的闪烁感，如果在某些过程中挪动视线，甚至会看到碎裂的缩圈等画面。而且说实话即使光标和缩圈都变得很清晰，也没有太大改善。
 
@@ -166,9 +180,9 @@ Alienware：NVIDIA’s ULMB \(Ultra Low Motion Blur\) Acer：NVIDIA’s LightBoo
 
 ### 面板
 
-**TN面板**响应速度最快，黑白最快4ms，GTG普遍1ms，而且相对廉价，而色彩比较糟心，普遍有泛白现象。
+**TN面板** 响应速度最快，黑白最快4ms，GTG普遍1ms，而且相对廉价，而色彩比较糟心，普遍有泛白现象。
 
-**IPS面板**响应速度就差了很多，GTG最低也要4ms，在osu的表现非常一般，即使高刷新率也会让缩圈出现明显的拖影，而且高刷新率IPS也相对昂贵，专注高刷新率之后IPS的色彩优势也大打折扣。如果不进行专业视频编辑（例如涉及商品颜色）请尽可能不要选择。
+**IPS面板** 响应速度就差了很多，GTG最低也要4ms，在osu的表现非常一般，即使高刷新率也会让缩圈出现明显的拖影，而且高刷新率IPS也相对昂贵，专注高刷新率之后IPS的色彩优势也大打折扣。如果不进行专业视频编辑（例如涉及商品颜色）请尽可能不要选择。
 
 **MVA面板**的响应速度简直可以用糟糕形容，**请不要使用**。
 
@@ -176,15 +190,17 @@ Alienware：NVIDIA’s ULMB \(Ultra Low Motion Blur\) Acer：NVIDIA’s LightBoo
 
 资金允许的条件下尽可能至少购买Acer/AOC等品牌，如果比较充裕可以购买Asus和Benq。
 
-**240Hz到底能不能看出来？** 答案是能，1000Hz的鼠标在屏幕上可以浓密的显示出一条光标轨迹，非常顺滑。能几乎完全消除缩圈撕裂的观感（144是做不到的），而且响应速度极快，**是最适合osu的屏**。
+#### **240Hz到底能不能看出来？**
+
+答案是能，1000Hz的鼠标在屏幕上可以浓密的显示出一条光标轨迹，非常顺滑。能几乎完全消除缩圈撕裂的观感（144是做不到的），而且响应速度极快，**是最适合osu的屏**。
 
 ### 著名的“人眼极限60Hz”
 
-首先我们要理解帧显示的直观感受。 直线移动的光源会在人眼上留下一条直线路径，而这个路径是连续不间断的。 如果光源是闪烁的，那么我们得到的路径就会是间断的。
+首先我们要理解帧显示的直观感受。直线移动的光源会在人眼上留下一条直线路径，而这个路径是连续不间断的。如果光源是闪烁的，那么我们得到的路径就会是间断的。
 
-从结果来看，显示画面可以在每一帧加入上一帧移动路径中的模糊画面来模拟一个比较连续的路径， 俗称动态模糊，就可以让画面显得流畅起来，例如只有24fps的电影每一帧就都是模糊的。 但是竞技游戏中这种做法并不明智，不仅会看不清目标，而且这样做也不能让光标的位置更快的更新，光标的延迟感也不会改善。
+从结果来看，显示画面可以在每一帧加入上一帧移动路径中的模糊画面来模拟一个比较连续的路径， 俗称动态模糊，就可以让画面显得流畅起来，例如只有24fps的电影每一帧就都是模糊的。 但是竞技游戏中这种做法**并不明智**，不仅会看不清目标，而且这样做也不能让光标的位置更快的更新，光标的延迟感也不会改善。
 
-通过上述理论，60Hz是人眼极限的说法就根本不成立了，甚至人眼没有所谓的极限，只要某一个光点运动够快， 闪烁的频率不能满足让光点路径连续，我们就能看出它不连贯。
+通过上述理论，60Hz是人眼极限的说法就**根本不成立**了，甚至人眼没有所谓的极限，只要某一个光点运动够快， 闪烁的频率不能满足让光点路径连续，我们就能看出它不连贯。
 
 总结以上，到底是否需要购买高端显示器是我们一个斟酌的环节，但如果能够投入，它将伴随你的其他游戏走向更高的等级。如果高AR是你的瓶颈，高刷新率显示器一定不会让你失望。
 
@@ -192,7 +208,7 @@ Alienware：NVIDIA’s ULMB \(Ultra Low Motion Blur\) Acer：NVIDIA’s LightBoo
 
 说到耳机，大家可能比较抵触，听个响是很多人的选择，而且好耳机非常贵也让很多人望而却步。
 
-但其实不然，听个响很可能漏听很多东西，原因就是osu里面的歌普遍偏快，有些歌用普通耳机听快到你根本不知道他在敲什么，而你平时听一些舒缓歌曲当然很难分辨出耳机好坏。mapper抓音的时候可以慢慢听，但我们在打图的时候却不能慢放听音。
+但其实不然，听个响很可能漏听很多东西，原因就是osu!里面的歌普遍偏快，有些歌用普通耳机听快到你根本不知道他在敲什么，而你平时听一些舒缓歌曲当然很难分辨出耳机好坏。mapper抓音的时候可以慢慢听，但我们在打图的时候却不能慢放听音。
 
 中级篇是认为“玩家们已经肯为了这个游戏投入精力时间以及金钱”的条件下来进行科普和推荐的，所以在这里推荐大家换上一个能够清晰听出节奏和旋律的耳机，不要求它好听与否，而是要有一定解析能力。
 
@@ -229,7 +245,8 @@ osu!所需要的是足够高的单核主频 以及一块750级别的显卡。因
 
 但是，双核处理器的局限让它在其他游戏中的表现非常差，因此可以考虑增加500元左右的预算，升级到4代i5处理器。
 
-黑名单
+{% hint style="danger" %}
+#### 黑名单
 
 * 低频处理器
 
@@ -238,6 +255,7 @@ osu!对单核频率极度敏感，低于3GHz的处理器可能会无法稳定在
 * 4代之前的平台
 
 找不到能用半年以上的主板……
+{% endhint %}
 
 ### 笔记本篇
 

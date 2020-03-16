@@ -12,6 +12,7 @@
 * [界面介绍](chu-jian-yi-xia/jie-mian-jie-shao.md)
 * [文件结构](chu-jian-yi-xia/wen-jian-jie-gou.md)
 * [名词解释](chu-jian-yi-xia/ming-ci-jie-shi.md)
+* [快捷键](chu-jian-yi-xia/kuai-jie-jian.md)
 * [一些需要遵守的规则](chu-jian-yi-xia/yi-xie-xu-yao-zun-shou-de-gui-ze.md)
 * [CN osu 玩家聚集地](chu-jian-yi-xia/cn-osu-wan-jia-ju-ji-di.md)
 
