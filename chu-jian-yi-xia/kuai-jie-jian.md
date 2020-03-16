@@ -187,3 +187,99 @@ osu!模式列表（依次序绑定键盘）
 
 
 ## 编辑模式
+<!-- just copy from wiki((((  -->
+### 键盘快捷键
+#### 通用
+<kbd>H</kbd>: 帮助（包括下列所有快捷键）
+
+#### 音乐
+<kbd>Z</kbd>: 停止
+
+<kbd>X</kbd>: 从开始播放
+
+<kbd>C</kbd>/空格</kbd>: 暂停/恢复
+
+<kbd>←</kbd>/<kbd>→</kbd>: 歌曲内快进（按住SHIFT四倍速快进）
+
+#### 书签指令
+<kbd>Ctrl</kbd>+<kbd>B</kbd>: 在当前位置添加书签
+
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>: 移除当前位置书签
+
+<kbd>Ctrl</kbd>+<kbd>←</kbd>: 跳转至前一书签
+
+<kbd>Ctrl</kbd>+<kbd>→</kbd>: 跳转至后一书签
+
+#### 保存与重置
+<kbd>Ctrl</kbd>+<kbd>L</kbd>: 恢复原保存状态
+
+<kbd>Ctrl</kbd>+<kbd>S</kbd>: 快速保存
+
+<kbd>Ctrl</kbd>+<kbd>N</kbd>: 移除所有note（但保持时间/歌曲设置不变）
+
+#### 模式切换
+
+<kbd>F1</kbd>: 做图模式
+
+<kbd>F2</kbd>: 设计模式（目前只有基础可用）
+
+<kbd>F3</kbd>: 时间模式
+
+<kbd>F4</kbd>: 歌曲设置
+
+#### 作图模式
+<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3/</kbd><kbd>4</kbd>: 改变选择/布置模式
+
+<kbd>Q</kbd>/<kbd>W</kbd>/<kbd>E</kbd>/<kbd>R</kbd>/<kbd>L</kbd>: 改变右手选项模式
+
+<kbd>Delete</kbd>: 移除所选notes
+
+<kbd>Ctrl</kbd>+<kbd>Z</kbd>,Y: 撤销/重复
+
+<kbd>Ctrl</kbd>+<kbd>A</kbd>: 选择所有notes
+
+<kbd>Ctrl</kbd>+<kbd>X</kbd>/<kbd>C</kbd>/<kbd>V</kbd>>: 剪切，复制，粘贴
+
+<kbd>Ctrl</kbd>+<kbd>D</kbd>: 克隆所选项目
+
+放置时按住<kbd>Alt</kbd>: 根据上一个note的时间对齐距离
+
+放置时按住<kbd>Shift</kbd>: 无网格对齐
+
+修改时按住<kbd>Shift</kbd>: 无网格或节拍（时间）对齐
+
+<kbd>J</kbd>/<kbd>K</kbd>: 在时间轴上向前/向后微移物件
+
+<kbd>G</kbd>: 循环调整网格大小
+
+<kbd>Ctrl</kbd>+<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd>: 调整网格大小（极小/小/中等/大）
+
+<kbd>Ctrl</kbd>+<kbd>,</kbd>/<kbd>.</kbd>: 逆时针/顺时针旋转物件
+
+<kbd>Ctrl</kbd>+<kbd>H</kbd>/<kbd>J</kbd>: 水平/竖直翻转物件
+
+#### 测时模式
+<kbd>T</kbd>: 用键盘敲击测BPM
+
+调整 BPM/Offset 时按下 <kbd>Shift</kbd> 键: 小球跳动的声音变为4倍速
+
+<kbd>Ctrl</kbd>+<kbd>B</kbd>: 重置现在的BPM标记线
+
+<kbd>Ctrl</kbd>+<kbd>P</kbd>: 添加新的BPM标记线
+
+### 鼠标快捷键
+<kbd>左键单击</kbd>: 放置打击圈，开始滑条或者为滑条添加一个新的轨迹点/选择物件
+
+<kbd>Ctrl</kbd> + <kbd>左键单击</kbd>: 为已经存在的滑条添加一个新的轨迹点
+
+<kbd>右键单击</kbd>: 设置新的连击，结束滑条或者为滑条移除一个轨迹点/移除物件（仅当在可选模式或在没有播放音频的情况下）
+
+<kbd>鼠标滚轮</kbd>: 时间轴向前/向后移动，按住Shift可使移动的幅度变为4倍
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>鼠标滚轮</kbd>: 改变放置物件/选择物件模式
+
+<kbd>Ctrl</kbd> + <kbd>鼠标滚轮</kbd>: 增加/减少节奏分数
+
+<kbd>Alt</kbd> + <kbd>鼠标滚轮</kbd>: 增加/减少自动间距控制的倍数。当鼠标指在时间轴上时改变时间轴的紧密程度
+
+<kbd>拖拽</kbd>: 移动选择物件的空间或时间位置，移动滑条的轨迹点，在时间轴上拖动滑条或转盘的尾部可以延长它们
