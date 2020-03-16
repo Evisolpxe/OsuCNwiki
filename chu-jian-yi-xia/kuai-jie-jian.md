@@ -1,285 +1,298 @@
+---
+tags:
+  - hotkey
+  - hotkeys
+  - keyboard
+  - shortcuts
+---
+
 # 快捷键
 
-osu!有非常多的快捷键，但是由于缺少引导和介绍，大部分玩家都是通过口口相传或者自己摸索了解到一些快捷键的用法。快捷键可以有效改善游戏~~刷pp~~体验。在[官方wiki](https://osu.ppy.sh/help/wiki/Shortcut_key_reference)上有关于快捷键的大部分介绍，另外在游戏的键位设置里也能找到一些快捷键。本文在官方wiki的基础上补充了一些其未收录的快捷键。
+osu!有非常多的快捷键，但是由于缺少引导和介绍，大部分玩家都是通过口口相传或者自己摸索了解到一些快捷键的用法。快捷键可以有效改善游戏~~刷pp~~体验。在[官方英文wiki](https://github.com/ppy/osu-wiki/blob/master/wiki/Shortcut_key_reference/en.md)上有关于快捷键的介绍，然而对应的中文版本已经年久失修。本文主要是由英文版本翻译而来，另外补充了一些没有收录但有用的操作。
 
-假如某个快捷键需要多个键协同操作，下面规定用“+”连接表示同时按下，用“-”连接表示依次按下，用“/”连接表示选其一按下。
+*注意：假如某个快捷键需要多个键协同操作，用“+”连接表示同时按下，用“-”连接表示依次按下，用“/”连接表示选其一按下。
 
-<!-- <kbd>Ctrl</kbd>+<kbd>H</kbd> -->
+<!-- *Note: This article lists the default keyboard shortcuts. You can change some of them in the [options](/wiki/Options).* -->
+
 ## 通用快捷键
-<kbd>Shift</kbd>+<kbd>F1</kbd>: 打开 osu!status （当网络错误时）
 
-<kbd>F7</kbd>: 切换帧数限制模式
+下列快捷键可在任意地方使用。
 
-<kbd>F8</kbd>: 显示/隐藏聊天栏
-
-<kbd>F9</kbd>: 显示/隐藏扩展聊天栏
-
-<kbd>F10</kbd>: 禁用所有鼠标按键（鼠标滚轮仍可使用）
-
-<kbd>F12</kbd>: 屏幕截图（同时按住Shift可将截图上传至服务器分享）
-
-<kbd>Insert</kbd>: 最小化osu!至通知栏（老板键）
-
-<kbd>Ctrl+F11</kbd>: 打开/关闭Frame time graph；按住<kbd>Ctrl</kbd>可以暂停图像变化
-
-<kbd>Ctrl</kbd>+<kbd>O</kbd>：打开侧边Options菜单
-
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `Alt` + `F4` | 关闭游戏客户端（无提示）。如果处于游玩界面、编辑器界面或者osu!direct界面，则退回到选曲界面或主菜单（osu!direct）。 |
+| `Alt` + `↑/↓` | 调整主音量；利用`←`或者`→`可以分别调整音效和音乐的音量。|
+| `Ctrl` + `Alt` + `Shift` + `S` | 重载皮肤。如果在游玩界面或者成绩结算界面按下，则会在回到选曲界面后重载。 |
+| `Ctrl` + `F11` | 打开/关闭frame times graph。按住`Ctrl`可以暂停图像变化。 |
+| `F7` | 切换帧数限制模式。 |
+| `F8` | 显示/隐藏聊天栏。 |
+| `F9` | 显示/隐藏扩展聊天栏。 |
+| `F10` | 禁用/启用所有鼠标按键（鼠标滚轮仍可使用）。 |
+| `F12` | 屏幕截图。点击右下角跳出的提示框会打开保存的文件夹。 |
+| `Shift` + `F12` | 截图保存并上传至服务器，同时自动在浏览器中打开截图，方便玩家分享截图。 |
+| `Insert` | 最小化osu!至通知栏并且静音游戏（老板键）。 |
+| `Shift` + `F1` | 当网络错误时会启动浏览器打开 [osu!status](https://twitter.com/osustatus "osu!status on Twitter")。假如是osu!服务器方面的问题，这个推特账号会及时更新情况。 |
+| `Ctrl` + `O` | 打开侧边Options菜单。假如不在主菜单界面将无法打开offset调节窗口。 |
 
 ## 主菜单
-<!-- 这里的主菜单指osu!刚打开时的界面（屏幕中间有一个粉饼）。 -->
 
-<kbd>F1</kbd>: 前一首歌
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `Alt` + `Enter` | 切换全屏模式。 |
+| `↑/↓` | 调整主音量；利用`←`或者`→`可以分别调整音效和音乐的音量。|
+| `Esc` | 返回上级菜单/退出osu!。 |
+| `P` / `E` / `O` | 打开play菜单。 |
+| `P`-`P`-`P` | 进入单人游戏模式。 |
+| `P`-`P`-`M` | 进入多人游戏模式。 |
+| `E`-`E` | 进入编辑模式。 |
+| `O` | 打开侧边Options菜单。 |
+| `Q` | 退出游戏（有提示）。 |
+| `F` | Toggle the FPS counter. |
 
-<kbd>F2</kbd>: 从开头播放
-
-<kbd>F3</kbd>: 暂停/开始
-
-<kbd>F4</kbd>: 停止
-
-<kbd>F5</kbd>: 下一首歌
-
-<kbd>F6</kbd>: 跳转至jukebox，可以搜索并选择某首歌播放或者选择某个收藏夹作为歌单播放 ~~（很好地体现了音乐播放器的特点）~~
-
-<kbd>Alt</kbd>+<kbd>Enter</kbd>: 切换全屏模式
-
-<kbd>Esc</kbd>: 返回上级菜单/退出osu!
-
-<kbd>P</kbd>: 游戏模式（敲击两次进入 osu!std 模式歌曲选择界面）
-
-<kbd>P</kbd>-<kbd>M</kbd>: 游戏模式 （多人游戏）
-
-<!-- P-S-T: 游戏模式 （太鼓歌曲选择）
-
-P-S-C: 游戏模式 （接水果歌曲选择）
-
-P-S-M: 游戏模式（osu!mania 歌曲选择） -->
-
-<kbd>E</kbd>: 编辑模式（歌曲选择）
-
-<kbd>J</kbd>: 跳转至jukebox，同F6
-
-<!-- Z/X/C/V/B: Jukebox控制（Winamp布局） -->
-
-<!-- D: osu!direct（仅限捐赠者使用）
-
-O: 选项
-
-Q: 退出 -->
-
-<kbd>R</kbd>: 随机歌曲
-
-<kbd>↑</kbd>/<kbd>↓</kbd>: 增大/减小音量
-
-<kbd>←</kbd>/<kbd>→</kbd>：前一首歌/下一首歌，等价于<kbd>F1</kbd>/<kbd>F5</kbd>
-
+### 点唱机
+主菜单右上角放歌的那个东西。
+<!-- 这里排版有点问题 -->
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `Z` / `F1` | 前一首歌。 |
+| `X` / `F2` | 从开头播放。 |
+| `C` | 暂停/播放 |
+| `F4` | 停止（重置播放进度） |
+| `V` / `F5` | 下一首歌。 |
+| `J` / `F6`| 打开点唱机选曲菜单，可以搜索并选择某首歌播放或者选择某个收藏夹作为歌单播放 ~~（很好地体现了音乐播放器的特点）~~。 |
+| `R` | 随机播放。 |
 
 ## 歌曲选择
-<kbd>F1</kbd>: Mod选择
 
-<kbd>F2</kbd>: 随机谱面
-<!-- F2: 随机谱面（快速按下两次立即选择随机谱面） -->
+*注意：下列部分快捷键在多人模式选曲中可能无效。*
 
-<kbd>Shift</kbd>+<kbd>F2</kbd>：回到随机选择前的谱面，等价于<kbd>F2</kbd>的逆操作
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `F1` | Mod选择。 |
+| `F2` | 随机谱面。 |
+| `Shift` + `F2` | 回到随机选择前的谱面，等价于`F2`的逆操作。 |
+| `F3` | 谱面选项。 |
+| `F5` | 刷新列表，一般是为了读入刚下载好但尚未读入列表中的谱面。 |
+| `Shift` + `Delete` | 打开删除对话框，提示选择删除选定图的所有难度、选定难度、所有可见谱面。 |
+| `Ctrl` + `1` | osu!std模式。 |
+| `Ctrl` + `2` | osu!taiko模式。 |
+| `Ctrl` + `3` | osu!catch模式。 |
+| `Ctrl` + `4` | osu!mania模式。 |
+| `Ctrl` + `Enter` | Auto模式演示当前谱面。 |
+| `Ctrl` + `Shift` + `Enter` | Cinema模式演示当前谱面。 |
+| `Ctrl` + `A` | 切换Auto模式。 |
+| `Ctrl` + `F3` / `Ctrl` + `+` | osu!mania模式下加快osu!mania的下落速度。 |
+| `Ctrl` + `F4` / `Ctrl` + `-` | osu!mania模式下降低osu!mania的下落速度。 |
+| `Ctrl` + `Backspace` | 搜索框退格。 |
+| `Up/Down Arrow` | 分别选择上/下一张图。 |
+| `Left/Right Arrow` | 分别选择上/下一套图。 |
+| `Page Up/Down` | 歌曲列表向上/下滚动。 |
+| `Enter` | 开始游玩选定谱面。 |
+| `Shift` + `Left/Right Arrow` | 选择上/下一套图。|
+| `Shift` + `Enter` | 打开/合并选定的这套图。 |
 
-<kbd>F3</kbd>: 谱面选项
+### Mod选择
 
-<kbd>F5</kbd>: 刷新列表（修复模式），一般是为了读入刚下载好但尚未读入列表中的谱面
+<!-- *Main page: [Game modifiers](/wiki/Game_Modifiers)* -->
 
-<kbd>Shift</kbd>+<kbd>Delete</kbd>: 删除当前谱面
+*注意：需进入mod选择界面。*
 
-<kbd>Ctrl</kbd>+<kbd>Enter</kbd>: 自动模式演示当前谱面
+*注意： Target practice (osu!std), 1K and 2K (osu!mania), Co-op (osu!mania), and Mirror (osu!mania) 没有快捷键。*
 
-<kbd>Ctrl</kbd>+<kbd>A</kbd>: 切换自动模式
-
-<kbd>Ctrl</kbd>+<kbd>+</kbd>/<kbd>Ctrl</kbd>+<kbd>-</kbd>: osu!mania模式下调整osu!mania的下落速度变化
-
-<kbd>PageUp</kbd>/<kbd>PageDown</kbd>: 列表下/上移（大幅度）
-
-<kbd>↑</kbd>/<kbd>↓</kbd>: 列表下/上移；同时当选择的这套图各难度谱面相邻显示时，选择这套图里上/下一难度的谱面
-
-<kbd>←</kbd>/<kbd>→</kbd>：选择上/下一套图
-
-<kbd>Enter</kbd>: 确认选择，进入游戏模式
-
-<kbd>ESC</kbd>：清空搜索框内容/返回主菜单
-
-
-### 关于搜索
-
-在歌曲选择界面直接敲入字母与数字可以开始搜索谱面。利用一些关键词可以更方便地过滤不想要的谱面，对于拥有动辄几万张谱面的玩家可以有效提高搜索效率。
-
-这些过滤规则的输入规则一般是“关键词-逻辑比较符号-具体数字”。多重过滤规则之间可以用空格隔开表示与操作。逻辑比较符号包括“</>/=/!=”，具体数字由玩家决定。
-关键词基本上是谱面的属性，一些关键词列举如下：
-stars, bpm, ar, od, hp, cs, keys, ......
-
-示例：将“stars=6.85 ar=9.6 bpm=200”复制后在歌曲选择页面按"<kbd>Ctrl</kbd>+<kbd>V</kbd>"。
-
-
-## 模式选择
-注意：特殊模式如Perfect或Nightcore需要多点击一次来选择。
-
-osu!模式列表（依次序绑定键盘）
-
-<kbd>Q</kbd>: Easy
-
-<kbd>W</kbd>: No Fail
-
-<kbd>E</kbd>: Half-Time
-
-<kbd>A</kbd>: Hard Rock
-
-<kbd>S</kbd>: Sudden Death
-
-<kbd>D</kbd>: Double Time
-
-<kbd>F</kbd>: Hidden
-
-<kbd>G</kbd>: Flashlight
-
-<kbd>X</kbd>: Relax （在osu!mania 4/5/6/7/8K模式下无效）
-
-<kbd>C</kbd>: Auto-Pilot
-
-<kbd>V</kbd>: Spun-Out
-
-<kbd>B</kbd>: Auto
-
+| 快捷键 | Mod |
+| :-- | :-- |
+| `Q` | Easy |
+| `W` | No Fail |
+| `E` | Half Time |
+| `A` | Hard Rock |
+| `S` | Sudden Death |
+| `S`-`S` | Perfect |
+| `D` | Double Time |
+| `D`-`D` | Nightcore |
+| `F` | Hidden (osu!standard, osu!taiko, and osu!catch) or Fade In (osu!mania)
+| `F`-`F` | Hidden (osu!mania) |
+| `G` | Flashlight |
+| `Z` | Relax (osu!standard, osu!taiko, osu!catch) /  xK mods (osu!mania) |
+| `X` | Auto Pilot (osu!standard) / Random (osu!mania) |
+| `C` | Spun Out (osu!standard) |
+| `V` | Auto |
+| `V`-`V` | Cinema |
+| `B` | Score v2 |
+| `3` to `9` | 3K to 9K (osu!mania) |
 
 ## 游戏模式
-<!-- +/-: 调整本地延时（按住SHIFT/CTRL更精确调节） -->
-<kbd>+</kbd>/<kbd>-</kbd>: 调整本地offset
 
-<kbd>Esc</kbd>: 暂停（在自动模式下会直接退出）
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `+` or `-` | 调整本地offset (hold `Alt` to change the precision). |
+| `Esc` | 暂停（在观看replay或者Auto、Cinema模式下会直接退出） |
+| `Space` | 跳过开头。 |
+| `Tab` | 切换左侧榜单显示模式（一直显示/仅在休息时段显示）。 |
+| `Shift` + `Tab` | 隐藏/显示acc，分数，血条，进度条等元素。 |
+| `F3` or `F4` | 调整 osu!mania下落速度 (在谱面开头使用有效). |
+| `Ctrl` + `R` / `` ` `` | 立刻retry，并自动跳过开头（出于防误触考虑，轻按是无效的；这个键位可以在Options里的“键位设置”中的quick retry对应的按键修改）。 |
 
-<kbd>空格</kbd>: 跳过开头部份
+## Replay播放
 
-<kbd>Tab</kbd>: 切换左侧榜单显示模式（一直显示/仅在休息时段显示）
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `H` | 隐藏/显示界面上的大部分元件（除了按键计数框）。 |
+| `F` | 1/2/0.5倍速播放（一个可能的bug是假如在进入replay播放瞬间按`F`改变倍速，整个replay的播放倍速将以这个瞬间改变后的倍速为准，也就是可能获得1-4倍或0.25-1倍速的播放）。 |
+| `F2` | （在成绩结算页面下）导出replay为.osr文件，保存目录为osu/Replays。 |
 
-<kbd>Shift</kbd>+<kbd>tab</kbd>：隐藏/显示acc，分数，血条，进度条等
+*注意：下面快捷键仅在测试版（Cutting Edge）中有效，第一次切换要重启游戏。*
 
-<kbd>F3</kbd>/<kbd>F4</kbd>/<kbd>Ctrl</kbd>+<kbd>+</kbd>/<kbd>Ctrl</kbd>+<kbd>-</kbd>: osu!mania模式下调整osu!mania的下落速度变化
-
-<kbd>~</kbd>：立刻retry，并自动跳过开头（出于防误触考虑，快速轻按是无效的；这个键位可以在Options里的“键位设置”中的quick retry对应的按键修改）
-
-<kbd>空格</kbd>：跳过开头（当有skip提示时）
-
-
-## 播放Replay
-
-<kbd>F</kbd>：改变为1/2/0.5倍速播放（一个可能的bug是假如在进入replay播放瞬间按<kbd>F</kbd>改变倍速，整个replay的播放倍速将以这个瞬间改变后的倍速为准，也就是可能获得1-4倍或0.25-1倍速的播放）
-
-<kbd>H</kbd>：隐藏界面上的大部分元件（除了按键计数框）
-
-<kbd>F2</kbd>（仅成绩结算页面下）：导出replay为.osr文件，默认目录为osu/Replays
-
-**数字键**（仅在测试版（Cutting Edge）中有效，第一次切换要重启游戏）
-
-小键盘区的数字是无效的，只能使用字母区上面那一排数字键。
-<!-- 数字键调整的倍速是基于F键调整的倍速上的，以F键调整的倍速为原速进行调整。 -->
-
-<kbd>5</kbd>：暂停播放
-
-<kbd>6</kbd>：继续播放（56交替按可以达到超低速看replay的效果）
-
-<kbd>7</kbd>/<kbd>8</kbd>/<kbd>9</kbd>：加速replay播放，数字越大越快 ~~（真的非常非常非常快）~~
-
-<kbd>0</kbd>：原速播放
-
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `5` | 暂停。 |
+| `6` / `0` | 原速播放。 |
+| `7` | 2倍速。 |
+| `8` | 3倍速。 |
+| `9` | 4倍速。 |
 
 ## 编辑模式
-<!-- just copy from wiki((((  -->
-### 键盘快捷键
-#### 通用
-<kbd>H</kbd>: 帮助（包括下列所有快捷键）
 
-#### 音乐
-<kbd>Z</kbd>: 停止
+<!-- *Main page: [Beatmap Editor](/wiki/Beatmap_Editor)* -->
 
-<kbd>X</kbd>: 从开始播放
+### 通用
 
-<kbd>C</kbd>/空格</kbd>: 暂停/恢复
+下列快捷键可在编辑器内随时使用。
 
-<kbd>←</kbd>/<kbd>→</kbd>: 歌曲内快进（按住SHIFT四倍速快进）
+因为~~M姓玩家不懂作图~~该部分涉及到作图方面的知识，暂时没有翻译。
+| 快捷键 | 效果 |
+| :-- | :-- |
+| `Z` | 跳至第一个note或歌曲开头处。 |
+| `V` | 跳至最后一个note或歌曲结尾处。 |
+| `X` | 从头播放。 |
+| `C` / `Space` | 暂停/播放。 |
+| `Left Arrow` / `Right Arrow` | Skip through the song. |
+| `Up Arrow` or `Down Arrow` | Skip between timing points. |
+| `Shift` + `Left Arrow` or `Shift` + `Right Arrow` | Skip through the song at 4x speed. |
+| `Ctrl` + `B` | Add a bookmark at the current timestamp. |
+| `Ctrl` + `Shift` + `B` | Remove the bookmark in the current timestamp. |
+| `Ctrl` + `Left/Right Arrow` | Jump to the previous/next bookmark. |
+| `Ctrl` + `L` | Revert to the last saved state (partial). This will reload the `.osu` and `.osb` files. |
+| `Ctrl` + `Shift` + `L` | Revert to the last saved state (full). This will reload everything. |
+| `Ctrl` + `O` | Opens the difficulty selection window. |
+| `Ctrl` + `S` | Save the beatmap in its current state. |
+| `Ctrl` + `N` | Prompt to remove all hit objects. |
+| `Ctrl` + `Up/Down Arrow` | Increase/decrease the playback speed by 25%. |
+| `Ctrl` + `Shift` + `Up/Down Arrow` | Increase/decrease the playback speed by 5%. |
+| `F1` | Switch to the [compose](/wiki/Compose) mode. |
+| `F2` | Switch to the [design](/wiki/Design) mode. |
+| `F3` | Switch to the [timing](/wiki/Timing) mode. |
+| `F4` | Open the [song setup](/wiki/Song_Setup) dialog. |
+| `F5` | Enter test mode. |
+| `F6` | Open the timing and control points dialog. |
+| `Ctrl` + `P` | Add an uninherited timing point at the current timestamp. If not in the timing mode, this will also open the timing and control points dialog. |
+| `Ctrl` + `Shift` + `P` | Add a inherited timing point at the current timestamp. This will also open the timing and control points dialog. |
+| `Ctrl` + `I` | Delete the current uninherited or inherited section. This will not work on first uninherited timing point. |
 
-#### 书签指令
-<kbd>Ctrl</kbd>+<kbd>B</kbd>: 在当前位置添加书签
+#### Mouse
 
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>: 移除当前位置书签
+| Shortcut | Action |
+| :-- | :-- |
+| `Mouse Wheel Up/Down` | Seek forward/backward. |
+| `Shift` + `Mouse Wheel Up/Down` | Seek forward/backward at 4x. |
+| `Ctrl` + `Mouse Wheel Up/Down` | Adjust the snap divisor. |
+| `Alt` + `Mouse Wheel Up/Down` | Adjust the distance snapping multiplier when hovering over the playfield. Adjust the timeline zoom when hovering over the timeline. |
+| `Alt` + `Shift` + `Mouse Wheel Up/Down` | More precisely adjust the distance snapping multiplier when hovering over the playfield. |
 
-<kbd>Ctrl</kbd>+<kbd>←</kbd>: 跳转至前一书签
+### Compose
 
-<kbd>Ctrl</kbd>+<kbd>→</kbd>: 跳转至后一书签
+#### Mouse
 
-#### 保存与重置
-<kbd>Ctrl</kbd>+<kbd>L</kbd>: 恢复原保存状态
+| Shortcut | Action |
+| :-- | :-- |
+| `Right Click` | Toggle new combo (when placing new hit objects) or delete object (when selecting). |
 
-<kbd>Ctrl</kbd>+<kbd>S</kbd>: 快速保存
+#### General
 
-<kbd>Ctrl</kbd>+<kbd>N</kbd>: 移除所有note（但保持时间/歌曲设置不变）
+| Shortcut | Action |
+| :-- | :-- |
+| `Alt` + `F4` or `Esc` | Return to song selection. |
+| `Ctrl` + `Z` | Undo. |
+| `Ctrl` + `Y` | Redo. |
+| `Ctrl` + `A` | Select all hit objects. |
+| `Ctrl` + `X` | Cut. |
+| `Ctrl` + `C` | Copy. |
+| `Ctrl` + `V` | Paste. |
+| `Ctrl` + `D` | Clone the selection. This will paste the selection 1 measure after last selected object. |
+| `Delete` | Delete. |
+| `1`, `2`, `3`, or `4` | Switch between placement/selection mode: select, circle, slider, and spinner respectively (osu!standard, osu!taiko, or osu!catch). |
+| `1`, `2`, or `3` | Switch between placement/selection mode: select, circle, and hold respectively (osu!mania). |
+| `Ctrl` + `Alt` + `Mouse Wheel Up/Down` | Switch between placement/selection modes. |
+| `Ctrl` + `Shift` + `A` | Open [AiMod](/wiki/Beatmap_Editor/AiMod). |
 
-#### 模式切换
+#### Playfield
 
-<kbd>F1</kbd>: 做图模式
+| Shortcut | Action |
+| :-- | :-- |
+| `Alt` | Temporarily toggle [distance snap](/wiki/Beatmap_Editor/Distance_Snap) while held down. |
+| `Y` | Toggle distance snap. |
+| `Shift` | Temporarily toggle grid snap while held down. |
+| `T` | Toggle grid snap. |
+| `G` | Cycle through grid size. |
+| `Ctrl` + `1` | Set grid size to tiny. |
+| `Ctrl` + `2` | Set grid size to small. |
+| `Ctrl` + `3` | Set grid size to medium. |
+| `Ctrl` + `4` | Set grid size to large. |
+| `L` | Toggle locking of hit objects. |
 
-<kbd>F2</kbd>: 设计模式（目前只有基础可用）
+#### Object manipulation
 
-<kbd>F3</kbd>: 时间模式
+| Shortcut | Action |
+| :-- | :-- |
+| `Q` | Toggle new combo. |
+| `Ctrl` + `,` | Rotate the selection by 90 degrees anticlockwise. |
+| `Ctrl` + `.` | Rotate the selection by 90 degrees clockwise. |
+| `Ctrl` + `H` | Flip the selection horizontally. |
+| `Ctrl` + `J` | Flip the selection vertically. |
+| `Ctrl` + `G` | Reverse the selection. That is, move the first selected object to the last selected object and so on. |
+| `Ctrl` + `Shift` + `R` | Rotate the selected hit objects by a specified angle (opens a dialog). |
+| `Ctrl` + `Shift` + `S` | Scale selected hit objects by a specified amount (opens a dialog). |
+| `Ctrl` + `Shift` + `D` | Generate polygons with a specificied number of points (opens a dialog). |
+| `Ctrl` + `Shift` + `F` | Convert the selected slider into a hit circle stream (opens a dialog). |
+| `Ctrl` + `Left/Right/Up/Down Arrow` | Nudge the selected notes in the pressed direction. (osu!standard, osu!taiko, osu!catch) |
+| `Ctrl` + `Left/Right Arrow` | Move selected objects left or right one column. (osu!mania) |
+| `Ctrl` + `Up/Down Arrow` | Move selected objects up or down one tick in time. (osu!mania) |
 
-<kbd>F4</kbd>: 歌曲设置
+#### Hitsounding
 
-#### 作图模式
-<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3/</kbd><kbd>4</kbd>: 改变选择/布置模式
+| Shortcut | Action |
+| :-- | :-- |
+| `W` | Toggle the whistle addition to selection. |
+| `E` | Toggle the Finish addition to selection. |
+| `R` | Toggle the Clap addition to selection. |
+| `Shift` + (`Q`, `W`, `E`, or `R`) | Change sampleset for the selection to auto, normal, soft, or drum respectively. |
+| `Ctrl` + (`Q`, `W`, `E`, or `R`) | Change addition set for the selection to auto, normal, soft, or drum respectively. |
+| `Ctrl` + `Shift` + `I` | Open the sample import dialog. |
 
-<kbd>Q</kbd>/<kbd>W</kbd>/<kbd>E</kbd>/<kbd>R</kbd>/<kbd>L</kbd>: 改变右手选项模式
+#### Timeline
 
-<kbd>Delete</kbd>: 移除所选notes
+| Shortcut | Action |
+| :-- | :-- |
+| `Shift` + (`1`, `2`, `3`, `4`, `6`, or `8`) | Set the [beat snap divisor](/wiki/Beatmap_Editor/Beat_Snap_Divisor) to 1/1, 1/2, 1/3, 1/4, 1/6, and 1/8 respectively. |
+| `Shift` (while dragging in the timeline) | Ignore the beat snap divisor snapping. |
+| `J` | Nudge the selection backwards 1 divisor. |
+| `K` | Nudge the selection forwards 1 divisor. |
 
-<kbd>Ctrl</kbd>+<kbd>Z</kbd>,Y: 撤销/重复
+### Design
 
-<kbd>Ctrl</kbd>+<kbd>A</kbd>: 选择所有notes
+| Shortcut | Action |
+| :-- | :-- |
+| `I` | Open the sprite library overlay. |
+| `Ctrl` + `Z` | Undo. |
+| `Ctrl` + `Y` | Redo. |
+| `Ctrl` + `X` | Cut the selected sprite. |
+| `Ctrl` + `C` | Copy the selected sprite. |
+| `Ctrl` + `V` | Paste the sprite at the current time. *Note: Pasted sprites will not be shown on the layer list until the beatmap is saved and reloaded.* |
+| `Delete` | Remove the selected sprite from the layer. |
+| `W`, `A`, `S`, `D` | Nudge the selected sprite up, left, down, or right respectively one [osu!pixel](/wiki/Glossary#osupixel). |
 
-<kbd>Ctrl</kbd>+<kbd>X</kbd>/<kbd>C</kbd>/<kbd>V</kbd>>: 剪切，复制，粘贴
+### Timing
 
-<kbd>Ctrl</kbd>+<kbd>D</kbd>: 克隆所选项目
-
-放置时按住<kbd>Alt</kbd>: 根据上一个note的时间对齐距离
-
-放置时按住<kbd>Shift</kbd>: 无网格对齐
-
-修改时按住<kbd>Shift</kbd>: 无网格或节拍（时间）对齐
-
-<kbd>J</kbd>/<kbd>K</kbd>: 在时间轴上向前/向后微移物件
-
-<kbd>G</kbd>: 循环调整网格大小
-
-<kbd>Ctrl</kbd>+<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd>: 调整网格大小（极小/小/中等/大）
-
-<kbd>Ctrl</kbd>+<kbd>,</kbd>/<kbd>.</kbd>: 逆时针/顺时针旋转物件
-
-<kbd>Ctrl</kbd>+<kbd>H</kbd>/<kbd>J</kbd>: 水平/竖直翻转物件
-
-#### 测时模式
-<kbd>T</kbd>: 用键盘敲击测BPM
-
-调整 BPM/Offset 时按下 <kbd>Shift</kbd> 键: 小球跳动的声音变为4倍速
-
-<kbd>Ctrl</kbd>+<kbd>B</kbd>: 重置现在的BPM标记线
-
-<kbd>Ctrl</kbd>+<kbd>P</kbd>: 添加新的BPM标记线
-
-### 鼠标快捷键
-<kbd>左键单击</kbd>: 放置打击圈，开始滑条或者为滑条添加一个新的轨迹点/选择物件
-
-<kbd>Ctrl</kbd> + <kbd>左键单击</kbd>: 为已经存在的滑条添加一个新的轨迹点
-
-<kbd>右键单击</kbd>: 设置新的连击，结束滑条或者为滑条移除一个轨迹点/移除物件（仅当在可选模式或在没有播放音频的情况下）
-
-<kbd>鼠标滚轮</kbd>: 时间轴向前/向后移动，按住Shift可使移动的幅度变为4倍
-
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>鼠标滚轮</kbd>: 改变放置物件/选择物件模式
-
-<kbd>Ctrl</kbd> + <kbd>鼠标滚轮</kbd>: 增加/减少节奏分数
-
-<kbd>Alt</kbd> + <kbd>鼠标滚轮</kbd>: 增加/减少自动间距控制的倍数。当鼠标指在时间轴上时改变时间轴的紧密程度
-
-<kbd>拖拽</kbd>: 移动选择物件的空间或时间位置，移动滑条的轨迹点，在时间轴上拖动滑条或转盘的尾部可以延长它们
+| Shortcut | Action |
+| :-- | :-- |
+| `T` | Set BPM and offset when tapped to the beat of the song. |
+| `Shift` while adjusting the BPM and offset | Increment 4x the normal amount. |
