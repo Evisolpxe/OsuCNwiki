@@ -22,11 +22,11 @@ cyperdark运营的osu!skins:[https://skins.osuck.net/](https://skins.osuck.net/)
 
 目前国外最大的osu!皮肤站 由用户上传 管理员审核 作者为cyperdark 国外名皮肤制作者(Skinner)
 
-Circle People运营的osu! Skins:[https://circle-people.com/skins/](https://skins.osuck.net/)
+Circle People运营的osu! Skins:[https://circle-people.com/skins/](https://circle-people.com/skins/)
 
 团体Circle People运营的osu!皮肤站 主要包含顶级玩家的皮肤
 
-Subreddit:[https://www.reddit.com/r/OsuSkins/](https://skins.osuck.net/)
+Subreddit:[https://www.reddit.com/r/OsuSkins/](https://www.reddit.com/r/OsuSkins/)
 
 非官方译名:红迪 用户创建的子贴分区 主要包含皮肤发布 类似官方论坛
 
