@@ -109,3 +109,5 @@ ppv2通过计算每一张图的不同分项的难度（大致可以分为aim、f
 
 _**Enjoy the game!**_
 
+> 本篇贡献者: Jack\_Wang\_
+
