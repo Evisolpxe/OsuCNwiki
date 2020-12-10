@@ -72,9 +72,7 @@ description: osu相关工具一览
   * 简介：查rep挂。
 * replay to video
   * 项目网址：[https://github.com/uyitroa/osr2mp4-app](https://github.com/uyitroa/osr2mp4-app)
-  * 简介：将replay转成视频。 &lt;!-- - 需求
-  * osu自带的replay播放太弱了，除了录视频以外几乎没啥用，想看看怎么miss的非常麻烦。
-  * 好用的replay viewer至少应该做到：任意倍速、随机拖动进度条、暂停、逐帧播放、zx点击标记 --&gt;
+  * 简介：将replay转成视频。
 
 ### stream
 
@@ -97,7 +95,7 @@ description: osu相关工具一览
 
 * gosumemory
   * 项目地址：[https://github.com/l3lackShark/gosumemory](https://github.com/l3lackShark/gosumemory)
-  * 简介：许多top直播和CPOL录视频使用的工具，可以自己定制出非常好看的直播界面。还支持比赛直播。 &lt;!-- \#\#\# 眼动仪 --&gt; &lt;!-- \#\#\# 比赛直播界面 --&gt;
+  * 简介：CPOL录视频以及许多top直播使用的工具，可以自己定制出非常好看的直播界面。还支持比赛直播。
 
 ### mirrors
 
@@ -114,7 +112,7 @@ description: osu相关工具一览
 
 * osu player
   * 项目地址：[https://github.com/Milkitic/Osu-Player](https://github.com/Milkitic/Osu-Player)
-  * 简介：osu播放器，除了音乐外还可以播放hitsound、video和storyboard等。
+  * 简介：[yf_bmp](https://osu.ppy.sh/users/1243669)写的osu播放器，除了音乐外还可以播放hitsound、video和storyboard等。
 
 
 
