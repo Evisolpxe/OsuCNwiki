@@ -38,6 +38,7 @@
 * [需要知道的硬件知识](jin-jie-zhi-lu/xu-yao-zhi-dao-de-ying-jian-zhi-shi.md)
 * [需要用到的软件知识](jin-jie-zhi-lu/xu-yao-yong-dao-de-ruan-jian-zhi-shi.md)
 * [围绕osu!开发](jin-jie-zhi-lu/wei-rao-osu-kaifa.md)
+* [Review of osu! Tools](jin-jie-zhi-lu/review-of-osu-tools.md)
 * [小心伤病！](jin-jie-zhi-lu/xiao-xin-shang-bing.md)
 * [Tournament](jin-jie-zhi-lu/tournament.md)
 

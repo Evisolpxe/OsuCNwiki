@@ -1,7 +1,6 @@
 # Review of osu! Tools
 ## ranking
 ### 基于pp的排名
-<!-- 核心是pp算法。 -->
 - 官方pp
     - 项目网址：https://github.com/ppy/osu-performance
     - 简介：官方的pp计算器，不需要介绍了。
@@ -32,19 +31,12 @@
     - 简介：osu!matchmaking是一个面向osu!std的mp系统，同样使用elo作为评价标准。主要特点在于搭建的自动mp机器人（maidbot）以及自带图池，玩家可以随时进行排位mp。具体使用方法请加入discord服务器了解。
 
 ## mapping
-<!-- ### editor -->
 - osumapper
     - 项目网址：https://github.com/kotritrona/osumapper
     - 简介：基于深度学习的自动作图器。
 - mappingtools
     - 项目网址：https://mappingtools.seira.moe/
     - 简介：将各种作图辅助软件集合到这一个程序中（顺便一提我是从[fanzhen](https://osu.ppy.sh/users/418699)关于XNOR的[推文](https://twitter.com/fanzhen0019/status/1297837187984064512?s=20)里找到的这个）。
-    
-<!-- https://docs.google.com/document/d/1oKqrxLPVk9O5-_yokEQPcvgdis2dj1ESYWv-K659Z7U/edit -->
-
-<!-- ## skins
-### 收集网站
-### 制作教程 -->
 
 ## collections
 - osu Collections Editor
@@ -67,13 +59,10 @@
 - replay to video
     - 项目网址：https://github.com/uyitroa/osr2mp4-app
     - 简介：将replay转成视频。
-<!-- - 需求
-    - osu自带的replay播放太弱了，除了录视频以外几乎没啥用，想看看怎么miss的非常麻烦。
-    - 好用的replay viewer至少应该做到：任意倍速、随机拖动进度条、暂停、逐帧播放、zx点击标记 -->
 
 ## stream
 ### 插件
-<!-- - pp、map信息 -->
+
 - streamCompanion
     - 项目网址：https://github.com/Piotrekol/StreamCompanion
     - 简介：主要可以显示实时pp与谱面信息，还有其他一些功能例如Key counter等等。
@@ -90,8 +79,6 @@
 - gosumemory
     - 项目地址：https://github.com/l3lackShark/gosumemory
     - 简介：许多top直播和CPOL录视频使用的工具，可以自己定制出非常好看的直播界面。还支持比赛直播。
-<!-- ### 眼动仪 -->
-<!-- ### 比赛直播界面 -->
 
 
 ## mirrors
@@ -108,12 +95,3 @@
 - osu player
     - 项目地址：https://github.com/Milkitic/Osu-Player
     - 简介：osu播放器，除了音乐外还可以播放hitsound、video和storyboard等。
-
-<!-- ## bot
-### qq
-- 白菜
-- sayobot
-- 小阿日
-- 猫猫
-### osu
-- maidbot -->

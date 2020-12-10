@@ -16,6 +16,6 @@
 
 ## 现Wiki部分贡献成员：
 
-[DuNai](https://osu.ppy.sh/users/2522197) \| [Explosive](https://osu.ppy.sh/users/245276) \| [EmertxE](https://osu.ppy.sh/users/954557) \| [iMey](https://osu.ppy.sh/users/1597068) \| [MatsumotoRise](https://osu.ppy.sh/users/672726) \| [MaKenanbuReraaa](https://osu.ppy.sh/users/3331264) \| [Miracle](https://osu.ppy.sh/users/5964035) \| [Mother Ship](https://osu.ppy.sh/users/2545898) \| [rustbell](https://osu.ppy.sh/users/227717)  
+[demisemiquaver](https://osu.ppy.sh/users/8501053) \| [DuNai](https://osu.ppy.sh/users/2522197) \| [Explosive](https://osu.ppy.sh/users/245276) \| [EmertxE](https://osu.ppy.sh/users/954557) \| [iMey](https://osu.ppy.sh/users/1597068) \| [MatsumotoRise](https://osu.ppy.sh/users/672726) \| [MaKenanbuReraaa](https://osu.ppy.sh/users/3331264) \| [Miracle](https://osu.ppy.sh/users/5964035) \| [Mother Ship](https://osu.ppy.sh/users/2545898) \| [rustbell](https://osu.ppy.sh/users/227717)  
 
 
