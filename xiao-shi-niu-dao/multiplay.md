@@ -57,3 +57,4 @@ mp让玩家可以交换自己喜欢的图和歌，同时带来了玩家之间的
 | !mp move username slot | 用于将该玩家移动到房间的特定位置。 |
 | !mp timer n | 计时n秒。 |
 | !mp invite username | 邀请该玩家进入房间。 |
+
