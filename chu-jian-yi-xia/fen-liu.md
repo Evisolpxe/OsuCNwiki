@@ -36,15 +36,19 @@
 
 不支持对谱面自带皮肤等组件的处理，但是有比较强大的搜索功能。
 
-#### 血猫
+### 在建中
 
-网址：[https://bloodcat.com/osu/](https://bloodcat.com/osu/)
+#### chimu.moe
 
-这是一个2012上线的，由韩国网友开发并运营的osu!镜像站，具体开发者信息可查看[https://bloodcat.com/osu/info.php](https://bloodcat.com/osu/info.php)。
+网址：[https://chimu.moe/](https://chimu.moe/)
 
-主页在2015年汉化，提供Beatmap Packs分流下载，同时支持处理谱面组件和搜索，并且支持与osu!客户端一样的按AR、length等搜索，搜索对外提供JSON API。
+由于著名谱面镜像站血猫（bloodcat）在2020年末关停，作为替代，2021年初chimu.moe计划上线，目前网站还在建设中，主页可以查看建设进度
 
-对Unrank图的处理策略也是即时爬取，并且网站开发者会删除质量过差的图。
+目前可以使用如下链接下载谱面
+
+https://chimu.moe/d/:set_id
+
+https://chimu.moe/osu/:beatmap_id
 
 ### 纪念碑
 
@@ -65,6 +69,18 @@
 #### osu.yas-online.net
 
 主页尚存，但是请求下载时跳转的域名都不存在，并且Beatmap Packs只更新到400+。基本宣告死亡。
+
+#### 血猫
+
+网址：[https://bloodcat.com/osu/](https://bloodcat.com/osu/)
+
+这是一个2012上线的，由韩国网友开发并运营的osu!镜像站，~~具体开发者信息可查看[https://bloodcat.com/osu/info.php](https://bloodcat.com/osu/info.php)~~。
+
+主页在2015年汉化，提供Beatmap Packs分流下载，同时支持处理谱面组件和搜索，并且支持与osu!客户端一样的按AR、length等搜索，搜索对外提供JSON API。
+
+对Unrank图的处理策略也是即时爬取，并且网站开发者会删除质量过差的图。
+
+已于2020年末关站，打开其域名会自动重定向到在建镜像站chimu.moe
 
 > 本篇贡献者: Mother Ship
 
