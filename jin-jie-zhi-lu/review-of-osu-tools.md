@@ -58,6 +58,9 @@ description: osu相关工具一览
 * collection sharing
   * 项目网址：[https://collections.osustuff.ri.mk/](https://collections.osustuff.ri.mk/)
   * 简介：[arily](https://osu.ppy.sh/users/1123053)写的。同样是一个收藏夹分享网站，可以上传自己的收藏夹或下载别人的分享。可以用它来传赛图。
+* Collection-Helper
+  * 项目网址：[https://github.com/nzbasic/Collection-Helper](https://github.com/nzbasic/Collection-Helper)
+  * 简介：比较新的收藏夹管理软件，特点在于可以自定义筛选谱面。
 
 ### replay
 
@@ -76,8 +79,6 @@ description: osu相关工具一览
 
 ### stream
 
-#### 插件
-
 * streamCompanion
   * 项目网址：[https://github.com/Piotrekol/StreamCompanion](https://github.com/Piotrekol/StreamCompanion)
   * 简介：主要可以显示实时pp与谱面信息，还有其他一些功能例如Key counter等等。
@@ -90,17 +91,36 @@ description: osu相关工具一览
 * kps
   * 项目网址：[https://github.com/yugecin/osukps](https://github.com/yugecin/osukps)
   * 简介：显示按键状态、每秒按键数（kps）、累计按键次数。
-
-#### 直播界面
-
 * gosumemory
   * 项目地址：[https://github.com/l3lackShark/gosumemory](https://github.com/l3lackShark/gosumemory)
   * 简介：CPOL录视频以及许多top直播使用的工具，可以自己定制出非常好看的直播界面。还支持比赛直播。
+
+### statistics
+
+#### 数据追踪
+
+* osu!track
+  * 网址：[https://ameobea.me/osutrack/](https://ameobea.me/osutrack/)
+  * 简介：可能是比较早的爬个人数据的网站。能看到非常古老的个人bp，很适合老玩家怀旧。
+* osuTracker
+  * 网址：[https://osutracker.com/](https://osutracker.com/)
+  * 简介：主要特点是除了个人之外还有基于国家（或地区）的统计数据，比如可以看 CN 所有玩家的 bp 合成一个人的话是多少 pp。此外还有一些关于 osu! 有趣的数据统计结果可以欣赏。
+* osu! Stats
+  * 网址：[https://osustats.ppy.sh/](https://osustats.ppy.sh/)
+  * 简介：统计玩家所有全球排名前200左右的谱面，一天更新一次。另外页面最下面会显示前一天最高的25个pp记录。相比bp来说，上榜的成绩也许更能体现出实力。
+
+#### PP图统计
+
+有一些网站统计了玩家最常刷的pp图；当然也可以通过这些网站来找pp图。
+
+* [https://osu-pps.com/#/osu/maps](https://osu-pps.com/#/osu/maps)
+* [https://pp.bcs.dev/](https://pp.bcs.dev/)
 
 ### mirrors
 
 * bloodcat
   * [https://bloodcat.com/osu/](https://bloodcat.com/osu/)
+  * 备注：过去的血猫已经倒了，现在会跳转到[https://chimu.moe/](https://chimu.moe/)，也能用。
 * sayo
   * [https://osu.sayobot.cn/home](https://osu.sayobot.cn/home)
   * 浏览器插件（配合[TamperMonkey](https://www.tampermonkey.net/)使用）：[https://osu.sayobot.cn/sayobot.user.js](https://osu.sayobot.cn/sayobot.user.js)
@@ -113,6 +133,3 @@ description: osu相关工具一览
 * osu player
   * 项目地址：[https://github.com/Milkitic/Osu-Player](https://github.com/Milkitic/Osu-Player)
   * 简介：[yf_bmp](https://osu.ppy.sh/users/1243669)写的osu播放器，除了音乐外还可以播放hitsound、video和storyboard等。
-
-
-
