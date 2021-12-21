@@ -95,6 +95,33 @@ description: osu相关工具一览
   * 项目地址：[https://github.com/l3lackShark/gosumemory](https://github.com/l3lackShark/gosumemory)
   * 简介：CPOL录视频以及许多top直播使用的工具，可以自己定制出非常好看的直播界面。还支持比赛直播。
 
+### bot
+
+这部分其实笔者不是很熟悉，但是又觉得有介绍的必要，所以只是列出了一些开源的，还在持续更新的，同时功能比较完善的或者比较有名的项目。
+
+#### QQ
+
+* 白菜
+  * 项目地址：[https://github.com/Mother-Ship/cabbageWeb](https://github.com/Mother-Ship/cabbageWeb)
+  * 简介：可能是最早的osu的qq bot（指点江山以下略，，）
+* osu! 新人群 bot
+  * 项目地址：[https://github.com/b11p/OsuQqBotForNewbieGroup](https://github.com/b11p/OsuQqBotForNewbieGroup)
+  * 简介：只能说看着介绍写得比较全而且还在更新，笔者没有用过
+
+#### Discord
+
+Discord 是国外osu社区用的比较多的聊天软件，因为是hosted chat server的模式（而不是IM），很适合用来组织比赛，而且开发bot比qq方便很多。但是需要梯子。
+
+* flowabot
+  * 项目地址：[https://github.com/LeaPhant/flowabot](https://github.com/LeaPhant/flowabot)
+  * 简介：除了基本的查询信息之外，有很多有意思的功能，比如渲染谱面视频、输出谱面star/BPM的时域变化折线图等等。
+
+#### osu! irc
+
+* osu-ahr
+  * 项目地址：[https://github.com/Meowhal/osu-ahr](https://github.com/Meowhal/osu-ahr)
+  * 简介：通过 osu irc 在mp时实现自动轮换房主的bot，包括创建房间、开始游戏、关闭房间等等功能，使用房内玩家投票的方式决定是否跳过房主、是否abort等等。这个bot可以迁移到discord上，通过discord频道方便地设置bot的各种参数。
+
 ### statistics
 
 #### 数据追踪
