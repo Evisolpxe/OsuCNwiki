@@ -6,9 +6,9 @@ description: Auto-mapping 综述
 
 ## 简介
 
-本文是基于 AI 的 osu! 自动作图模型综述。该模型的功能是输入一段音频，输出符合音乐节奏的、类似人类 mapper 制作出的 beatmap。一些商业音游已经采用了这些手段辅助人类作图（比如 Love Live![^Takada]），但我们主要关注与 osu! 相关的自动作图进展。另外我们排除 BPM 变速图、跑道图等的自动作图工具，我们希望模型能够学习到人类作图的知识而不仅仅是生成。
+本文是基于 AI 的 osu! 自动作图模型综述。该模型的功能是输入一段音频，输出符合音乐节奏的、类似人类 mapper 制作出的 beatmap。一些商业音游已经采用了这些手段辅助人类作图（比如 Love Live![^Takada]），但我们主要关注与 osu! 相关的自动作图进展。另外我们排除 BPM 变速图、跑道图等自动作图工具，我们希望模型能够学习到人类作图的知识而不仅仅是生成图。
 
-说是综述其实只是一些论文的汇总介绍，行文没有仔细打磨。另外也还没有直接对 std 模式的论文，基本都是下落式模式，毕竟 std 作为二维平面相比一维的下落式或者太鼓建模麻烦点。。。
+说是综述其实只是一些论文的汇总介绍，行文没有仔细打磨。另外也还没有直接与 std 模式相关的论文，基本都是下落式模式，毕竟 std 作为二维平面相比一维的下落式或者太鼓建模麻烦点。。。
 
 ## 相关工作
 
@@ -74,8 +74,6 @@ TakoNation 参考了很多 Dance Dance Convolution[^Donahue]，一个基于 Danc
   - 博客：<https://www.nicksypteras.com/blog/aisu.html>：
   - 代码：<https://github.com/Syps/osu_beatmap_generator>
   - 生成谱面示例：<https://www.youtube.com/watch?v=E7yl1_HKcxw&list=PLXHqh2k-tZQeTHQ_s_kbrfhYQaYajfbpg>
-- 基于前者
-  - 代码：<https://github.com/NalianLive/AIMapper>
 - 17年的东西，看起来也没维护过了
   - 代码：<https://github.com/Ehaschia/osu-mapper>
 
