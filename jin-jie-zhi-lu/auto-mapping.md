@@ -12,13 +12,19 @@ description: Auto-mapping 综述
 
 ## 相关工作
 
+### Beatmap generator for Osu Game using machine learning approach
+
 目前找到的最早的有关 osu 的自动作图论文是2015年一位印尼人写的[^Maulidevi]。游戏平台是 mania4K。通过一些库提取音频特征然后摆放音符，虽然可以成功检测到节拍和旋律，但无法控制生成的 beatmap 的难度。这篇论文写得比较粗糙（公式甚至用位图而且非常糊。。），而且不是基于深度学习的方法好像是传统机器学习（SVM）的方法，感觉价值不大了。
+
+### Procedural Content Generation of Rhythm Games Using Deep Learning Methods
 
 比较有价值的工作来自于2019年 Yubin Liang 等人写的使用深度学习实现音乐游戏的 PCG（procedural content generation）[^Liang]。游戏平台是 mania4K。系统流程是用一套模型从音频生成 timpstamp ，然后基于 timestamp 再用另一套模型生成 action type，结合 timestamp 和 action type 可以生成 beatmap。
 
 所以其实我们想要的自动作图是一个叫做 PCG 方向下的具体实现。深度学习在 PCG 上的应用有一篇综述可以看看[^Liu]，这里就不只是音游了。PCG 其实更早是用在 2d 横板过关游戏的关卡自动生成上。
 
-重量级的工作是 2021 年 Emily Halina 提出的 TaikoNation 模型[^Halina]。游戏平台是 osu! taiko。作者的 osu id 是 [Kaifin](https://osu.ppy.sh/users/2596942)。这项工作有3个主要贡献：
+### TaikoNation: Patterning-focused Chart Generation for Rhythm Action Games
+
+重量级的工作是 2021 年 Emily Halina 等提出的 TaikoNation 模型[^Halina]。游戏平台是 osu! taiko。作者的 osu id 是 [Kaifin](https://osu.ppy.sh/users/2596942)（从导师推特的 follower 找到作者推特才发现这位就是 Kaifin。。。）。这项工作有3个主要贡献：
 
 - 提出了一个给定音频自动生成 taiko beatmap 的 LSTM 架构；
 - 建立了一个有 110 个 charts 的 taiko beatmap 数据集；
@@ -48,21 +54,26 @@ Evaluation 也是比较重要的部分。以前的模型会把检测起始点和
 TaikoNation 代码已公开：<https://github.com/emily-halina/TaikoNationV1>
 TakoNation 参考了很多 Dance Dance Convolution[^Donahue]，一个基于 Dance Dance Revolution 游戏平台的模型（可能外国人玩 DDR 的比较多）DDC 的代码也是公开的：<https://github.com/chrisdonahue/ddc>。
 
-作者推特上公开了下一步的工作是 KiaiTime，部分论文已经可以看到[^Halina2]。游戏平台仍然是 taiko。这是一个辅助人类作图的系统，mapper 可以从 AI 生成的 beatmap 中产生灵感，共同完成制作。
+作者推特上公开了下一步的工作是 KiaiTime（A Demonstration of KiaiTime: A Mixed-Initiative PCGML Rhythm Game Editor），部分论文已经可以看到[^Halina2]。游戏平台仍然是 taiko。这是一个辅助人类作图的系统，mapper 可以从 AI 生成的 beatmap 中产生灵感，共同完成制作。
 
-后面是一些不是很有用但还可以的工作。
+### 一些不是很有用但还可以的工作
+
 2019年 Zhiyu Lin 等人提出的 GenarationMania[^Lin]。游戏平台是 Beatmania。这个模型要解决的问题是自动生成 keysound（按下按键重现音乐的某些声音），相对来说 osu 不是很看重 keysound，所以这个问题在 osu 里不是很重要，这点 Halina 也提到了。
 
 然后看到比较有意思的还有2021年 Kim 等人提出的通过视频就可以提取音游 beatmap 的模型，用于生成数据集[^Kim]。当然 osu 的 beatmap 相当于是全公开的，所以我们用不到。
 
 一些研究者选择直接“自制”音游，这些音游本身就具有给定音频自动生成 beatmap 的功能，例如[^Salsabilla][^Yeh] 。
 
-最后放些代码库。
+### 其他项目
 
+- [Ar3](https://osu.ppy.sh/users/989563) 做的 osu! ai beatmap generator "osumapper"，全模式可用，可以用 colab 跑，比较完整
+  - 帖子：<https://osu.ppy.sh/community/forums/topics/791481?n=1>
+  - 代码：<https://github.com/kotritrona/osumapper>
+  - 生成谱面示例：<https://osu.ppy.sh/beatmapsets/1290030#osu/2678072>
 - 前几年有人做的自动生成 beatmap，作者已经弃坑
   - 博客：<https://www.nicksypteras.com/blog/aisu.html>：
   - 代码：<https://github.com/Syps/osu_beatmap_generator>
-  - 作品：<https://www.youtube.com/watch?v=E7yl1_HKcxw&list=PLXHqh2k-tZQeTHQ_s_kbrfhYQaYajfbpg>
+  - 生成谱面示例：<https://www.youtube.com/watch?v=E7yl1_HKcxw&list=PLXHqh2k-tZQeTHQ_s_kbrfhYQaYajfbpg>
 - 基于前者
   - 代码：<https://github.com/NalianLive/AIMapper>
 - 17年的东西，看起来也没维护过了
