@@ -30,11 +30,15 @@ description: Auto-mapping 综述
 - 建立了一个有 110 个 charts 的 taiko beatmap 数据集；
 - 与 Dance Dance Convolution 模型（见下文）的对比
 
-模型训练时先将音频分成 23ms 的小段提取特征，然后将对应的这一段人类制作的 beatmap 提取特征，两个东西扔进模型里训练预测后4个 notes；生成 heatmap 时将预测窗在音频上滑动，得到预测的 notes 从而得到最终完整的 beatmap。
+#### Architecture
+
+模型训练时先将音频分成 23ms 的小段提取特征，然后从这一段音乐对应的人类制作的 chart 提取特征，两个东西扔进模型里训练预测后4个 notes；生成 chart 时将预测窗在音频上滑动，得到预测的 notes 从而得到最终完整的 beatmap。
 作者强调了 human-like patterning 这一概念，指人类作图时往往重复出现某些特定的组合（以表现音乐主题），这一模式将是模型主要的学习对象。
-对音频的处理：23ms 大约是 163BPM 下两个 1/64 拍的 notes 时间间隔，作者认为这样的切片对大部分 BPM 音乐而言都比较合适。切片的音频使用 short-time Fourier transform 提取特征。
-对 beatmap 的处理：即对 .osu 文件的解析，不多介绍。
-网络这一块反而没什么好说的了，就 ReLu、dropout、卷积、全连接、LSTM，softmax，本人完全不懂。训练用的 CPU 是 AMD Ryzen 5 3600x，GPU 是 NVIDIA GeForce 1080 Ti GPU，花了2个半小时。生成时会用较长的滑动窗口对音乐进行预测，在每个 timestamp 上得到多个预测，选择其中概率最高的作为最终结果，这种预测方式提高了模型的记忆性。生成的 beatmap 还需要一些处理实现最终可玩。
+对音频的处理，3ms 大约是 163BPM 下两个 1/64 拍的 notes 时间间隔，作者认为这样切片对大部分音乐而言都比较合适。切片的音频使用 short-time Fourier transform 提取特征。
+对 beatmap 的处理，即对 .osu 文件的解析，不多介绍。
+网络这一块反而没什么好说的了，就是 ReLU、dropout、卷积、全连接、LSTM，softmax，本人完全不懂。训练用的 CPU 是 AMD Ryzen 5 3600x，GPU 是 NVIDIA GeForce 1080 Ti GPU，花了2个半小时。生成时会用较长的滑动窗口对音乐进行预测，在每个 timestamp 上得到多个预测，选择其中概率最高的作为最终结果，这种预测方式提高了模型的记忆性。生成的 beatmap 还需要一些处理实现最终可玩。
+
+#### Evaluation
 
 Evaluation 也是比较重要的部分。以前的模型会把检测起始点和作图分成两个任务，但 TaikoNation 是这两个任务一起做的。选择的 baseline 一个是 DDC，因为其他人也用而且和 taiko 比较像；另一个是在 timestamp 上随机生成 note 形成的 beatmap。作者收集了两个游戏平台都收录的10首音乐，以及这些音乐的上架 beatmap。作者制定了5条标准衡量生成 beatmap 的质量（没看懂说实话）：
 
@@ -44,11 +48,15 @@ Evaluation 也是比较重要的部分。以前的模型会把检测起始点和
 - Over.P-Space：找出独特模式，旨在揭露模型覆盖了多少模式空间；
 - HI P-Space：衡量模式使用的 Human-like pattern 的比例。
 
+#### Results
+
 基于以上标准，作者实验的结果表明 TaikoNation 相比 DDC 使用了更多的 human-like pattern，并且生成的 beatmap 中的 note 密度分布和人类制作的更加相似。作者指出由于 DDR 和 taiko 的 note 类型存在区别，导致无法直接比较两种方法的 note 类型摆放选择，但从 note 类型的分布来看，TaikoNation 和人类还是比较接近的。在起始点检测任务上二者没有显著差异，作者认为这和用于预测的滑动窗口有关。进一步的实验需要更多的人类评价，这将留待未来完成。（2021年8月左右作者发了招收 taiko 志愿者的推，不过我没有看到后续）
 
 作者提到模型目前生成的 beatmap 只能算作是一个“近似值”。可以让玩家通过双盲测试对 beatmap 的特定方面进行评分，进一步帮助研究者深入了解模型的学习能力。
 
 作者认为未来的发展方向应当是人类与 AI 合作制图，例如 AI 可以作为新手 mapper 的指导老师，或者为成熟 mapper 提供灵感。另外，其他音乐游戏（SDVX）具有独特的游戏对象（旋钮），可以开发出一种通用架构能够针对不同音游进行调整。以上就是这篇论文的主要内容。
+
+#### 其他
 
 有兴趣的还可以看一下 [workshop](http://www.pcgworkshop.com/index.php)，录像在 [这里](https://herts-ac-uk.zoom.us/rec/play/DXcbDiDn2yEtgZHpYqdrDWQRR0UtShnSzOBCkoG0fBHXmU2JuDKWy_OWvqokDZy4gEuaNxS3FEZN5DU3.WIYDoCo3KPNpakwQ?continueMode=true&_x_zm_rtaid=SY9h4bt_QRGq__AH9ce7-g.1648229651961.c796ecd306dd04a07f848d03b4178d7d&_x_zm_rhtaid=146)，大概2小时的地方，听作者介绍自己的工作和 Q&A。
 TaikoNation 代码已公开：<https://github.com/emily-halina/TaikoNationV1>
