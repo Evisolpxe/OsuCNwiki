@@ -41,4 +41,5 @@
 * [Review of osu! Tools](jin-jie-zhi-lu/review-of-osu-tools.md)
 * [小心伤病！](jin-jie-zhi-lu/xiao-xin-shang-bing.md)
 * [Tournament](jin-jie-zhi-lu/tournament.md)
+* [Auto-Mapping AI制图](jin-jie-zhi-lu/auto-mapping.md)
 
